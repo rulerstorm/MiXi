@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>51E98A01-7563-412D-B37E-87DCE14671D5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>mixi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>86A2B4227200D26FFF5B8FC95B4A134EFF56C2D6</key>
+		<string>github.com:rulerstorm/MiXi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>mixi.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>86A2B4227200D26FFF5B8FC95B4A134EFF56C2D6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:rulerstorm/MiXi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>86A2B4227200D26FFF5B8FC95B4A134EFF56C2D6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>86A2B4227200D26FFF5B8FC95B4A134EFF56C2D6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mixi_git</string>
+		</dict>
+	</array>
+</dict>
+</plist>
