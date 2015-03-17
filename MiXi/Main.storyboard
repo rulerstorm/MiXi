@@ -91,7 +91,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="登陆" id="aIK-Aa-y24">
-                        <barButtonItem key="backBarButtonItem" title=" " id="vrb-K8-SSZ"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="Wpp-YC-XlH"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -234,11 +234,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="hKW-cT-1rX">
-                        <barButtonItem key="backBarButtonItem" title=" " id="7TL-c6-K7i"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="ut7-Bb-fsy"/>
                     </navigationItem>
                     <connections>
                         <outlet property="ButtonNext" destination="PmK-Xo-kng" id="Es2-jM-GIh"/>
                         <outlet property="buttonSend" destination="Nuv-dW-Mn5" id="Ujl-cg-M9k"/>
+                        <outlet property="textFiedlPhone" destination="Aag-2g-GQj" id="i0C-O3-bX1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0q-Am-IoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -266,6 +267,9 @@
                                 <state key="normal" title="完成">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonCompeleteTaped" destination="bPZ-Nx-5nh" eventType="touchUpInside" id="3rd-FT-1Rg"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1r3-gF-gWB">
                                 <rect key="frame" x="99" y="211" width="123" height="29"/>

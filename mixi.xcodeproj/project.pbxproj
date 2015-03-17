@@ -17,6 +17,7 @@
 		AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC37DFCE1AB57ABD00AA6B53 /* Default@2x.png */; };
 		AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC37DFD21AB57B2B00AA6B53 /* Default-568h@2x.png */; };
 		AC9AB8AF1AB58DE8001EC765 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AB8AE1AB58DE8001EC765 /* RegisterViewController.swift */; };
+		ACCFE3FF1AB8B4C3003D5830 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		AC37DFCE1AB57ABD00AA6B53 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		AC37DFD21AB57B2B00AA6B53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		AC9AB8AE1AB58DE8001EC765 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../RegisterViewController.swift; sourceTree = "<group>"; };
+		ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		ACCFE3FE1AB8B4C3003D5830 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		ACCFE40F1AB8B868003D5830 /* mixi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mixi-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +129,10 @@
 		AC1CF6A41AB72FE30095B58C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				ACCFE40F1AB8B868003D5830 /* mixi-Bridging-Header.h */,
 				AC1CF6A21AB71A0D0095B58C /* ExtendingUIImage.swift */,
+				ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */,
+				ACCFE3FE1AB8B4C3003D5830 /* MBProgressHUD.h */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -242,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC1CF6A31AB71A0D0095B58C /* ExtendingUIImage.swift in Sources */,
+				ACCFE3FF1AB8B4C3003D5830 /* MBProgressHUD.m in Sources */,
 				AC9AB8AF1AB58DE8001EC765 /* RegisterViewController.swift in Sources */,
 				AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */,
 				AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */,
@@ -352,6 +360,8 @@
 				INFOPLIST_FILE = mixi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "mixi-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -362,6 +372,8 @@
 				INFOPLIST_FILE = mixi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "mixi-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -12,10 +12,13 @@ class RegisterViewController: UIViewController {
 
     @IBOutlet weak var ButtonNext: UIButton!
     @IBOutlet weak var buttonSend: UIButton!
+    @IBOutlet weak var textFiedlPhone: UITextField!
     
     //这个方法应该还需要增加发短信的内容
     @IBAction func buttonSendPushed() {
+        MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         self.view.endEditing(true)
+        MBProgressHUD.hideHUDForView(self.view, animated: true)
     }
     
     
@@ -29,10 +32,15 @@ class RegisterViewController: UIViewController {
         buttonSend.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
         buttonSend.backgroundColor = nil
         
+
+        
         
     }
 
-    
+    override func viewDidAppear(animated: Bool) {
+        //自动叫出键盘
+        self.textFiedlPhone.becomeFirstResponder()
+    }
     
     
 }
