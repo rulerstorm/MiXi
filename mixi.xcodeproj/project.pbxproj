@@ -14,6 +14,8 @@
 		AC1CF6A31AB71A0D0095B58C /* ExtendingUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF6A21AB71A0D0095B58C /* ExtendingUIImage.swift */; };
 		AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF6A61AB73E1F0095B58C /* InputInfomationViewController.swift */; };
 		AC1CF6A91AB740420095B58C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1CF6A81AB740420095B58C /* Main.storyboard */; };
+		AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A3941AB9618D001054B9 /* mainColor.swift */; };
+		AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC30A3961AB9960D001054B9 /* registerInfo.swift */; };
 		AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC37DFCE1AB57ABD00AA6B53 /* Default@2x.png */; };
 		AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC37DFD21AB57B2B00AA6B53 /* Default-568h@2x.png */; };
 		AC9AB8AF1AB58DE8001EC765 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AB8AE1AB58DE8001EC765 /* RegisterViewController.swift */; };
@@ -42,6 +44,8 @@
 		AC1CF6A21AB71A0D0095B58C /* ExtendingUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExtendingUIImage.swift; path = MiXi/ExtendingUIImage.swift; sourceTree = SOURCE_ROOT; };
 		AC1CF6A61AB73E1F0095B58C /* InputInfomationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputInfomationViewController.swift; path = MiXi/InputInfomationViewController.swift; sourceTree = SOURCE_ROOT; };
 		AC1CF6A81AB740420095B58C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AC30A3941AB9618D001054B9 /* mainColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainColor.swift; path = MiXi/mainColor.swift; sourceTree = SOURCE_ROOT; };
+		AC30A3961AB9960D001054B9 /* registerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerInfo.swift; sourceTree = "<group>"; };
 		AC37DFCE1AB57ABD00AA6B53 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		AC37DFD21AB57B2B00AA6B53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		AC9AB8AE1AB58DE8001EC765 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../RegisterViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 				AC1CF6A41AB72FE30095B58C /* Utility */,
 				AC1CF6A51AB73AB20095B58C /* Controller */,
 				AC19A0121AB56EFD00167523 /* Images.xcassets */,
+				AC30A3981AB99616001054B9 /* module */,
 				AC19A0091AB56EFD00167523 /* Supporting Files */,
 			);
 			path = mixi;
@@ -133,6 +138,7 @@
 				AC1CF6A21AB71A0D0095B58C /* ExtendingUIImage.swift */,
 				ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */,
 				ACCFE3FE1AB8B4C3003D5830 /* MBProgressHUD.h */,
+				AC30A3941AB9618D001054B9 /* mainColor.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -145,6 +151,14 @@
 				AC19A00D1AB56EFD00167523 /* ViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		AC30A3981AB99616001054B9 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				AC30A3961AB9960D001054B9 /* registerInfo.swift */,
+			);
+			name = module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +265,10 @@
 				AC1CF6A31AB71A0D0095B58C /* ExtendingUIImage.swift in Sources */,
 				ACCFE3FF1AB8B4C3003D5830 /* MBProgressHUD.m in Sources */,
 				AC9AB8AF1AB58DE8001EC765 /* RegisterViewController.swift in Sources */,
+				AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */,
 				AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */,
 				AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */,
+				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
 				AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +372,8 @@
 		AC19A0261AB56EFD00167523 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = mixi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,7 +385,8 @@
 		AC19A0271AB56EFD00167523 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = mixi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

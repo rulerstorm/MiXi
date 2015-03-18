@@ -9,9 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-
-
-
+    @IBOutlet weak var btnRegist: UIButton!
+    @IBOutlet weak var btnLogin: UIButton!
+    
+    override func viewDidLoad() {
+        let buttonImage = UIImage.resizabelImage(name: "按钮－高72")
+        btnRegist.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
+        btnRegist.backgroundColor = nil
+        btnLogin.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
+        btnLogin.backgroundColor = nil
+    }
 }
 

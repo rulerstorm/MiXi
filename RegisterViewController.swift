@@ -21,6 +21,9 @@ class RegisterViewController: UIViewController {
         MBProgressHUD.hideHUDForView(self.view, animated: true)
     }
     
+    @IBAction func barItemBackTapped(sender: UIBarButtonItem) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
     
     override func viewDidLoad() {
         
@@ -31,9 +34,8 @@ class RegisterViewController: UIViewController {
         //设置“发送”按钮
         buttonSend.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
         buttonSend.backgroundColor = nil
-        
+    
 
-        
         
     }
 
