@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="-1964" y="684"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tabbar Controller-->
         <scene sceneID="Dd9-83-PXD">
             <objects>
-                <tabBarController id="2o9-YP-3sU" sceneMemberID="viewController">
+                <tabBarController id="2o9-YP-3sU" customClass="mainTabbarController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="yDL-yP-57y"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="k54-Cb-guz">
@@ -284,6 +284,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonCompeleteTaped" destination="bPZ-Nx-5nh" eventType="touchUpInside" id="3rd-FT-1Rg"/>
+                                    <segue destination="2o9-YP-3sU" kind="modal" id="mzn-6c-pEj"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G09-vo-He9">
@@ -299,7 +300,7 @@
                                         <state key="selected" image="蜜喜蜜喜－切片iphone5_48" backgroundImage="iphone5_94">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="highlighted" image="蜜喜蜜喜－切片iphone5_47" backgroundImage="切片iphone5_92"/>
+                                        <state key="highlighted" image="蜜喜蜜喜－切片iphone5_48" backgroundImage="iphone5_94"/>
                                         <connections>
                                             <action selector="buttonGenderTapped:" destination="bPZ-Nx-5nh" eventType="touchUpInside" id="cgO-cg-fEq"/>
                                         </connections>
@@ -314,7 +315,7 @@
                                         <state key="selected" image="蜜喜蜜喜－切片iphone5_52" backgroundImage="切片iphone5_91">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="highlighted" image="蜜喜蜜喜－切片iphone5_33" backgroundImage="iphone5_93"/>
+                                        <state key="highlighted" image="蜜喜蜜喜－切片iphone5_52" backgroundImage="切片iphone5_91"/>
                                         <connections>
                                             <action selector="buttonGenderTapped:" destination="bPZ-Nx-5nh" eventType="touchUpInside" id="YDT-MU-gqd"/>
                                         </connections>

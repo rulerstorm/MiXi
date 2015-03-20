@@ -26,7 +26,7 @@ class RegisterViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         //设置底部“下一步”按钮
         let buttonImage = UIImage.resizabelImage(name: "按钮－高72")
         ButtonNext.setBackgroundImage(buttonImage, forState: UIControlState.Normal)

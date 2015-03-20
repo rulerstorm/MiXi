@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC118A321ABCA1BC00A1915C /* mainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC118A311ABCA1BC00A1915C /* mainTabbarController.swift */; };
 		AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A00B1AB56EFD00167523 /* AppDelegate.swift */; };
 		AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A00D1AB56EFD00167523 /* ViewController.swift */; };
 		AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC19A0121AB56EFD00167523 /* Images.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC118A311ABCA1BC00A1915C /* mainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainTabbarController.swift; path = MiXi/mainTabbarController.swift; sourceTree = SOURCE_ROOT; };
 		AC19A0061AB56EFD00167523 /* mixi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mixi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC19A00A1AB56EFD00167523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC19A00B1AB56EFD00167523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				AC9AB8AE1AB58DE8001EC765 /* RegisterViewController.swift */,
+				AC118A311ABCA1BC00A1915C /* mainTabbarController.swift */,
 				AC1CF6A61AB73E1F0095B58C /* InputInfomationViewController.swift */,
 				AC19A00D1AB56EFD00167523 /* ViewController.swift */,
 			);
@@ -269,6 +272,7 @@
 				AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */,
 				AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */,
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
+				AC118A321ABCA1BC00A1915C /* mainTabbarController.swift in Sources */,
 				AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

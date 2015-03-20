@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnLogin: UIButton!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         let buttonImage = UIImage.resizabelImage(name: "按钮－高72")
         btnRegist.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
         btnRegist.backgroundColor = nil

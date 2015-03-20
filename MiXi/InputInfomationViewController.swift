@@ -14,6 +14,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var buttonMale: UIButton!
     @IBOutlet weak var buttonFemail: UIButton!
+    
     @IBOutlet weak var buttonComplete: UIButton!
 
     @IBOutlet weak var textNikname: UITextField!
@@ -34,11 +35,16 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
     
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         //设置底部“完成”按钮
         let buttonImage = UIImage.resizabelImage(name: "按钮－高72")
         buttonComplete.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
         buttonComplete.backgroundColor = nil
         
+        //取消男女按钮的高亮阴影
+        self.buttonMale.adjustsImageWhenHighlighted = false
+        self.buttonFemail.adjustsImageWhenHighlighted = false
+
         //设置textfield代理
         textBudget.delegate = self
         textNikname.delegate = self
