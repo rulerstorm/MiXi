@@ -10,6 +10,7 @@ import Foundation
 
 extension UIButton{
     
+    //主题按钮
     func setAsMainTheme(){
         let buttonImage = UIImage.resizabelImage(name: "按钮－高72")
         self.setBackgroundImage(buttonImage, forState: UIControlState.Normal)

@@ -25,7 +25,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
     //持有用户注册数据的模型
     let userInfo = registerInfo()
     //保存数据的方法
-    func saveToModule(){
+    private func saveToModule(){
         userInfo.userName = textNikname.text?
         userInfo.userGender = (buttonMale.selected) ? (registerInfo.gender.male) : (registerInfo.gender.female)
         userInfo.userBudget = textBudget.text?.toInt()
@@ -47,6 +47,11 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         textBudget.delegate = self
         textNikname.delegate = self
         lableStyle.delegate = self
+        
+        //监听键盘事件
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillChangeFrame:"), name: "UIKeyboardWillChangeFrameNotification", object: nil)
+        
+        //－－－－－－－－－－－－－－－这里开始计算生成下面的八个“风格”按钮－－－－－－－－－－－－－－－
         
         let isIphone4 = (UIScreen.mainScreen().bounds.size.height == 480) ? 1 : 0  //对苦逼的iphton4适配
         let gapW :CGFloat = 10
@@ -81,10 +86,12 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
             btn.setBackgroundImage(buttonImage, forState: UIControlState.Selected)
             btn.addTarget(self, action:Selector("hotBtnPressed:"), forControlEvents: UIControlEvents.TouchUpInside)
         }
-
-        //监听键盘事件
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillChangeFrame:"), name: "UIKeyboardWillChangeFrameNotification", object: nil)
-
+    }//viewdidload()
+    
+    
+    // 控制器销毁时，移除消息通知监听(必须)
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self);
     }
 
     //这里是下面一坨代码创建按钮的点击事件
@@ -95,7 +102,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         }else{
             for i in 0..<userInfo.userStyle.count{
                 //小心删除元素之后，下标i超过原来的最大值count－1越界
-                if  i<userInfo.userStyle.count && userInfo.userStyle[i] == sender.titleLabel!.text!{
+                if  userInfo.userStyle[i] == sender.titleLabel!.text!{
                     userInfo.userStyle.removeAtIndex(i)
                     break
                 }
@@ -127,7 +134,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
     }
 
     
-    //弹出键盘时同时向上滚都view
+    //弹出键盘时同时向上滚动view
     func keyboardWillChangeFrame(note :NSNotification){
         var shift :CGFloat = 0
         if textNikname.editing == true{         //第一个输入不要滑动，但是知道怎么判定，出此下策
@@ -146,7 +153,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
     }
     
     
-//-----------------textField监听----------------------------------
+//-----------------textField监听事件----------------------------------
     
     //  点击了return按钮(键盘最右下角的按钮)就会调用
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -172,7 +179,9 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         self.saveToModule()
     }
     
+
     
+    //编辑完成提交数据的button时间，需要判定后界面跳转至“主界面”
     @IBAction func buttonCompeleteTaped() {
         self.view.endEditing(true)
         MBProgressHUD.showHUDAddedTo(self.view, animated: true)
@@ -187,9 +196,6 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         
     }
     
-    deinit {
-        // 控制器销毁时，移除消息通知监听(必须)
-        NSNotificationCenter.defaultCenter().removeObserver(self);
-    }
+
     
 }
