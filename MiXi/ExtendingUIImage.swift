@@ -30,10 +30,10 @@ extension UIImage{
         return newImage
     }
     
-    func test(){
-        UIGraphicsGetCurrentContext()
-        
-    }
+//    func test(){
+//        UIGraphicsGetCurrentContext()
+//        
+//    }
 
     
     

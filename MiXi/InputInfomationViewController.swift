@@ -37,9 +37,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置底部“完成”按钮
-        let buttonImage = UIImage.resizabelImage(name: "按钮－高72")
-        buttonComplete.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
-        buttonComplete.backgroundColor = nil
+        buttonComplete.setAsMainTheme()
         
         //取消男女按钮的高亮阴影
         self.buttonMale.adjustsImageWhenHighlighted = false
@@ -79,6 +77,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
             btn.setTitleColor(mixiColor.mainCoffie, forState: UIControlState.Normal)
             btn.setTitleColor(mixiColor.mainCoffie, forState: UIControlState.Highlighted)
             btn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Selected)
+            let buttonImage = UIImage.resizabelImage(name: "按钮－高72")
             btn.setBackgroundImage(buttonImage, forState: UIControlState.Selected)
             btn.addTarget(self, action:Selector("hotBtnPressed:"), forControlEvents: UIControlEvents.TouchUpInside)
         }

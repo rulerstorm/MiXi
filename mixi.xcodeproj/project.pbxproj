@@ -12,6 +12,7 @@
 		AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A00D1AB56EFD00167523 /* ViewController.swift */; };
 		AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC19A0121AB56EFD00167523 /* Images.xcassets */; };
 		AC19A0221AB56EFD00167523 /* mixiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A0211AB56EFD00167523 /* mixiTests.swift */; };
+		AC19B47E1ABD66BD00E332C1 /* ExtendingUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19B47D1ABD66BD00E332C1 /* ExtendingUIButton.swift */; };
 		AC1CF6A31AB71A0D0095B58C /* ExtendingUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF6A21AB71A0D0095B58C /* ExtendingUIImage.swift */; };
 		AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF6A61AB73E1F0095B58C /* InputInfomationViewController.swift */; };
 		AC1CF6A91AB740420095B58C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1CF6A81AB740420095B58C /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		AC19A01B1AB56EFD00167523 /* mixiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mixiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC19A0201AB56EFD00167523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC19A0211AB56EFD00167523 /* mixiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mixiTests.swift; sourceTree = "<group>"; };
+		AC19B47D1ABD66BD00E332C1 /* ExtendingUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExtendingUIButton.swift; path = MiXi/ExtendingUIButton.swift; sourceTree = SOURCE_ROOT; };
 		AC1CF6A21AB71A0D0095B58C /* ExtendingUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExtendingUIImage.swift; path = MiXi/ExtendingUIImage.swift; sourceTree = SOURCE_ROOT; };
 		AC1CF6A61AB73E1F0095B58C /* InputInfomationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputInfomationViewController.swift; path = MiXi/InputInfomationViewController.swift; sourceTree = SOURCE_ROOT; };
 		AC1CF6A81AB740420095B58C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				ACCFE40F1AB8B868003D5830 /* mixi-Bridging-Header.h */,
 				AC1CF6A21AB71A0D0095B58C /* ExtendingUIImage.swift */,
+				AC19B47D1ABD66BD00E332C1 /* ExtendingUIButton.swift */,
 				ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */,
 				ACCFE3FE1AB8B4C3003D5830 /* MBProgressHUD.h */,
 				AC30A3941AB9618D001054B9 /* mainColor.swift */,
@@ -269,6 +272,7 @@
 				ACCFE3FF1AB8B4C3003D5830 /* MBProgressHUD.m in Sources */,
 				AC9AB8AF1AB58DE8001EC765 /* RegisterViewController.swift in Sources */,
 				AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */,
+				AC19B47E1ABD66BD00E332C1 /* ExtendingUIButton.swift in Sources */,
 				AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */,
 				AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */,
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,

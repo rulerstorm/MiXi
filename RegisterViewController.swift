@@ -21,21 +21,16 @@ class RegisterViewController: UIViewController {
         MBProgressHUD.hideHUDForView(self.view, animated: true)
     }
     
-    @IBAction func barItemBackTapped(sender: UIBarButtonItem) {
-        self.navigationController?.popViewControllerAnimated(true)
-    }
+//    @IBAction func barItemBackTapped(sender: UIBarButtonItem) {
+//        self.navigationController?.popViewControllerAnimated(true)
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置底部“下一步”按钮
-        let buttonImage = UIImage.resizabelImage(name: "按钮－高72")
-        ButtonNext.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
-        ButtonNext.backgroundColor = nil
+        ButtonNext.setAsMainTheme()
         //设置“发送”按钮
-        buttonSend.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
-        buttonSend.backgroundColor = nil
-    
-
+        buttonSend.setAsMainTheme()
         
     }
 
