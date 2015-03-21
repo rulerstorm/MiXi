@@ -11,5 +11,9 @@ import Foundation
 
 struct mixiColor{
     static let mainCoffie = UIColor(red: 139/255, green: 117/255, blue: 76/255, alpha: 1)
+//    static let mycolor = UIColor(patternImage: <#UIImage#>)
     
 }
+
+
+    
