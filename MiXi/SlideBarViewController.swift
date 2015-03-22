@@ -1,5 +1,5 @@
 //
-//  DaRenViewController.swift
+//  SlideBarViewController.swift
 //  mixi
 //
 //  Created by LuRock on 15/3/22.
@@ -8,15 +8,11 @@
 
 import UIKit
 
-class DaRenViewController: UIViewController {
+class SlideBarViewController: UITableViewController {
 
-    @IBOutlet weak var sdf: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        println("dsffd")
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IWTabBarButton.h"
 
-@interface IWTabBarButtonHeart : UIButton
+@interface IWTabBarButtonHeart : IWTabBarButton
 @property (nonatomic, strong) UITabBarItem *item;
 @end

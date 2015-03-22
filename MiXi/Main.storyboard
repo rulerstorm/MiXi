@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mZq-Jx-TbZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mZq-Jx-TbZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -131,22 +131,22 @@
             <point key="canvasLocation" x="-1084" y="684"/>
         </scene>
         <!--Da Ren View Controller-->
-        <scene sceneID="0xP-EZ-WFa">
+        <scene sceneID="2t5-8K-mzp">
             <objects>
-                <viewController id="OR2-DV-4Ov" customClass="DaRenViewController" sceneMemberID="viewController">
+                <viewController id="q09-xd-9RI" customClass="DaRenViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3W7-Lo-Bkn"/>
-                        <viewControllerLayoutGuide type="bottom" id="Iap-gS-skf"/>
+                        <viewControllerLayoutGuide type="top" id="b6I-Kf-sMd"/>
+                        <viewControllerLayoutGuide type="bottom" id="pwN-6o-V6i"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yQc-bD-FQs">
+                    <view key="view" contentMode="scaleToFill" id="kSd-3R-uZH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kLi-tT-Bir" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Yg-ev-OTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-630" y="38"/>
+            <point key="canvasLocation" x="-559" y="659"/>
         </scene>
         <!--注册-->
         <scene sceneID="6uv-QF-7CC">
@@ -369,50 +369,6 @@
             </objects>
             <point key="canvasLocation" x="-1555" y="1441"/>
         </scene>
-        <!--Hun Li Bu Zhi View Controller-->
-        <scene sceneID="pJH-Tm-DcV">
-            <objects>
-                <viewController id="XWF-yC-hf4" customClass="HunLiBuZhiViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="iYD-KH-KSL"/>
-                        <viewControllerLayoutGuide type="bottom" id="Hvf-7v-ntQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="c2u-yI-t1Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qI7-SQ-jUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-630" y="1338"/>
-        </scene>
-        <!--User Center Table View Controller-->
-        <scene sceneID="HKo-cD-9t8">
-            <objects>
-                <tableViewController id="xD5-e0-2JI" customClass="UserCenterTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gG6-R4-P4Y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eEn-ig-uDY">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eEn-ig-uDY" id="s0K-lU-xZF">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="xD5-e0-2JI" id="rZl-34-c15"/>
-                            <outlet property="delegate" destination="xD5-e0-2JI" id="0nA-a3-g7Q"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sGP-BV-uhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-630" y="684"/>
-        </scene>
     </scenes>
     <resources>
         <image name="iphone5_93" width="63" height="32"/>
@@ -431,7 +387,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rVv-l2-DhQ"/>
+        <segue reference="mzn-6c-pEj"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.58039215690000001" green="0.48627450979999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

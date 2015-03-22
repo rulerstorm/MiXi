@@ -9,7 +9,7 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    
     @IBOutlet weak var ButtonNext: UIButton!
     @IBOutlet weak var buttonSend: UIButton!
     @IBOutlet weak var textFiedlPhone: UITextField!
@@ -21,9 +21,9 @@ class RegisterViewController: UIViewController {
         MBProgressHUD.hideHUDForView(self.view, animated: true)
     }
     
-//    @IBAction func barItemBackTapped(sender: UIBarButtonItem) {
-//        self.navigationController?.popViewControllerAnimated(true)
-//    }
+    //    @IBAction func barItemBackTapped(sender: UIBarButtonItem) {
+    //        self.navigationController?.popViewControllerAnimated(true)
+    //    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class RegisterViewController: UIViewController {
         buttonSend.setAsMainTheme()
         
     }
-
+    
     override func viewDidAppear(animated: Bool) {
         //自动叫出键盘
         self.textFiedlPhone.becomeFirstResponder()

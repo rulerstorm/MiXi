@@ -31,7 +31,7 @@
 //    IWTabBarButton *button = [[IWTabBarButton alloc] init];
 //    [self addSubview:button];
     
-    if ([item.title  isEqual: @"购物车"]) {
+    if ([item.title  isEqual: @"个人中心"]) {
         IWTabBarButtonHeart *button = [[IWTabBarButtonHeart alloc] init];
         [self addSubview:button];
         // 2.设置数据
