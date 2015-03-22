@@ -27,6 +27,7 @@
 		ACF5D7BC1ABEAFAC00F5904B /* DaRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D7BB1ABEAFAC00F5904B /* DaRenViewController.swift */; };
 		ACF5D7BE1ABEB09300F5904B /* HunLiBuZhiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D7BD1ABEB09300F5904B /* HunLiBuZhiViewController.swift */; };
 		ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */; };
+		ACF5D7C31ABEC21200F5904B /* IWTabBarButtonHeart.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D7C21ABEC21200F5904B /* IWTabBarButtonHeart.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		ACF5D7BB1ABEAFAC00F5904B /* DaRenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenViewController.swift; path = MiXi/DaRenViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACF5D7BD1ABEB09300F5904B /* HunLiBuZhiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiViewController.swift; path = MiXi/HunLiBuZhiViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCenterTableViewController.swift; path = MiXi/UserCenterTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		ACF5D7C11ABEC21200F5904B /* IWTabBarButtonHeart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTabBarButtonHeart.h; sourceTree = "<group>"; };
+		ACF5D7C21ABEC21200F5904B /* IWTabBarButtonHeart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTabBarButtonHeart.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +193,8 @@
 				AC323ABD1ABEA8F200F46563 /* IWTabBar.m */,
 				AC323ABE1ABEA8F200F46563 /* IWTabBarButton.h */,
 				AC323ABF1ABEA8F200F46563 /* IWTabBarButton.m */,
+				ACF5D7C11ABEC21200F5904B /* IWTabBarButtonHeart.h */,
+				ACF5D7C21ABEC21200F5904B /* IWTabBarButtonHeart.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 				ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */,
 				AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */,
 				AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */,
+				ACF5D7C31ABEC21200F5904B /* IWTabBarButtonHeart.m in Sources */,
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
 				AC118A321ABCA1BC00A1915C /* mainTabbarController.swift in Sources */,
 				AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */,

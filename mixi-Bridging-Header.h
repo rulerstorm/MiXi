@@ -15,5 +15,6 @@
 //自定义的tabbar
 #import "IWTabBar.h"
 #import "IWTabBarButton.h"
+#import "IWTabBarButtonHeart.h"
 
 #endif

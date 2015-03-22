@@ -8,6 +8,7 @@
 
 #import "IWTabBar.h"
 #import "IWTabBarButton.h"
+#import "IWTabBarButtonHeart.h"
 
 @interface IWTabBar()
 @property (nonatomic, weak) IWTabBarButton *selectedButton;
@@ -15,23 +16,51 @@
 
 @implementation IWTabBar
 
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor colorWithRed:0.098 green:0.1057 blue:0.102 alpha:0.95];
+    }
+    return self;
+}
 
 - (void)addTabBarButtonWithItem:(UITabBarItem *)item
 {
     // 1.创建按钮
-    IWTabBarButton *button = [[IWTabBarButton alloc] init];
-    [self addSubview:button];
+//    IWTabBarButton *button = [[IWTabBarButton alloc] init];
+//    [self addSubview:button];
     
-    // 2.设置数据
-    button.item = item;
-    
-    // 3.监听按钮点击
-    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
-    
-    // 4.默认选中第0个按钮
-    if (self.subviews.count == 1) {
-        [self buttonClick:button];
+    if ([item.title  isEqual: @"购物车"]) {
+        IWTabBarButtonHeart *button = [[IWTabBarButtonHeart alloc] init];
+        [self addSubview:button];
+        // 2.设置数据
+        button.item = item;
+        
+        // 3.监听按钮点击
+        [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
+        
+        // 4.默认选中第0个按钮
+        if (self.subviews.count == 1) {
+            [self buttonClick:button];
+        }
+    }else{
+        IWTabBarButton *button = [[IWTabBarButton alloc] init];
+        [self addSubview:button];
+        // 2.设置数据
+        button.item = item;
+        
+        // 3.监听按钮点击
+        [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchDown];
+        
+        // 4.默认选中第0个按钮
+        if (self.subviews.count == 1) {
+            [self buttonClick:button];
+        }
     }
+   
+    
+
 }
 
 /**
@@ -45,9 +74,9 @@
     }
     
     // 2.设置按钮的状态
-    self.selectedButton.selected = NO;
-    button.selected = YES;
-    self.selectedButton = button;
+//    self.selectedButton.selected = NO;
+//    button.selected = YES;
+//    self.selectedButton = button;
 }
 
 - (void)layoutSubviews
