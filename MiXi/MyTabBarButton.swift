@@ -26,7 +26,7 @@ class MyTabBarButton: UIButton {
         super.init(frame: frame)
     }
     
-    //从xib创建就用这个初始化
+    //从xib创建就用这个初始化(这两个初始化要么一起写，要么一起不写)
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.imageView?.contentMode = UIViewContentMode.Center  //图片中对齐

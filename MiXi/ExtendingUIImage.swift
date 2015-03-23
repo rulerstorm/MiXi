@@ -13,7 +13,7 @@ extension UIImage{
     class func resizabelImage(#name :String) ->UIImage?{
         if let normalImage = UIImage(named: name){
             let w = CGFloat(normalImage.size.width * 0.5)
-            let h = CGFloat(normalImage.size.width * 0.5)
+            let h = CGFloat(normalImage.size.height * 0.5)
             return normalImage.resizableImageWithCapInsets(UIEdgeInsets(top: h, left: w, bottom: h, right: w))
         }else{
             return nil

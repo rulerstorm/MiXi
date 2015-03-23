@@ -11,6 +11,7 @@ import UIKit
 
 class InputInfomationViewController: UIViewController, UITextFieldDelegate{
 
+    @IBOutlet var scrollView: UIScrollView!
     
     @IBOutlet weak var buttonMale: UIButton!
     @IBOutlet weak var buttonFemail: UIButton!
@@ -48,16 +49,20 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         textNikname.delegate = self
         lableStyle.delegate = self
         
+        
         //监听键盘事件
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillChangeFrame:"), name: "UIKeyboardWillChangeFrameNotification", object: nil)
         
         //－－－－－－－－－－－－－－－这里开始计算生成下面的八个“风格”按钮－－－－－－－－－－－－－－－
-        
         let isIphone4 = (UIScreen.mainScreen().bounds.size.height == 480) ? 1 : 0  //对苦逼的iphton4适配
+        
+        //后记：其实应该在大view里面弄个scrollView，然后就能适配ip4了，现在控件都autolayout，改起来困难了
+        
         let gapW :CGFloat = 10
         let gapH :CGFloat = 10
         let btnW :CGFloat = (self.view.frame.size.width - 5 * gapW) / 4
         let btnH :CGFloat = 36
+        
         //计算第一个推荐按钮“梦幻”的高度
         let hight :CGFloat = self.view.frame.size.height - 70 - CGFloat(2 - isIphone4) * btnH - gapH + CGFloat(isIphone4 * 2) * gapH
         
@@ -179,7 +184,8 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         self.saveToModule()
     }
     
-
+    
+    
     
     //编辑完成提交数据的button时间，需要判定后界面跳转至“主界面”
     @IBAction func buttonCompeleteTaped() {

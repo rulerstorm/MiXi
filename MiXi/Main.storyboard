@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V3H-eH-zYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1158" y="696"/>
+            <point key="canvasLocation" x="-1048" y="690"/>
         </scene>
         <!--Da Ren View Controller-->
         <scene sceneID="2t5-8K-mzp">
@@ -143,12 +143,84 @@
                     <view key="view" contentMode="scaleToFill" id="kSd-3R-uZH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDI-AJ-LOr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNX-aq-mCG">
+                                        <rect key="frame" x="2" y="0.0" width="178" height="320"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－首页_14">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZw-B7-SkJ">
+                                        <rect key="frame" x="183" y="0.0" width="135" height="174"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－首页_15">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucD-7H-gEU">
+                                        <rect key="frame" x="183" y="176" width="135" height="144"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－首页_17">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9A-LI-vcv">
+                                        <rect key="frame" x="0.0" y="8" width="83" height="19"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="猜你喜欢">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbk-Xe-Cmz">
+                                        <rect key="frame" x="0.0" y="328" width="83" height="19"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="达人库">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6d-jV-Bmt">
+                                        <rect key="frame" x="8" y="363" width="64" height="64"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－首页_19">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="蜜喜蜜喜－首页_26"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nR-15-LzA">
+                                        <rect key="frame" x="168" y="363" width="64" height="64"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－首页_21">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="蜜喜蜜喜－首页_28"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoE-PO-JDF">
+                                        <rect key="frame" x="248" y="363" width="64" height="64"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－首页_22">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="蜜喜蜜喜－首页_29"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SS-Zq-foh">
+                                        <rect key="frame" x="88" y="363" width="64" height="64"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－首页_20">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="蜜喜蜜喜－首页_27"/>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="btnDaRenKu" destination="Zbk-Xe-Cmz" id="wgs-ia-wH2"/>
+                        <outlet property="btnGuss" destination="U9A-LI-vcv" id="bbe-Jy-9O6"/>
+                        <outlet property="srollView" destination="sDI-AJ-LOr" id="YQE-lB-ehq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Yg-ev-OTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-559" y="659"/>
+            <point key="canvasLocation" x="-562" y="657"/>
         </scene>
         <!--User Center Table View Controller-->
         <scene sceneID="l1y-Y2-9Nb">
@@ -407,6 +479,7 @@
                         <outlet property="buttonMale" destination="q7J-kL-IuB" id="r76-bd-IYW"/>
                         <outlet property="labelHotRecommand" destination="tlm-r7-w7L" id="zZX-2Z-vb4"/>
                         <outlet property="lableStyle" destination="3jI-a4-xQr" id="TBv-jG-kHf"/>
+                        <outlet property="scrollView" destination="f4D-mm-W5k" id="2qV-XG-A81"/>
                         <outlet property="textBudget" destination="APg-Qf-7LR" id="2A3-Li-0OJ"/>
                         <outlet property="textNikname" destination="sZI-Nu-hO6" id="IgF-vi-a8C"/>
                     </connections>
@@ -426,6 +499,17 @@
         <image name="蜜喜蜜喜－切片iphone5_47" width="13" height="13"/>
         <image name="蜜喜蜜喜－切片iphone5_48" width="13" height="13"/>
         <image name="蜜喜蜜喜－切片iphone5_52" width="12" height="14"/>
+        <image name="蜜喜蜜喜－首页_14" width="182" height="319"/>
+        <image name="蜜喜蜜喜－首页_15" width="134" height="164"/>
+        <image name="蜜喜蜜喜－首页_17" width="134" height="154"/>
+        <image name="蜜喜蜜喜－首页_19" width="64" height="64"/>
+        <image name="蜜喜蜜喜－首页_20" width="64" height="64"/>
+        <image name="蜜喜蜜喜－首页_21" width="64" height="64"/>
+        <image name="蜜喜蜜喜－首页_22" width="64" height="64"/>
+        <image name="蜜喜蜜喜－首页_26" width="64" height="64"/>
+        <image name="蜜喜蜜喜－首页_27" width="64" height="64"/>
+        <image name="蜜喜蜜喜－首页_28" width="64" height="64"/>
+        <image name="蜜喜蜜喜－首页_29" width="64" height="64"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -433,7 +517,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="uId-19-EHZ"/>
+        <segue reference="ADx-VC-VhL"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="0.58039215690000001" green="0.48627450979999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

@@ -72,13 +72,14 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         childVc.tabBarItem.image = UIImage(named: imageName)
         
         //包装一个导航控制器
-        let navi = UINavigationController(rootViewController: childVc)
+        let navi = MyNavigationViewController(rootViewController: childVc)
         navi.navigationBar.barTintColor = mixiColor.mainPink
         navi.navigationBar.tintColor = mixiColor.mainCoffie
+
         
-        //包装一个侧滑控制器
-//        let slideView = SlideViewController()
-//        slideView.addMainController(navi)
+
+        
+
         
         //加到主控制器
         self.addChildViewController(navi)

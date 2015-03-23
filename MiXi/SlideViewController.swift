@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SlideViewController: UIViewController {
+class SlideViewController: UIViewController, MyNavigationViewControllerDelegate {
     
     let slideBar = SlideBarViewController()
     var mainviewController = mainTabbarController()
@@ -17,7 +17,12 @@ class SlideViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.mainviewController.view.frame = self.view.bounds   //话说frame和bounds的区别？
+        for child in mainviewController.childViewControllers{
+            let navi = child as MyNavigationViewController
+            navi.itemDelegate = self
+        }
+
+        //设置侧边栏的frame
         self.slideBar.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 0.6, height: self.view.frame.height)
         
         //监听手势
@@ -80,6 +85,14 @@ class SlideViewController: UIViewController {
                 pan.view!.transform = CGAffineTransformIdentity
             }
         }
+    }
+
+    
+    //代理函数，监听左上角点击
+    func MyNavigationControllerLeftBarItenClicked(){
+        UIView.animateWithDuration(0.5, animations: {
+            self.mainviewController.view.transform = CGAffineTransformMakeTranslation(self.slideBar.view.frame.width, 0)
+        })
     }
 
     
