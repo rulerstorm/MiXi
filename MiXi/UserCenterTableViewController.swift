@@ -10,6 +10,8 @@ import UIKit
 
 class UserCenterTableViewController: UITableViewController {
 
+    var leftItemDelegate :leftBarButtunDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -72,7 +72,7 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         childVc.tabBarItem.image = UIImage(named: imageName)
         
         //包装一个导航控制器
-        let navi = MyNavigationViewController(rootViewController: childVc)
+        let navi = UINavigationController(rootViewController: childVc)
         navi.navigationBar.barTintColor = mixiColor.mainPink
         navi.navigationBar.tintColor = mixiColor.mainCoffie
 

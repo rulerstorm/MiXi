@@ -27,7 +27,6 @@
 		ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */; };
 		ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */; };
 		ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */; };
-		FEAD37031AC082D5005A6CD6 /* MyNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAD37021AC082D5005A6CD6 /* MyNavigationViewController.swift */; };
 		FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEDFADA91AC0093D0005464A /* TabBarView.xib */; };
 		FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */; };
 		FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAD1AC023610005464A /* MyTabBar.swift */; };
@@ -71,7 +70,6 @@
 		ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideBarViewController.swift; path = MiXi/SlideBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideViewController.swift; path = MiXi/SlideViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCenterTableViewController.swift; path = MiXi/UserCenterTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		FEAD37021AC082D5005A6CD6 /* MyNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationViewController.swift; path = MiXi/MyNavigationViewController.swift; sourceTree = SOURCE_ROOT; };
 		FEDFADA91AC0093D0005464A /* TabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabBarView.xib; path = MiXi/TabBarView.xib; sourceTree = SOURCE_ROOT; };
 		FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBarButton.swift; path = MiXi/MyTabBarButton.swift; sourceTree = SOURCE_ROOT; };
 		FEDFADAD1AC023610005464A /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBar.swift; path = MiXi/MyTabBar.swift; sourceTree = SOURCE_ROOT; };
@@ -173,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				AC118A311ABCA1BC00A1915C /* mainTabbarController.swift */,
-				FEAD37021AC082D5005A6CD6 /* MyNavigationViewController.swift */,
 				AC1CF6A61AB73E1F0095B58C /* InputInfomationViewController.swift */,
 				AC19A00D1AB56EFD00167523 /* ViewController.swift */,
 				ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */,
@@ -315,7 +312,6 @@
 				AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */,
 				AC19B47E1ABD66BD00E332C1 /* ExtendingUIButton.swift in Sources */,
 				ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */,
-				FEAD37031AC082D5005A6CD6 /* MyNavigationViewController.swift in Sources */,
 				AC7CD20D1ABF171D007E2B20 /* RegisterViewController.swift in Sources */,
 				AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */,
 				AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */,

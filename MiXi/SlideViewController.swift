@@ -8,7 +8,12 @@
 
 import UIKit
 
-class SlideViewController: UIViewController, MyNavigationViewControllerDelegate {
+protocol leftBarButtunDelegate{
+    func leftBarButtunClicked()
+}
+
+
+class SlideViewController: UIViewController, leftBarButtunDelegate {
     
     let slideBar = SlideBarViewController()
     var mainviewController = mainTabbarController()
@@ -16,11 +21,22 @@ class SlideViewController: UIViewController, MyNavigationViewControllerDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for child in mainviewController.childViewControllers{
-            let navi = child as MyNavigationViewController
-            navi.itemDelegate = self
-        }
+
+//这个有问题
+for child in mainviewController.childViewControllers{
+    let navi = child as UINavigationController
+    if(navi.childViewControllers[0] is DaRenViewController){
+        let final = navi.childViewControllers[0] as DaRenViewController
+        final.leftItemDelegate = self
+    }else if(navi.childViewControllers[0] is HunLiBuZhiViewController){
+        let final = navi.childViewControllers[0] as HunLiBuZhiViewController
+        final.leftItemDelegate = self
+    }else if(navi.childViewControllers[0] is UserCenterTableViewController){
+        let final = navi.childViewControllers[0] as UserCenterTableViewController
+        final.leftItemDelegate = self
+    }
+
+}
 
         //设置侧边栏的frame
         self.slideBar.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 0.6, height: self.view.frame.height)
@@ -89,7 +105,7 @@ class SlideViewController: UIViewController, MyNavigationViewControllerDelegate 
 
     
     //代理函数，监听左上角点击
-    func MyNavigationControllerLeftBarItenClicked(){
+    func leftBarButtunClicked(){
         UIView.animateWithDuration(0.5, animations: {
             self.mainviewController.view.transform = CGAffineTransformMakeTranslation(self.slideBar.view.frame.width, 0)
         })

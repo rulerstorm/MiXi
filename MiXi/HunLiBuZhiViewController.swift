@@ -8,8 +8,10 @@
 
 import UIKit
 
-class HunLiBuZhiViewController: UIViewController {
+class HunLiBuZhiViewController: UIViewController{
 
+    var leftItemDelegate :leftBarButtunDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -8,15 +8,24 @@
 
 import UIKit
 
+
+
+
 class DaRenViewController: UIViewController {
 
     @IBOutlet weak var srollView: UIScrollView!
     @IBOutlet weak var btnGuss: UIButton!
     @IBOutlet weak var btnDaRenKu: UIButton!
     
+    var leftItemDelegate :AnyObject?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "蜜喜蜜喜"
+        
+        let leftItem = UIBarButtonItem(image: UIImage(named: "蜜喜蜜喜－首页_07"), style: UIBarButtonItemStyle.Bordered, target: self.leftItemDelegate, action: Selector("leftBarButtunClicked"))
+        self.navigationItem.leftBarButtonItem = leftItem
+        
         
         //适配iphone4
         self.srollView.contentSize = CGSize(width: 320, height: 568)  //这行表述可滚动范围
