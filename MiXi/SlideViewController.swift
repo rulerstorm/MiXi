@@ -11,28 +11,24 @@ import UIKit
 class SlideViewController: UIViewController {
     
     let slideBar = SlideBarViewController()
-    var mainviewController :UIViewController?
+    var mainviewController = mainTabbarController()
     var lastX :CGFloat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.mainviewController?.view.frame = self.view.bounds   //话说frame和bounds的区别？
+//        self.mainviewController.view.frame = self.view.bounds   //话说frame和bounds的区别？
         self.slideBar.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 0.6, height: self.view.frame.height)
         
         //监听手势
         let gesture = UIPanGestureRecognizer(target: self, action: Selector("didDrag:"))
-        self.mainviewController?.view.addGestureRecognizer(gesture)
-    }
-
-    
-    func addMainController(mainController :UIViewController){
-        
-        self.mainviewController = mainController
-        self.addChildViewController(mainController)
-        self.view.addSubview(mainController.view)
+        self.mainviewController.view.addGestureRecognizer(gesture)
+ 
+        self.addChildViewController(mainviewController)
+        self.view.addSubview(mainviewController.view)
         self.view.backgroundColor = UIColor.whiteColor()
 
+        
         //先加到数组里面的view会在下面
         self.addChildViewController(slideBar)
         self.view.addSubview(slideBar.view)

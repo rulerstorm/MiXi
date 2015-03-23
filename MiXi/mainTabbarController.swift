@@ -77,9 +77,11 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         navi.navigationBar.tintColor = mixiColor.mainCoffie
         
         //包装一个侧滑控制器
-        let slideView = SlideViewController()
-        slideView.addMainController(navi)
-        self.addChildViewController(slideView)
+//        let slideView = SlideViewController()
+//        slideView.addMainController(navi)
+        
+        //加到主控制器
+        self.addChildViewController(navi)
         
         //传递item数据，初始化tabbar里面按钮
         self.customTabBar?.addTabBarButtonWithItem(item: childVc.tabBarItem)

@@ -53,7 +53,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonSendPushed" destination="HIK-Ux-wgG" eventType="touchUpInside" id="DoO-1B-dqW"/>
-                                    <segue destination="2o9-YP-3sU" kind="modal" id="rVv-l2-DhQ"/>
+                                    <segue destination="CKT-yC-lxP" kind="modal" id="uId-19-EHZ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名：" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ga9-Bn-jK5">
@@ -114,21 +114,23 @@
             </objects>
             <point key="canvasLocation" x="-1964" y="684"/>
         </scene>
-        <!--Main Tabbar Controller-->
-        <scene sceneID="Dd9-83-PXD">
+        <!--Slide View Controller-->
+        <scene sceneID="bUg-wV-5de">
             <objects>
-                <tabBarController id="2o9-YP-3sU" customClass="mainTabbarController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="yDL-yP-57y"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="k54-Cb-guz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C4B-7D-Vbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="CKT-yC-lxP" customClass="SlideViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="leI-5i-cmh"/>
+                        <viewControllerLayoutGuide type="bottom" id="YqU-xd-RQp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pFI-R9-PMS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V3H-eH-zYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1084" y="684"/>
+            <point key="canvasLocation" x="-1158" y="696"/>
         </scene>
         <!--Da Ren View Controller-->
         <scene sceneID="2t5-8K-mzp">
@@ -300,7 +302,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonCompeleteTaped" destination="bPZ-Nx-5nh" eventType="touchUpInside" id="3rd-FT-1Rg"/>
-                                    <segue destination="2o9-YP-3sU" kind="modal" id="mzn-6c-pEj"/>
+                                    <segue destination="CKT-yC-lxP" kind="modal" id="ADx-VC-VhL"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G09-vo-He9">
@@ -431,7 +433,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="mzn-6c-pEj"/>
+        <segue reference="uId-19-EHZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.58039215690000001" green="0.48627450979999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>
