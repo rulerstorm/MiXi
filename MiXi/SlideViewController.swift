@@ -77,7 +77,7 @@ for child in mainviewController.childViewControllers{
 
                 } else{ // 走动距离的没有达到四分之一
                     UIView.animateWithDuration(duration, animations: {
-                        pan.view!.transform = CGAffineTransformIdentity
+                        pan.view!.transform = CGAffineTransformIdentity   //这个参数需要理解，能复原位置
                     })
                 }
             }else{
@@ -106,9 +106,15 @@ for child in mainviewController.childViewControllers{
     
     //代理函数，监听左上角点击
     func leftBarButtunClicked(){
-        UIView.animateWithDuration(0.5, animations: {
-            self.mainviewController.view.transform = CGAffineTransformMakeTranslation(self.slideBar.view.frame.width, 0)
-        })
+        if(self.mainviewController.view.frame.minX == 0){
+            UIView.animateWithDuration(0.5, animations: {
+                self.mainviewController.view.transform = CGAffineTransformMakeTranslation(self.slideBar.view.frame.width, 0)
+            })
+        }else{
+            UIView.animateWithDuration(0.5, animations: {
+                self.mainviewController.view.transform = CGAffineTransformIdentity
+            })
+        }
     }
 
     
