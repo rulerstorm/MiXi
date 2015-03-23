@@ -47,13 +47,13 @@ class mainTabbarController: UITabBarController, IWTabBarDelegate{
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
-        let daRen = DaRenViewController()
+        let daRen = storyBoard.instantiateViewControllerWithIdentifier("daren") as DaRenViewController
         self.setupChildViewController(daRen, title: "婚礼达人", imageName: "婚礼达人黄")
         
-        let userCenter = UserCenterTableViewController()
+        let userCenter = storyBoard.instantiateViewControllerWithIdentifier("userCenter") as UserCenterTableViewController
         self.setupChildViewController(userCenter, title: "个人中心", imageName: "购物车")
         
-        let buZhi = HunLiBuZhiViewController()
+        let buZhi = storyBoard.instantiateViewControllerWithIdentifier("buZhi") as HunLiBuZhiViewController
         self.setupChildViewController(buZhi, title: "婚礼布置", imageName: "婚礼布置黄")
         
     }

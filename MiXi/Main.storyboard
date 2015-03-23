@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mZq-Jx-TbZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mZq-Jx-TbZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -133,7 +133,7 @@
         <!--Da Ren View Controller-->
         <scene sceneID="2t5-8K-mzp">
             <objects>
-                <viewController id="q09-xd-9RI" customClass="DaRenViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="daren" id="q09-xd-9RI" customClass="DaRenViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b6I-Kf-sMd"/>
                         <viewControllerLayoutGuide type="bottom" id="pwN-6o-V6i"/>
@@ -147,6 +147,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Yg-ev-OTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-559" y="659"/>
+        </scene>
+        <!--User Center Table View Controller-->
+        <scene sceneID="l1y-Y2-9Nb">
+            <objects>
+                <tableViewController storyboardIdentifier="userCenter" id="xNd-S1-fGT" customClass="UserCenterTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SSM-vz-f7B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wm6-dv-0hw">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wm6-dv-0hw" id="urL-qv-Bt3">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xNd-S1-fGT" id="VrH-XH-uCl"/>
+                            <outlet property="delegate" destination="xNd-S1-fGT" id="lf8-25-q9U"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChX-d7-z1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-562" y="1267"/>
+        </scene>
+        <!--Hun Li Bu Zhi View Controller-->
+        <scene sceneID="35Z-0r-HHh">
+            <objects>
+                <viewController storyboardIdentifier="buZhi" id="zbp-r3-pfI" customClass="HunLiBuZhiViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YlB-KV-8H8"/>
+                        <viewControllerLayoutGuide type="bottom" id="KI3-hF-PNi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ykr-SX-ppf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMf-ig-vdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-560" y="1879"/>
         </scene>
         <!--注册-->
         <scene sceneID="6uv-QF-7CC">
