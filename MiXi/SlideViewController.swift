@@ -12,6 +12,7 @@ class SlideViewController: UIViewController {
     
     let slideBar = SlideBarViewController()
     var mainviewController :UIViewController?
+    var lastX :CGFloat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,27 +39,45 @@ class SlideViewController: UIViewController {
         self.view.sendSubviewToBack(slideBar.view)   //这句可以把某个view弄到最底下
     }
     
-    //里面关于翻译的不是恨理解，直接从oc翻译的代码。。。
+    //里面关于translation的不是恨理解
     func didDrag(pan:UIPanGestureRecognizer){
         let point = pan.translationInView(pan.view!)
         let slideBarWidth = self.slideBar.view.frame.width
-        println("sdfasdf")
+        let duration = 0.25
+        
+        if (pan.state == UIGestureRecognizerState.Changed){
+            //这里记录上次的位置，以确定拖拽方向
+            self.lastX = pan.view?.frame.minX
+        }
+        
         // 结束拖拽
         if (pan.state == UIGestureRecognizerState.Cancelled || pan.state == UIGestureRecognizerState.Ended) {
-            if (pan.view?.frame.minX >= slideBarWidth * 0.5) { // 往右边至少走动了一半
-                UIView.animateWithDuration(0.3, animations: {
-                    pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
-                })
+            if(pan.view?.frame.minX > self.lastX!){ //如果向右拖
+                if (pan.view?.frame.minX >= slideBarWidth * 0.2) { // 往右边至少走动了五分之一
+                    UIView.animateWithDuration(duration, animations: {
+                        pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
+                    })
 
-            } else { // 走动距离的没有达到一半
-                UIView.animateWithDuration(0.3, animations: {
-                    pan.view!.transform = CGAffineTransformIdentity
-                })
+                } else{ // 走动距离的没有达到四分之一
+                    UIView.animateWithDuration(duration, animations: {
+                        pan.view!.transform = CGAffineTransformIdentity
+                    })
+                }
+            }else{
+                if (pan.view?.frame.minX <= slideBarWidth * 0.8) { // 往左边至少走动了五分之一
+                    UIView.animateWithDuration(duration, animations: {
+                        pan.view!.transform = CGAffineTransformIdentity
+                    })
+                    
+                } else{
+                    UIView.animateWithDuration(duration, animations: {
+                        pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
+                    })
+                }
             }
-        } else { // 正在拖拽中
+        } else { // begin和changed都会进来
             pan.view!.transform = CGAffineTransformTranslate(pan.view!.transform, point.x, 0)
             pan.setTranslation(CGPointZero, inView: pan.view!)
-            
             if (pan.view!.frame.minX >= slideBarWidth) {
                 pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0);
             } else if (pan.view!.frame.minX <= 0) {
