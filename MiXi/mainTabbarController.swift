@@ -20,11 +20,12 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         let newTabBar = nib.instantiateWithOwner(nil, options: nil)[0] as MyTabBar
 
         newTabBar.delegate = self
-        self.tabBar.frame = CGRect(x: self.tabBar.frame.minX, y: self.tabBar.frame.minY-8, width: self.tabBar.frame.width, height: self.tabBar.frame.height+8)
-        self.tabBar.barTintColor = UIColor.whiteColor()
+//        self.tabBar.frame = CGRect(x: self.tabBar.frame.minX, y: self.tabBar.frame.minY-8, width: self.tabBar.frame.width, height: self.tabBar.frame.height+8)
+//        self.tabBar.barTintColor = UIColor.whiteColor()
 //        self.tabBar.clipsToBounds = true
-        self.tabBar.addSubview(newTabBar)
+        self.view.addSubview(newTabBar)
         self.customTabBar = newTabBar
+        newTabBar.frame = CGRect(x: 0, y: self.view.frame.height - 57, width: self.view.frame.width, height: 57)
         //初始化所有子控制器
         self.setupAllChildViewControllers()
         
@@ -33,12 +34,13 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.tabBar.removeFromSuperview()
         //删除系统自带的uitabbarbutton
-        for subview in self.tabBar.subviews{
-            if (subview.isKindOfClass(UIControl)){
-                subview.removeFromSuperview()
-            }
-        }
+//        for subview in self.tabBar.subviews{
+//            if (subview.isKindOfClass(UIControl)){
+//                subview.removeFromSuperview()
+//            }
+//        }
     }
     
     //tabbar回调的代理事件
