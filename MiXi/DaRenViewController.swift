@@ -14,7 +14,7 @@ class DaRenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        println("dsffd")
+
         
         // Do any additional setup after loading the view.
     }

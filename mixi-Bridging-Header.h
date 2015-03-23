@@ -12,9 +12,5 @@
 //指示器动画库
 #import "MBProgressHUD.h"
 
-//自定义的tabbar
-#import "IWTabBar.h"
-#import "IWTabBarButton.h"
-#import "IWTabBarButtonHeart.h"
 
 #endif

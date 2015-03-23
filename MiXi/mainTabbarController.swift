@@ -8,20 +8,23 @@
 
 import UIKit
 
-class mainTabbarController: UITabBarController, IWTabBarDelegate{
+class mainTabbarController: UITabBarController, MyTabBarDelegate {
 
-    var customTabBar :IWTabBar?
+    var customTabBar :MyTabBar?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //初始化自定义的tabbar
-        let newTabBar = IWTabBar()
-        newTabBar.frame = self.tabBar.bounds;
-        newTabBar.delegate = self;
+        let nib = UINib(nibName: "TabBarView", bundle: nil)
+        let newTabBar = nib.instantiateWithOwner(nil, options: nil)[0] as MyTabBar
+
+        newTabBar.delegate = self
+        self.tabBar.frame = CGRect(x: self.tabBar.frame.minX, y: self.tabBar.frame.minY-8, width: self.tabBar.frame.width, height: self.tabBar.frame.height+8)
+        self.tabBar.barTintColor = UIColor.whiteColor()
+//        self.tabBar.clipsToBounds = true
         self.tabBar.addSubview(newTabBar)
         self.customTabBar = newTabBar
-        
         //初始化所有子控制器
         self.setupAllChildViewControllers()
         
@@ -38,9 +41,9 @@ class mainTabbarController: UITabBarController, IWTabBarDelegate{
         }
     }
     
-    
-    func tabBar(tabBar: IWTabBar!, didSelectedButtonFrom from: Int, to: Int) {
-        self.selectedIndex = to
+    //tabbar回调的代理事件
+    func tabbarDidSelectButton(#index :Int) {
+        self.selectedIndex = index
     }
     
     func setupAllChildViewControllers(){
@@ -62,16 +65,9 @@ class mainTabbarController: UITabBarController, IWTabBarDelegate{
     func setupChildViewController(  childVc :UIViewController,
                                     title :String,
                                     imageName :String)
-//                                    selectedImageName :String)
     {
         childVc.title = title
         childVc.tabBarItem.image = UIImage(named: imageName)
-//        childVc.tabBarItem.selectedImage = UIImage(named: selectedImageName)?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
-        
-        if (childVc.title == "个人中心"){
-            childVc.tabBarItem.image = UIImage(named: imageName)?.scaleImage(InScale: 0.85)
-        }
-        
         
         //包装一个导航控制器
         let navi = UINavigationController(rootViewController: childVc)
@@ -83,8 +79,8 @@ class mainTabbarController: UITabBarController, IWTabBarDelegate{
         slideView.addMainController(navi)
         self.addChildViewController(slideView)
         
-        //添加到tabbar内部的按钮
-        self.customTabBar?.addTabBarButtonWithItem(childVc.tabBarItem)
+        //传递item数据，初始化tabbar里面按钮
+        self.customTabBar?.addTabBarButtonWithItem(item: childVc.tabBarItem)
     }
 
 

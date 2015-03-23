@@ -23,13 +23,14 @@
 		AC7CD2091ABF1351007E2B20 /* DaRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD2081ABF1351007E2B20 /* DaRenViewController.swift */; };
 		AC7CD20B1ABF1375007E2B20 /* HunLiBuZhiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD20A1ABF1375007E2B20 /* HunLiBuZhiViewController.swift */; };
 		AC7CD20D1ABF171D007E2B20 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD20C1ABF171D007E2B20 /* RegisterViewController.swift */; };
-		AC7CD2141ABF1806007E2B20 /* IWTabBarButtonHeart.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD20E1ABF1806007E2B20 /* IWTabBarButtonHeart.m */; };
-		AC7CD2151ABF1806007E2B20 /* IWTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD2101ABF1806007E2B20 /* IWTabBarButton.m */; };
-		AC7CD2161ABF1806007E2B20 /* IWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD2121ABF1806007E2B20 /* IWTabBar.m */; };
 		ACCFE3FF1AB8B4C3003D5830 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */; };
 		ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */; };
 		ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */; };
 		ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */; };
+		FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEDFADA91AC0093D0005464A /* TabBarView.xib */; };
+		FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */; };
+		FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAD1AC023610005464A /* MyTabBar.swift */; };
+		FEDFADB01AC047E10005464A /* HeartTabBsrButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,18 +64,16 @@
 		AC7CD2081ABF1351007E2B20 /* DaRenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenViewController.swift; path = MiXi/DaRenViewController.swift; sourceTree = SOURCE_ROOT; };
 		AC7CD20A1ABF1375007E2B20 /* HunLiBuZhiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiViewController.swift; path = MiXi/HunLiBuZhiViewController.swift; sourceTree = SOURCE_ROOT; };
 		AC7CD20C1ABF171D007E2B20 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = MiXi/RegisterViewController.swift; sourceTree = SOURCE_ROOT; };
-		AC7CD20E1ABF1806007E2B20 /* IWTabBarButtonHeart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWTabBarButtonHeart.m; path = MiXi/IWTabBarButtonHeart.m; sourceTree = SOURCE_ROOT; };
-		AC7CD20F1ABF1806007E2B20 /* IWTabBarButtonHeart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWTabBarButtonHeart.h; path = MiXi/IWTabBarButtonHeart.h; sourceTree = SOURCE_ROOT; };
-		AC7CD2101ABF1806007E2B20 /* IWTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWTabBarButton.m; path = MiXi/IWTabBarButton.m; sourceTree = SOURCE_ROOT; };
-		AC7CD2111ABF1806007E2B20 /* IWTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWTabBarButton.h; path = MiXi/IWTabBarButton.h; sourceTree = SOURCE_ROOT; };
-		AC7CD2121ABF1806007E2B20 /* IWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWTabBar.m; path = MiXi/IWTabBar.m; sourceTree = SOURCE_ROOT; };
-		AC7CD2131ABF1806007E2B20 /* IWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWTabBar.h; path = MiXi/IWTabBar.h; sourceTree = SOURCE_ROOT; };
 		AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mixi-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		ACCFE3FE1AB8B4C3003D5830 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideBarViewController.swift; path = MiXi/SlideBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideViewController.swift; path = MiXi/SlideViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCenterTableViewController.swift; path = MiXi/UserCenterTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		FEDFADA91AC0093D0005464A /* TabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabBarView.xib; path = MiXi/TabBarView.xib; sourceTree = SOURCE_ROOT; };
+		FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBarButton.swift; path = MiXi/MyTabBarButton.swift; sourceTree = SOURCE_ROOT; };
+		FEDFADAD1AC023610005464A /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBar.swift; path = MiXi/MyTabBar.swift; sourceTree = SOURCE_ROOT; };
+		FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeartTabBsrButton.swift; path = MiXi/HeartTabBsrButton.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,12 +194,10 @@
 		AC323AB41ABEA41100F46563 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				AC7CD20E1ABF1806007E2B20 /* IWTabBarButtonHeart.m */,
-				AC7CD20F1ABF1806007E2B20 /* IWTabBarButtonHeart.h */,
-				AC7CD2101ABF1806007E2B20 /* IWTabBarButton.m */,
-				AC7CD2111ABF1806007E2B20 /* IWTabBarButton.h */,
-				AC7CD2121ABF1806007E2B20 /* IWTabBar.m */,
-				AC7CD2131ABF1806007E2B20 /* IWTabBar.h */,
+				FEDFADA91AC0093D0005464A /* TabBarView.xib */,
+				FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */,
+				FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */,
+				FEDFADAD1AC023610005464A /* MyTabBar.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -287,6 +284,7 @@
 			files = (
 				AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */,
 				AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */,
+				FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */,
 				AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */,
 				AC1CF6A91AB740420095B58C /* Main.storyboard in Resources */,
 			);
@@ -310,18 +308,18 @@
 				AC7CD2091ABF1351007E2B20 /* DaRenViewController.swift in Sources */,
 				ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */,
 				ACCFE3FF1AB8B4C3003D5830 /* MBProgressHUD.m in Sources */,
+				FEDFADB01AC047E10005464A /* HeartTabBsrButton.swift in Sources */,
 				AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */,
 				AC19B47E1ABD66BD00E332C1 /* ExtendingUIButton.swift in Sources */,
 				ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */,
 				AC7CD20D1ABF171D007E2B20 /* RegisterViewController.swift in Sources */,
 				AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */,
-				AC7CD2161ABF1806007E2B20 /* IWTabBar.m in Sources */,
 				AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */,
 				ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */,
+				FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */,
 				AC7CD20B1ABF1375007E2B20 /* HunLiBuZhiViewController.swift in Sources */,
-				AC7CD2141ABF1806007E2B20 /* IWTabBarButtonHeart.m in Sources */,
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
-				AC7CD2151ABF1806007E2B20 /* IWTabBarButton.m in Sources */,
+				FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */,
 				AC118A321ABCA1BC00A1915C /* mainTabbarController.swift in Sources */,
 				AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */,
 			);

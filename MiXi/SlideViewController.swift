@@ -18,26 +18,28 @@ class SlideViewController: UIViewController {
         
         self.mainviewController?.view.frame = self.view.bounds   //话说frame和bounds的区别？
         self.slideBar.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 0.7, height: self.view.frame.height)
-        self.view.sendSubviewToBack(slideBar.view)
+        self.view.sendSubviewToBack(slideBar.view)   //这句可以把某个view弄到最底下
+        
+        //监听手势
+        let gesture = UIPanGestureRecognizer(target: self, action: Selector("didDrag"))
+        self.mainviewController?.view.addGestureRecognizer(gesture)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func addMainController(mainController :UIViewController){
 
-        self.addChildViewController(slideBar)
-        self.view.addSubview(slideBar.view)
-        
         self.mainviewController = mainController
         self.addChildViewController(mainController)
         self.view.addSubview(mainController.view)
         self.view.backgroundColor = UIColor.whiteColor()
         
-
+        //为了调试方便，故意加在mainView的上面
+        self.addChildViewController(slideBar)
+        self.view.addSubview(slideBar.view)
     }
 
+    
+    
+    
 
 }
