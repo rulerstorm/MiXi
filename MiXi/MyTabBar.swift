@@ -22,7 +22,7 @@ class MyTabBar: UIView {
     @IBOutlet weak var btnHeart: HeartTabBsrButton!
     
     func addTabBarButtonWithItem(#item:UITabBarItem){   //垃圾代码
-        if(item.title == "个人中心"){
+        if(item.title == "预约车"){
             btnHeart.addTarget(self, action: Selector("buttonClick:"), forControlEvents: UIControlEvents.TouchDown)
         }
         if(item.title == "婚礼达人"){

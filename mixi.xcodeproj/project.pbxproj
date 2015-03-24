@@ -31,6 +31,10 @@
 		FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */; };
 		FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAD1AC023610005464A /* MyTabBar.swift */; };
 		FEDFADB01AC047E10005464A /* HeartTabBsrButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */; };
+		FEEEF80A1AC15E710050B0D0 /* DaRenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEEF8091AC15E710050B0D0 /* DaRenHeader.xib */; };
+		FEEEF80C1AC183A30050B0D0 /* DaRenDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEF80B1AC183A30050B0D0 /* DaRenDetailViewController.swift */; };
+		FEEEF8141AC198ED0050B0D0 /* DaRenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEF8131AC198ED0050B0D0 /* DaRenHeaderView.swift */; };
+		FEEEF8161AC1A64D0050B0D0 /* MyNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEF8151AC1A64D0050B0D0 /* MyNavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,10 @@
 		FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBarButton.swift; path = MiXi/MyTabBarButton.swift; sourceTree = SOURCE_ROOT; };
 		FEDFADAD1AC023610005464A /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBar.swift; path = MiXi/MyTabBar.swift; sourceTree = SOURCE_ROOT; };
 		FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeartTabBsrButton.swift; path = MiXi/HeartTabBsrButton.swift; sourceTree = SOURCE_ROOT; };
+		FEEEF8091AC15E710050B0D0 /* DaRenHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DaRenHeader.xib; path = MiXi/DaRenHeader.xib; sourceTree = SOURCE_ROOT; };
+		FEEEF80B1AC183A30050B0D0 /* DaRenDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenDetailViewController.swift; path = MiXi/DaRenDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		FEEEF8131AC198ED0050B0D0 /* DaRenHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenHeaderView.swift; path = MiXi/DaRenHeaderView.swift; sourceTree = SOURCE_ROOT; };
+		FEEEF8151AC1A64D0050B0D0 /* MyNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationViewController.swift; path = MiXi/MyNavigationViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,9 +179,11 @@
 			isa = PBXGroup;
 			children = (
 				AC118A311ABCA1BC00A1915C /* mainTabbarController.swift */,
+				FEEEF8151AC1A64D0050B0D0 /* MyNavigationViewController.swift */,
 				AC1CF6A61AB73E1F0095B58C /* InputInfomationViewController.swift */,
 				AC19A00D1AB56EFD00167523 /* ViewController.swift */,
 				ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */,
+				FEEEF80B1AC183A30050B0D0 /* DaRenDetailViewController.swift */,
 				ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */,
 				ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */,
 				AC7CD2081ABF1351007E2B20 /* DaRenViewController.swift */,
@@ -196,6 +206,8 @@
 			children = (
 				FEDFADA91AC0093D0005464A /* TabBarView.xib */,
 				FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */,
+				FEEEF8091AC15E710050B0D0 /* DaRenHeader.xib */,
+				FEEEF8131AC198ED0050B0D0 /* DaRenHeaderView.swift */,
 				FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */,
 				FEDFADAD1AC023610005464A /* MyTabBar.swift */,
 			);
@@ -282,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEEF80A1AC15E710050B0D0 /* DaRenHeader.xib in Resources */,
 				AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */,
 				AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */,
 				FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */,
@@ -304,6 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEEEF80C1AC183A30050B0D0 /* DaRenDetailViewController.swift in Sources */,
+				FEEEF8161AC1A64D0050B0D0 /* MyNavigationViewController.swift in Sources */,
 				AC1CF6A31AB71A0D0095B58C /* ExtendingUIImage.swift in Sources */,
 				AC7CD2091ABF1351007E2B20 /* DaRenViewController.swift in Sources */,
 				ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */,
@@ -321,6 +336,7 @@
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
 				FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */,
 				AC118A321ABCA1BC00A1915C /* mainTabbarController.swift in Sources */,
+				FEEEF8141AC198ED0050B0D0 /* DaRenHeaderView.swift in Sources */,
 				AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -193,6 +193,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" backgroundImage="蜜喜蜜喜－首页_29"/>
+                                        <connections>
+                                            <segue destination="0ia-cY-MEt" kind="push" id="i3S-nH-4BO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SS-Zq-foh">
                                         <rect key="frame" x="88" y="363" width="64" height="64"/>
@@ -221,6 +224,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Yg-ev-OTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-562" y="657"/>
+        </scene>
+        <!--Da Ren Detail View Controller-->
+        <scene sceneID="NU8-H6-5Qw">
+            <objects>
+                <viewController id="0ia-cY-MEt" customClass="DaRenDetailViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7UL-Cf-RI9"/>
+                        <viewControllerLayoutGuide type="bottom" id="WcJ-xn-r2P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="46B-TX-qbd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.3350426125" blue="0.3838580593" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iXA-Hs-oEo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EfK-BI-W9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106" y="657"/>
         </scene>
         <!--User Center Table View Controller-->
         <scene sceneID="l1y-Y2-9Nb">
@@ -274,6 +296,55 @@
                                         <rect key="frame" x="3" y="3" width="173" height="129"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_01">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37g-6s-T6k">
+                                        <rect key="frame" x="3" y="136" width="138" height="103"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_04">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keG-ch-Hyp">
+                                        <rect key="frame" x="144" y="134" width="173" height="103"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_05">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e9-Px-fuU">
+                                        <rect key="frame" x="3" y="242" width="230" height="103"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_07">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLP-7d-zzc">
+                                        <rect key="frame" x="236" y="242" width="81" height="103"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_08">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcP-8M-1h0">
+                                        <rect key="frame" x="3" y="349" width="174" height="57"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_09">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6T-Hb-4XV">
+                                        <rect key="frame" x="3" y="409" width="174" height="53"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_11">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHT-Ee-dgd">
+                                        <rect key="frame" x="180" y="349" width="137" height="113"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_10">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -525,6 +596,13 @@
         <image name="蜜喜蜜喜－切片iphone5_52" width="12" height="14"/>
         <image name="蜜喜蜜喜－婚礼布置-IPHONE5_01" width="347" height="258"/>
         <image name="蜜喜蜜喜－婚礼布置-IPHONE5_02" width="276" height="258"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_04" width="276" height="206"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_05" width="346" height="206"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_07" width="460" height="206"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_08" width="163" height="206"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_09" width="349" height="114"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_10" width="274" height="225"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_11" width="349" height="107"/>
         <image name="蜜喜蜜喜－首页_14" width="182" height="319"/>
         <image name="蜜喜蜜喜－首页_15" width="134" height="164"/>
         <image name="蜜喜蜜喜－首页_17" width="134" height="154"/>

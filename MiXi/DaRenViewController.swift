@@ -30,7 +30,6 @@ class DaRenViewController: UIViewController {
         //这个是网上查来的。。。好神奇，可以左移item的位置
         self.navigationItem.leftBarButtonItem?.imageInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
         
-        
         //适配iphone4
         self.srollView.contentSize = CGSize(width: 320, height: 568)  //这行表述可滚动范围
         

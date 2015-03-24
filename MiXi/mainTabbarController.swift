@@ -58,7 +58,7 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         self.setupChildViewController(daRen, title: "婚礼达人", imageName: "婚礼达人黄")
         
         let userCenter = storyBoard.instantiateViewControllerWithIdentifier("userCenter") as UserCenterTableViewController
-        self.setupChildViewController(userCenter, title: "个人中心", imageName: "购物车")
+        self.setupChildViewController(userCenter, title: "预约车", imageName: "购物车")
         
         let buZhi = storyBoard.instantiateViewControllerWithIdentifier("buZhi") as HunLiBuZhiViewController
         self.setupChildViewController(buZhi, title: "婚礼布置", imageName: "婚礼布置黄")
@@ -74,7 +74,7 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         childVc.tabBarItem.image = UIImage(named: imageName)
         
         //包装一个导航控制器
-        let navi = UINavigationController(rootViewController: childVc)
+        let navi = MyNavigationViewController(rootViewController: childVc)
         navi.navigationBar.barTintColor = mixiColor.mainPink
         
         //这个是导航控制器左右两个item的主题色
@@ -87,6 +87,8 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
 //        UITextAttributeTextShadowColor – Key to the text shadow color
 //        UITextAttributeTextShadowOffset – Key to the offset used for the text shadow
         navi.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mixiColor.mainCoffie]
+        
+        
         
         //加到主控制器
         self.addChildViewController(navi)
