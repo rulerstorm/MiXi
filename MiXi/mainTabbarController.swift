@@ -25,7 +25,7 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
 //        self.tabBar.clipsToBounds = true
         self.view.addSubview(newTabBar)
         self.customTabBar = newTabBar
-        newTabBar.frame = CGRect(x: 0, y: self.view.frame.height - 57, width: self.view.frame.width, height: 57)
+        newTabBar.frame = CGRect(x: 0, y: self.view.frame.height - newTabBar.frame.height, width: self.view.frame.width, height: newTabBar.frame.height)
         //初始化所有子控制器
         self.setupAllChildViewControllers()
         
@@ -34,7 +34,9 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        //直接把默认的tabbar干掉算了。。。别折腾了
         self.tabBar.removeFromSuperview()
+        
         //删除系统自带的uitabbarbutton
 //        for subview in self.tabBar.subviews{
 //            if (subview.isKindOfClass(UIControl)){
@@ -74,12 +76,14 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         //包装一个导航控制器
         let navi = UINavigationController(rootViewController: childVc)
         navi.navigationBar.barTintColor = mixiColor.mainPink
-        navi.navigationBar.tintColor = mixiColor.mainCoffie
-
         
-
-        
-
+        //改所有子bar上面的title颜色，这个字典里面的key和oc中有变化
+        //以下四个是oc中key的名字和解释：
+//        UITextAttributeFont – Key to the font
+//        UITextAttributeTextColor – Key to the text color
+//        UITextAttributeTextShadowColor – Key to the text shadow color
+//        UITextAttributeTextShadowOffset – Key to the offset used for the text shadow
+        navi.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mixiColor.mainCoffie]
         
         //加到主控制器
         self.addChildViewController(navi)

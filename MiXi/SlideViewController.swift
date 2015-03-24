@@ -22,21 +22,22 @@ class SlideViewController: UIViewController, leftBarButtunDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//这个有问题
-for child in mainviewController.childViewControllers{
-    let navi = child as UINavigationController
-    if(navi.childViewControllers[0] is DaRenViewController){
-        let final = navi.childViewControllers[0] as DaRenViewController
-        final.leftItemDelegate = self
-    }else if(navi.childViewControllers[0] is HunLiBuZhiViewController){
-        let final = navi.childViewControllers[0] as HunLiBuZhiViewController
-        final.leftItemDelegate = self
-    }else if(navi.childViewControllers[0] is UserCenterTableViewController){
-        let final = navi.childViewControllers[0] as UserCenterTableViewController
-        final.leftItemDelegate = self
-    }
+    //这个有问题，需要重构
+    //功能是各个子页面左上角的barItem设置代理，他们需要通知这个slideViewController来实施侧滑
+    for child in mainviewController.childViewControllers{
+        let navi = child as UINavigationController
+        if(navi.childViewControllers[0] is DaRenViewController){
+            let final = navi.childViewControllers[0] as DaRenViewController
+            final.leftItemDelegate = self
+        }else if(navi.childViewControllers[0] is HunLiBuZhiViewController){
+            let final = navi.childViewControllers[0] as HunLiBuZhiViewController
+            final.leftItemDelegate = self
+        }else if(navi.childViewControllers[0] is UserCenterTableViewController){
+            let final = navi.childViewControllers[0] as UserCenterTableViewController
+            final.leftItemDelegate = self
+        }
 
-}
+    }
 
         //设置侧边栏的frame
         self.slideBar.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 0.6, height: self.view.frame.height)

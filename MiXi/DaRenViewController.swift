@@ -22,6 +22,7 @@ class DaRenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "蜜喜蜜喜"
+
         
         //设置左上角item
         let leftItem = UIBarButtonItem(image: UIImage(named: "蜜喜蜜喜－首页_07"), style: UIBarButtonItemStyle.Bordered, target: self.leftItemDelegate, action: Selector("leftBarButtunClicked"))
