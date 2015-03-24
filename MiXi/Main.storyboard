@@ -259,8 +259,32 @@
                     <view key="view" contentMode="scaleToFill" id="ykr-SX-ppf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.3350426125" blue="0.3838580593" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tYV-rO-Iif">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBV-e8-9rC">
+                                        <rect key="frame" x="179" y="3" width="138" height="129"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_02">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpR-J8-BVL">
+                                        <rect key="frame" x="3" y="3" width="173" height="129"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_01">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="srollView" destination="tYV-rO-Iif" id="kOI-jK-PV4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMf-ig-vdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -499,6 +523,8 @@
         <image name="蜜喜蜜喜－切片iphone5_47" width="13" height="13"/>
         <image name="蜜喜蜜喜－切片iphone5_48" width="13" height="13"/>
         <image name="蜜喜蜜喜－切片iphone5_52" width="12" height="14"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_01" width="347" height="258"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_02" width="276" height="258"/>
         <image name="蜜喜蜜喜－首页_14" width="182" height="319"/>
         <image name="蜜喜蜜喜－首页_15" width="134" height="164"/>
         <image name="蜜喜蜜喜－首页_17" width="134" height="154"/>

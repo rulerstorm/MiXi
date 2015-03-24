@@ -7,11 +7,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IWTabBar"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyTabBar" customModule="mixi" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Of-wb-tZa">
-                    <rect key="frame" x="0.0" y="16" width="320" height="49"/>
+                    <rect key="frame" x="0.0" y="15" width="320" height="49"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl5-V4-bZR" customClass="MyTabBarButton" customModule="mixi" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="122" height="49"/>
@@ -31,7 +31,7 @@
                     <color key="backgroundColor" red="0.098039215686274508" green="0.10588235294117647" blue="0.10196078431372549" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QR-WM-lki" customClass="HeartTabBsrButton" customModule="mixi" customModuleProvider="target">
-                    <rect key="frame" x="125" y="0.0" width="70" height="62"/>
+                    <rect key="frame" x="124" y="0.0" width="72" height="64"/>
                     <state key="normal" backgroundImage="购物车"/>
                 </button>
             </subviews>

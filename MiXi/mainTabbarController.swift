@@ -77,6 +77,9 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         let navi = UINavigationController(rootViewController: childVc)
         navi.navigationBar.barTintColor = mixiColor.mainPink
         
+        //这个是导航控制器左右两个item的主题色
+        navi.navigationBar.tintColor = mixiColor.mainCoffie
+        
         //改所有子bar上面的title颜色，这个字典里面的key和oc中有变化
         //以下四个是oc中key的名字和解释：
 //        UITextAttributeFont – Key to the font
