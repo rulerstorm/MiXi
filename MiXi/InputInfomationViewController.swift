@@ -11,7 +11,7 @@ import UIKit
 
 class InputInfomationViewController: UIViewController, UITextFieldDelegate{
 
-    @IBOutlet var scrollView: UIScrollView!
+//    @IBOutlet var scrollView: UIScrollView!
     
     @IBOutlet weak var buttonMale: UIButton!
     @IBOutlet weak var buttonFemail: UIButton!
