@@ -131,19 +131,59 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
     }
     
     
-    @IBOutlet weak var myTableView: UITableView!
+    @IBOutlet weak var lowToHighBtn: UIButton!
+    @IBOutlet weak var highToLowBtn: UIButton!
+    @IBOutlet weak var hotSortBtn: UIButton!
+    @IBOutlet weak var starSortBtn: UIButton!
+    @IBOutlet weak var chekeImageView: UIImageView!
+    
+    //初始化“综合排序”bar
+    private func initOverAllBar(){
+        var selectedImageNameSuffix = ["35", "37", "39", "42"]
+        var selectedImageName = "蜜喜蜜喜－切片iphone5_"
+        var count = 0
+        for subView in overAllBar.subviews{
+            if let btn = subView as? UIButton{   //筛选按钮进行设置
+                btn.setTitleColor(mixiColor.mainCoffie, forState: UIControlState.Normal)
+                btn.setTitleColor(mixiColor.mainCoffie, forState: UIControlState.Highlighted)
+                btn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Selected)
+                let buttonImage = UIImage.resizabelImage(name: "按钮－高72")
+                btn.setBackgroundImage(buttonImage, forState: UIControlState.Selected)
+                btn.titleLabel?.font = UIFont.systemFontOfSize(14)
+                btn.setImage(UIImage(named: selectedImageName + selectedImageNameSuffix[count]), forState: UIControlState.Selected)
+                count++
+            }
+        }
+        sortBtnClicked(lowToHighBtn)
+    }
+    
+    //“综合排序”bar里面的按钮统一用这个点击事件
+    @IBAction func sortBtnClicked(sender: UIButton) {
+        for subView in overAllBar.subviews{     //遍历overAllBar所有的subview
+            if let btn = subView as? UIButton{   //所有按钮设为为选中
+                btn.selected = false
+            }
+        }
+        sender.selected = true  //点击的那个选中
+        UIView.animateWithDuration(0.2, animations: {[unowned self] in  //注意这里小心循环引用
+            self.chekeImageView.center = CGPoint(x: 300, y: sender.center.y)  //这里直接设置center的值比frame方便
+        })
+    }
+
+   
     
     
     
     
-    
-    
+    @IBOutlet weak var myTableView: UITableView!{
+        didSet{
+            myTableView.delegate = self
+            myTableView.dataSource = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        myTableView.delegate = self
-        myTableView.dataSource = self
         
         //初始化用代码创建的“地区”滑块
         self.view.addSubview(distrectBar)
@@ -152,6 +192,7 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
         self.view.sendSubviewToBack(myTableView)
         initDistrectBar()
 
+        initOverAllBar()
         
         
         
@@ -176,6 +217,7 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
     override func viewWillAppear(animated: Bool) {
         overAllBar.hidden = false
         priceSearchBar.hidden = false
+        self.navigationItem.title = "摄影"
     }
     
     

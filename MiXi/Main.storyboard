@@ -327,7 +327,7 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1eI-W6-zgM">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1eI-W6-zgM" userLabel="价格区间">
                                 <rect key="frame" x="0.0" y="64" width="320" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gp-GA-SG1">
@@ -362,7 +362,7 @@
                                 <color key="backgroundColor" white="0.95281217910000005" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKi-je-9J2">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKi-je-9J2" userLabel="综合排序">
                                 <rect key="frame" x="0.0" y="-39" width="320" height="140"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRO-ko-m2O">
@@ -372,6 +372,9 @@
                                             <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sortBtnClicked:" destination="5rQ-Z3-Ocf" eventType="touchUpInside" id="Ljw-Bb-Udp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8g-fT-7My">
                                         <rect key="frame" x="0.0" y="35" width="320" height="35"/>
@@ -380,6 +383,9 @@
                                             <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sortBtnClicked:" destination="5rQ-Z3-Ocf" eventType="touchUpInside" id="6xR-cz-w8q"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSI-qC-KZE">
                                         <rect key="frame" x="0.0" y="70" width="320" height="35"/>
@@ -388,6 +394,9 @@
                                             <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sortBtnClicked:" destination="5rQ-Z3-Ocf" eventType="touchUpInside" id="lGg-LI-6D7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybq-aw-UmG">
                                         <rect key="frame" x="0.0" y="105" width="320" height="35"/>
@@ -396,11 +405,17 @@
                                             <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sortBtnClicked:" destination="5rQ-Z3-Ocf" eventType="touchUpInside" id="URA-aO-cEX"/>
+                                        </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="对号－白色" translatesAutoresizingMaskIntoConstraints="NO" id="Eh0-AD-OIj">
+                                        <rect key="frame" x="292" y="11" width="17" height="13"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.94623323179999996" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OmD-vk-1uA">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OmD-vk-1uA" userLabel="主bar">
                                 <rect key="frame" x="0.0" y="64" width="320" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLN-Tx-TRS">
@@ -449,9 +464,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="fjj-dI-nOP"/>
                     <connections>
+                        <outlet property="chekeImageView" destination="Eh0-AD-OIj" id="dUZ-Wb-EUK"/>
+                        <outlet property="highToLowBtn" destination="P8g-fT-7My" id="1DF-hh-eLc"/>
+                        <outlet property="hotSortBtn" destination="BSI-qC-KZE" id="kIP-Qg-7iS"/>
+                        <outlet property="lowToHighBtn" destination="QRO-ko-m2O" id="EAN-2w-sVO"/>
                         <outlet property="myTableView" destination="0MB-Cf-v7e" id="ly6-xw-eUk"/>
                         <outlet property="overAllBar" destination="WKi-je-9J2" id="uV6-SJ-d3E"/>
                         <outlet property="priceSearchBar" destination="1eI-W6-zgM" id="1FW-oH-HDp"/>
+                        <outlet property="starSortBtn" destination="ybq-aw-UmG" id="LVr-Qx-GuF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZl-BP-W07" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -824,6 +844,7 @@
         <image name="切片iphone5_91" width="77" height="40"/>
         <image name="切片iphone5_92" width="77" height="40"/>
         <image name="定位－icon" width="8" height="10"/>
+        <image name="对号－白色" width="17" height="12"/>
         <image name="收藏白色iphone5_15" width="16" height="16"/>
         <image name="蜜喜蜜喜－切片iphone5_107" width="93" height="93"/>
         <image name="蜜喜蜜喜－切片iphone5_33" width="12" height="14"/>
