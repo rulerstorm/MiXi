@@ -255,10 +255,10 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
     //监听tableview的滑动
     func scrollViewDidScroll(scrollView: UIScrollView) {
         accumulate += scrollView.contentOffset.y - lastOffSet   //累计混动的距离，向上增加，向下减少
-        println(accumulate)
+//        println(accumulate)
         if(accumulate > 150){           //150的阈值比较合适
             accumulate = 0
-            UIView.animateWithDuration(0.35, animations: {
+            UIView.animateWithDuration(0.5, animations: {
                 self.overAllBar.transform = CGAffineTransformMakeTranslation(0, -self.overAllBar.frame.height - self.mainSearchBar.frame.height)
                 self.priceSearchBar.transform = CGAffineTransformMakeTranslation(0, -self.priceSearchBar.frame.height - self.mainSearchBar.frame.height)
                 self.mainSearchBar.transform = CGAffineTransformMakeTranslation(0, -self.mainSearchBar.frame.height)
@@ -268,7 +268,7 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
             self.view.endEditing(true)
         }else if(accumulate < -100){
             accumulate = 0
-            UIView.animateWithDuration(0.35, animations: {
+            UIView.animateWithDuration(0.5, animations: {
                 self.mainSearchBar.transform = CGAffineTransformIdentity
             })
         }
