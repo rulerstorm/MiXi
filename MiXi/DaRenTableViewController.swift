@@ -248,6 +248,8 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
     }
 
     
+    //这段让上面的bar在滚动时自动收起来
+    
     @IBOutlet weak var mainSearchBar: UIView!
     var lastOffSet :CGFloat = 0
     var accumulate :CGFloat = 0  //累计判断正负，以防变化太快
@@ -266,7 +268,7 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
             })
             
             self.view.endEditing(true)
-        }else if(accumulate < -100){
+        }else if(accumulate < -10){      //找回来比较容易
             accumulate = 0
             UIView.animateWithDuration(0.5, animations: {
                 self.mainSearchBar.transform = CGAffineTransformIdentity
