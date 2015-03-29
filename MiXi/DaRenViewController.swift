@@ -21,8 +21,7 @@ class DaRenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "蜜喜蜜喜"
-
+        
         
         //设置左上角item
         let leftItem = UIBarButtonItem(image: UIImage(named: "蜜喜蜜喜－首页_07"), style: UIBarButtonItemStyle.Bordered, target: self.leftItemDelegate, action: Selector("leftBarButtunClicked"))
@@ -45,7 +44,15 @@ class DaRenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    //为了下一个页面的左上角返回按钮不要出现文字
+    //这方法也是够机智的
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationItem.title = " "
+    }
 
-
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = "蜜喜蜜喜"
+    }
 
 }
