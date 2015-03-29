@@ -331,7 +331,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="37"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gp-GA-SG1">
-                                        <rect key="frame" x="0.0" y="12" width="84" height="13"/>
+                                        <rect key="frame" x="3" y="12" width="84" height="13"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="价格区间 (元)">
                                             <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -365,7 +365,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKi-je-9J2" userLabel="综合排序">
                                 <rect key="frame" x="0.0" y="-39" width="320" height="140"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRO-ko-m2O">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRO-ko-m2O">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title=" 价格从低到高                                        " image="蜜喜蜜喜－切片iphone5_38">
@@ -376,7 +376,7 @@
                                             <action selector="sortBtnClicked:" destination="5rQ-Z3-Ocf" eventType="touchUpInside" id="Ljw-Bb-Udp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8g-fT-7My">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8g-fT-7My">
                                         <rect key="frame" x="0.0" y="35" width="320" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title=" 价格从高到低                                        " image="蜜喜蜜喜－切片iphone5_36">
@@ -387,7 +387,7 @@
                                             <action selector="sortBtnClicked:" destination="5rQ-Z3-Ocf" eventType="touchUpInside" id="6xR-cz-w8q"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSI-qC-KZE">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSI-qC-KZE">
                                         <rect key="frame" x="0.0" y="70" width="320" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title=" 人气排序                                               " image="蜜喜蜜喜－切片iphone5_40">
@@ -398,7 +398,7 @@
                                             <action selector="sortBtnClicked:" destination="5rQ-Z3-Ocf" eventType="touchUpInside" id="lGg-LI-6D7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybq-aw-UmG">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybq-aw-UmG">
                                         <rect key="frame" x="0.0" y="105" width="320" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title=" 星级排序                                               " image="蜜喜蜜喜－切片iphone5_41">
@@ -420,7 +420,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLN-Tx-TRS">
                                         <rect key="frame" x="37" y="4" width="46" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="价格">
                                             <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -431,7 +431,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBQ-O3-pgT">
                                         <rect key="frame" x="135" y="4" width="46" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="地区">
                                             <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -442,7 +442,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLs-tD-jck">
                                         <rect key="frame" x="225" y="4" width="73" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="综合排序">
                                             <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -468,6 +468,7 @@
                         <outlet property="highToLowBtn" destination="P8g-fT-7My" id="1DF-hh-eLc"/>
                         <outlet property="hotSortBtn" destination="BSI-qC-KZE" id="kIP-Qg-7iS"/>
                         <outlet property="lowToHighBtn" destination="QRO-ko-m2O" id="EAN-2w-sVO"/>
+                        <outlet property="mainSearchBar" destination="OmD-vk-1uA" id="FEt-Ve-al7"/>
                         <outlet property="myTableView" destination="0MB-Cf-v7e" id="ly6-xw-eUk"/>
                         <outlet property="overAllBar" destination="WKi-je-9J2" id="uV6-SJ-d3E"/>
                         <outlet property="priceSearchBar" destination="1eI-W6-zgM" id="1FW-oH-HDp"/>

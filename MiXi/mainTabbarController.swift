@@ -88,6 +88,7 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
 //        UITextAttributeTextShadowOffset – Key to the offset used for the text shadow
         navi.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mixiColor.mainCoffie]
         
+//        navi.hidesBarsOnSwipe = true
         
         
         //加到主控制器
