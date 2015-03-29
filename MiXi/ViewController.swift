@@ -16,6 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         btnRegist.setAsMainTheme()
         btnLogin.setAsMainTheme()
+        
+        //全局光标颜色
+        UITextField.appearance().tintColor = mixiColor.mainCoffie
     }
 }
 

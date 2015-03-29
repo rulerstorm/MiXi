@@ -64,7 +64,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         let btnH :CGFloat = 36
         
         //计算第一个推荐按钮“梦幻”的高度
-        let hight :CGFloat = self.view.frame.size.height - 70 - CGFloat(2 - isIphone4) * btnH - gapH + CGFloat(isIphone4 * 2) * gapH
+        let firstHight :CGFloat = self.view.frame.size.height - 70 - CGFloat(2 - isIphone4) * btnH - gapH + CGFloat(isIphone4 * 2) * gapH
         
         //适配iphone4屏幕长度不够的情况
         if ( isIphone4 == 1){
@@ -76,7 +76,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         for index in 0..<(8 - isIphone4 * 4){    //默认8个，如果iphone4则4个
             let floatIndex = CGFloat(index)
             let realX = (floatIndex % 4 + 1) * gapW + floatIndex % 4 * btnW
-            let realY = hight + CGFloat(index / 4) * ( gapH + btnH)
+            let realY = firstHight + CGFloat(index / 4) * ( gapH + btnH)
             let btn = UIButton.buttonWithType(UIButtonType.System) as UIButton
             btn.frame = CGRectMake(realX, realY, btnW, btnH)
             btn.setTitle(btnName[index], forState: UIControlState.Normal)

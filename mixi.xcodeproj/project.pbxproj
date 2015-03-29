@@ -23,14 +23,12 @@
 		AC7CD2091ABF1351007E2B20 /* DaRenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD2081ABF1351007E2B20 /* DaRenViewController.swift */; };
 		AC7CD20B1ABF1375007E2B20 /* HunLiBuZhiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD20A1ABF1375007E2B20 /* HunLiBuZhiViewController.swift */; };
 		AC7CD20D1ABF171D007E2B20 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CD20C1ABF171D007E2B20 /* RegisterViewController.swift */; };
-		ACCFE3FF1AB8B4C3003D5830 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */; };
 		ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */; };
 		ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */; };
 		ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */; };
 		FE8081A71AC6F05D00A70DE3 /* DaRenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */; };
 		FE8081A91AC6F0C500A70DE3 /* DaRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */; };
-		FEC429171AC849810099734A /* DaRenTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC429161AC849810099734A /* DaRenTableHeader.xib */; };
-		FEC429191AC84B330099734A /* DaRenTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC429181AC84B330099734A /* DaRenTableHeaderView.swift */; };
+		FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97600A1AC85A290041486D /* MBProgressHUD.m */; };
 		FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEDFADA91AC0093D0005464A /* TabBarView.xib */; };
 		FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */; };
 		FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAD1AC023610005464A /* MyTabBar.swift */; };
@@ -73,15 +71,13 @@
 		AC7CD20A1ABF1375007E2B20 /* HunLiBuZhiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiViewController.swift; path = MiXi/HunLiBuZhiViewController.swift; sourceTree = SOURCE_ROOT; };
 		AC7CD20C1ABF171D007E2B20 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = MiXi/RegisterViewController.swift; sourceTree = SOURCE_ROOT; };
 		AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mixi-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		ACCFE3FE1AB8B4C3003D5830 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideBarViewController.swift; path = MiXi/SlideBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideViewController.swift; path = MiXi/SlideViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCenterTableViewController.swift; path = MiXi/UserCenterTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewController.swift; path = MiXi/DaRenTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewCell.swift; path = MiXi/DaRenTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		FEC429161AC849810099734A /* DaRenTableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DaRenTableHeader.xib; path = MiXi/DaRenTableHeader.xib; sourceTree = SOURCE_ROOT; };
-		FEC429181AC84B330099734A /* DaRenTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableHeaderView.swift; path = MiXi/DaRenTableHeaderView.swift; sourceTree = SOURCE_ROOT; };
+		FE9760091AC85A290041486D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		FE97600A1AC85A290041486D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		FEDFADA91AC0093D0005464A /* TabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabBarView.xib; path = MiXi/TabBarView.xib; sourceTree = SOURCE_ROOT; };
 		FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBarButton.swift; path = MiXi/MyTabBarButton.swift; sourceTree = SOURCE_ROOT; };
 		FEDFADAD1AC023610005464A /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBar.swift; path = MiXi/MyTabBar.swift; sourceTree = SOURCE_ROOT; };
@@ -176,8 +172,8 @@
 			children = (
 				AC1CF6A21AB71A0D0095B58C /* ExtendingUIImage.swift */,
 				AC19B47D1ABD66BD00E332C1 /* ExtendingUIButton.swift */,
-				ACCFE3FD1AB8B4C3003D5830 /* MBProgressHUD.m */,
-				ACCFE3FE1AB8B4C3003D5830 /* MBProgressHUD.h */,
+				FE9760091AC85A290041486D /* MBProgressHUD.h */,
+				FE97600A1AC85A290041486D /* MBProgressHUD.m */,
 				AC30A3941AB9618D001054B9 /* mainColor.swift */,
 			);
 			name = Utility;
@@ -214,8 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				FEDFADA91AC0093D0005464A /* TabBarView.xib */,
-				FEC429161AC849810099734A /* DaRenTableHeader.xib */,
-				FEC429181AC84B330099734A /* DaRenTableHeaderView.swift */,
 				FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */,
 				FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */,
 				FEEEF8091AC15E710050B0D0 /* DaRenHeader.xib */,
@@ -311,7 +305,6 @@
 				AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */,
 				AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */,
 				FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */,
-				FEC429171AC849810099734A /* DaRenTableHeader.xib in Resources */,
 				AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */,
 				AC1CF6A91AB740420095B58C /* Main.storyboard in Resources */,
 			);
@@ -334,11 +327,10 @@
 				FEEEF80C1AC183A30050B0D0 /* DaRenDetailViewController.swift in Sources */,
 				FEEEF8161AC1A64D0050B0D0 /* MyNavigationViewController.swift in Sources */,
 				AC1CF6A31AB71A0D0095B58C /* ExtendingUIImage.swift in Sources */,
-				FEC429191AC84B330099734A /* DaRenTableHeaderView.swift in Sources */,
 				AC7CD2091ABF1351007E2B20 /* DaRenViewController.swift in Sources */,
 				ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */,
-				ACCFE3FF1AB8B4C3003D5830 /* MBProgressHUD.m in Sources */,
 				FEDFADB01AC047E10005464A /* HeartTabBsrButton.swift in Sources */,
+				FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */,
 				AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */,
 				AC19B47E1ABD66BD00E332C1 /* ExtendingUIButton.swift in Sources */,
 				ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */,
