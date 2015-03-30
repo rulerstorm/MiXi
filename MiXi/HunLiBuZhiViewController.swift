@@ -28,20 +28,14 @@ class HunLiBuZhiViewController: UIViewController{
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //为了下一个页面的左上角返回按钮不要出现文字
+    //这方法也是够机智的
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationItem.title = " "
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = "婚礼布置"
     }
-    */
 
 }

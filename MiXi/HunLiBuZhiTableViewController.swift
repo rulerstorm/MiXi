@@ -74,6 +74,11 @@ class HunLiBuZhiTableViewController: UIViewController,UITableViewDataSource, UIT
             
             btn.tag =  100 + index  //用tag分组区分
             btn.addTarget(self, action:Selector("filterBtnPressed:"), forControlEvents: UIControlEvents.TouchUpInside)
+            
+            if index == 0{
+                btn.selected = true
+            }
+            
         }
         
         //创建风格的按钮
@@ -101,6 +106,10 @@ class HunLiBuZhiTableViewController: UIViewController,UITableViewDataSource, UIT
             
             btn.tag = 200 + index  //用tag分组区分
             btn.addTarget(self, action:Selector("filterBtnPressed:"), forControlEvents: UIControlEvents.TouchUpInside)
+            
+            if index == 0{
+                btn.selected = true
+            }
         }
         
         //创建颜色的按钮
@@ -453,6 +462,7 @@ class HunLiBuZhiTableViewController: UIViewController,UITableViewDataSource, UIT
                 self.priceSearchBar.transform = CGAffineTransformMakeTranslation(0, -self.priceSearchBar.frame.height - self.mainSearchBar.frame.height)
                 self.mainSearchBar.transform = CGAffineTransformMakeTranslation(0, -self.mainSearchBar.frame.height)
                 self.distrectBar.transform = CGAffineTransformMakeTranslation(0, -self.distrectBar.frame.height - self.mainSearchBar.frame.height)
+                self.filterBar.transform = CGAffineTransformMakeTranslation(0, -self.filterBar.frame.height - self.mainSearchBar.frame.height)
             })
             
             self.view.endEditing(true)
@@ -464,9 +474,6 @@ class HunLiBuZhiTableViewController: UIViewController,UITableViewDataSource, UIT
         }
         lastOffSet = scrollView.contentOffset.y
     }
-
-    
-    
     
 
 }
