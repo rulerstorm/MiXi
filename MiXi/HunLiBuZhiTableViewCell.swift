@@ -1,16 +1,14 @@
 //
-//  DaRenTableViewCell.swift
+//  HunLiBuZhiTableViewCell.swift
 //  mixi
 //
-//  Created by LuRock on 15/3/28.
+//  Created by LuRock on 15/3/30.
 //  Copyright (c) 2015年 LuRock. All rights reserved.
 //
 
 import UIKit
 
-
-//记得设置相框button周围的金色边框
-class DaRenTableViewCell: UITableViewCell {
+class HunLiBuZhiTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

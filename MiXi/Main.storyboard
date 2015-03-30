@@ -180,6 +180,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" backgroundImage="蜜喜蜜喜－首页_26"/>
+                                        <connections>
+                                            <segue destination="5rQ-Z3-Ocf" kind="push" id="9lK-NO-sjV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nR-15-LzA">
                                         <rect key="frame" x="168" y="363" width="64" height="64"/>
@@ -187,6 +190,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" backgroundImage="蜜喜蜜喜－首页_28"/>
+                                        <connections>
+                                            <segue destination="5rQ-Z3-Ocf" kind="push" id="ftU-7a-bEC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoE-PO-JDF">
                                         <rect key="frame" x="248" y="363" width="64" height="64"/>
@@ -204,6 +210,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" backgroundImage="蜜喜蜜喜－首页_27"/>
+                                        <connections>
+                                            <segue destination="5rQ-Z3-Ocf" kind="push" id="DL9-nO-yAK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucD-7H-gEU">
                                         <rect key="frame" x="183" y="176" width="135" height="144"/>
@@ -338,7 +347,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3V8-ma-g8Q">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3V8-ma-g8Q">
                                         <rect key="frame" x="226" y="3" width="87" height="30"/>
                                         <color key="backgroundColor" red="0.92156862750000001" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                         <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -350,7 +359,7 @@
                                         <rect key="frame" x="190" y="17" width="31" height="1"/>
                                         <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pof-Kd-35d">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pof-Kd-35d">
                                         <rect key="frame" x="98" y="3" width="87" height="30"/>
                                         <color key="backgroundColor" red="0.92156862750000001" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                         <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -477,7 +486,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZl-BP-W07" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103" y="758"/>
+            <point key="canvasLocation" x="-95" y="657"/>
         </scene>
         <!--Da Ren Detail View Controller-->
         <scene sceneID="NU8-H6-5Qw">
@@ -524,6 +533,252 @@
             </objects>
             <point key="canvasLocation" x="-562" y="1267"/>
         </scene>
+        <!--Hun Li Bu Zhi Table View Controller-->
+        <scene sceneID="yIW-1S-Jpl">
+            <objects>
+                <viewController id="Khh-Xv-wnR" customClass="HunLiBuZhiTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tg7-lP-9j2"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Hi-s2-v9c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y8L-di-5TO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="OcY-rx-crO">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.92156862750000001" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HunLiBuZhiCell" id="iiQ-pP-kMx" userLabel="HunLiBuZhiCell" customClass="HunLiBuZhiTableViewCell" customModule="mixi" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="111" width="320" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iiQ-pP-kMx" id="cT9-Vl-sE6">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lu5-Mh-kqt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgc-kT-p7q">
+                                                            <rect key="frame" x="7" y="0.0" width="306" height="193"/>
+                                                            <color key="backgroundColor" red="1" green="0.90529179670000004" blue="0.42611283560000002" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                                            <state key="normal" title="Button">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e4-od-xCG">
+                                                            <rect key="frame" x="14" y="96" width="80" height="80"/>
+                                                            <state key="normal" backgroundImage="蜜喜蜜喜－切片iphone5_107">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
+                                                        <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-xh-TIy">
+                                                            <rect key="frame" x="7" y="121" width="306" height="67"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥ 20000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jq6-nB-qwQ">
+                                                                    <rect key="frame" x="173" y="26" width="65" height="16"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="定位－icon" translatesAutoresizingMaskIntoConstraints="NO" id="hy1-Ch-Tvt">
+                                                                    <rect key="frame" x="100" y="8" width="8" height="12"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="长宁区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIc-Tq-Z9L">
+                                                                    <rect key="frame" x="109" y="8" width="51" height="12"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="收藏" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKf-bv-ICE">
+                                                                    <rect key="frame" x="269" y="39" width="30" height="15"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="收藏白色iphone5_15" translatesAutoresizingMaskIntoConstraints="NO" id="Gz2-qa-5nM">
+                                                                    <rect key="frame" x="269" y="12" width="25" height="25"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue Sea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbE-le-uFb">
+                                                                    <rect key="frame" x="100" y="26" width="65" height="16"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DZr-qF-5EY" userLabel="价格区间">
+                                <rect key="frame" x="0.0" y="64" width="320" height="37"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEr-wH-SHt">
+                                        <rect key="frame" x="3" y="12" width="84" height="13"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="价格区间 (元)">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hn8-jF-gCE">
+                                        <rect key="frame" x="226" y="3" width="87" height="30"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cte-Vb-QvF">
+                                        <rect key="frame" x="190" y="17" width="31" height="1"/>
+                                        <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMg-xz-GlZ">
+                                        <rect key="frame" x="98" y="3" width="87" height="30"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.95281217910000005" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hky-Yr-7Yl" userLabel="综合排序">
+                                <rect key="frame" x="0.0" y="-39" width="320" height="140"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5G-GY-oGP">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title=" 价格从低到高                                        " image="蜜喜蜜喜－切片iphone5_38">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sortBtnClicked:" destination="Khh-Xv-wnR" eventType="touchUpInside" id="Tlk-NM-fDy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4w-gV-TaC">
+                                        <rect key="frame" x="0.0" y="35" width="320" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title=" 价格从高到低                                        " image="蜜喜蜜喜－切片iphone5_36">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sortBtnClicked:" destination="Khh-Xv-wnR" eventType="touchUpInside" id="o7T-YU-A9r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kj-IQ-0GY">
+                                        <rect key="frame" x="0.0" y="70" width="320" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title=" 人气排序                                               " image="蜜喜蜜喜－切片iphone5_40">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sortBtnClicked:" destination="Khh-Xv-wnR" eventType="touchUpInside" id="POq-F4-XGV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-yq-pTW">
+                                        <rect key="frame" x="0.0" y="105" width="320" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title=" 星级排序                                               " image="蜜喜蜜喜－切片iphone5_41">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sortBtnClicked:" destination="Khh-Xv-wnR" eventType="touchUpInside" id="Lwj-tq-9cx"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="对号－白色" translatesAutoresizingMaskIntoConstraints="NO" id="3ZK-0B-YDi">
+                                        <rect key="frame" x="292" y="11" width="17" height="13"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.94623323179999996" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLu-cX-7RM" userLabel="主bar">
+                                <rect key="frame" x="0.0" y="64" width="320" height="37"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0p-yG-vDT">
+                                        <rect key="frame" x="19" y="4" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="价格">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnPriceCliced" destination="Khh-Xv-wnR" eventType="touchUpInside" id="LgA-FV-SUx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgf-t6-ixT">
+                                        <rect key="frame" x="93" y="4" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="地区">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnDistrictClicked" destination="Khh-Xv-wnR" eventType="touchUpInside" id="azL-ca-zdq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgr-LH-rm8">
+                                        <rect key="frame" x="239" y="4" width="73" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="综合排序">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnOverAllClicked" destination="Khh-Xv-wnR" eventType="touchUpInside" id="ADq-No-VIb"/>
+                                        </connections>
+                                    </button>
+                                    <view alpha="0.20000000298023224" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vXf-8H-ipY">
+                                        <rect key="frame" x="0.0" y="36" width="320" height="1"/>
+                                        <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-41-VGk">
+                                        <rect key="frame" x="167" y="4" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="筛选">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFilterClicked:" destination="Khh-Xv-wnR" eventType="touchUpInside" id="5vY-lF-ZRt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.95281217910000005" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qEc-TY-Htd"/>
+                    <connections>
+                        <outlet property="chekeImageView" destination="3ZK-0B-YDi" id="bgt-aX-myR"/>
+                        <outlet property="highToLowBtn" destination="V4w-gV-TaC" id="XVv-wP-lsE"/>
+                        <outlet property="hotSortBtn" destination="4kj-IQ-0GY" id="1aY-4L-O5D"/>
+                        <outlet property="lowToHighBtn" destination="H5G-GY-oGP" id="7f1-MV-rBo"/>
+                        <outlet property="mainSearchBar" destination="RLu-cX-7RM" id="j64-3Y-62Z"/>
+                        <outlet property="myTableView" destination="OcY-rx-crO" id="3Wp-Y8-ghV"/>
+                        <outlet property="overAllBar" destination="Hky-Yr-7Yl" id="gVJ-uy-NHw"/>
+                        <outlet property="priceSearchBar" destination="DZr-qF-5EY" id="S2a-H5-ZAY"/>
+                        <outlet property="starSortBtn" destination="PFa-yq-pTW" id="pnd-Fj-MG7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gy1-7A-Ouu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="1879"/>
+        </scene>
         <!--Hun Li Bu Zhi View Controller-->
         <scene sceneID="35Z-0r-HHh">
             <objects>
@@ -545,6 +800,9 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_02">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Khh-Xv-wnR" kind="push" id="4C9-q0-udP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpR-J8-BVL">
                                         <rect key="frame" x="3" y="3" width="173" height="129"/>
@@ -552,6 +810,9 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_01">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Khh-Xv-wnR" kind="push" id="Ag1-ll-JrH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37g-6s-T6k">
                                         <rect key="frame" x="3" y="136" width="138" height="103"/>
@@ -559,6 +820,9 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_04">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Khh-Xv-wnR" kind="push" id="wpb-Hm-7cv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keG-ch-Hyp">
                                         <rect key="frame" x="144" y="134" width="173" height="103"/>
@@ -566,6 +830,9 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_05">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Khh-Xv-wnR" kind="push" id="ao3-gy-edi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4e9-Px-fuU">
                                         <rect key="frame" x="3" y="242" width="230" height="103"/>
@@ -573,6 +840,9 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_07">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Khh-Xv-wnR" kind="push" id="uC7-4b-foX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLP-7d-zzc">
                                         <rect key="frame" x="236" y="242" width="81" height="103"/>
@@ -580,6 +850,9 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_08">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Khh-Xv-wnR" kind="push" id="rhO-I7-0cB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcP-8M-1h0">
                                         <rect key="frame" x="3" y="349" width="174" height="57"/>
@@ -587,6 +860,9 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_09">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Khh-Xv-wnR" kind="push" id="wBh-Mi-7Eg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6T-Hb-4XV">
                                         <rect key="frame" x="3" y="409" width="174" height="53"/>
@@ -594,6 +870,9 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_11">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Khh-Xv-wnR" kind="push" id="SBc-iE-UVO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHT-Ee-dgd">
                                         <rect key="frame" x="180" y="349" width="137" height="113"/>
@@ -601,6 +880,9 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－婚礼布置-IPHONE5_10">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Khh-Xv-wnR" kind="push" id="cXq-S2-RbC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -884,6 +1166,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="uId-19-EHZ"/>
+        <segue reference="ftU-7a-bEC"/>
+        <segue reference="wpb-Hm-7cv"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -26,6 +26,8 @@
 		ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */; };
 		ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */; };
 		ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */; };
+		FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */; };
+		FE27DD301AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */; };
 		FE8081A71AC6F05D00A70DE3 /* DaRenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */; };
 		FE8081A91AC6F0C500A70DE3 /* DaRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */; };
 		FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97600A1AC85A290041486D /* MBProgressHUD.m */; };
@@ -74,6 +76,8 @@
 		ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideBarViewController.swift; path = MiXi/SlideBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideViewController.swift; path = MiXi/SlideViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCenterTableViewController.swift; path = MiXi/UserCenterTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewController.swift; path = MiXi/HunLiBuZhiTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewCell.swift; path = MiXi/HunLiBuZhiTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewController.swift; path = MiXi/DaRenTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewCell.swift; path = MiXi/DaRenTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE9760091AC85A290041486D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 				FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */,
 				AC19A00D1AB56EFD00167523 /* ViewController.swift */,
 				ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */,
+				FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */,
 				FEEEF80B1AC183A30050B0D0 /* DaRenDetailViewController.swift */,
 				ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */,
 				ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */,
@@ -210,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				FEDFADA91AC0093D0005464A /* TabBarView.xib */,
+				FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */,
 				FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */,
 				FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */,
 				FEEEF8091AC15E710050B0D0 /* DaRenHeader.xib */,
@@ -330,6 +336,7 @@
 				AC7CD2091ABF1351007E2B20 /* DaRenViewController.swift in Sources */,
 				ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */,
 				FEDFADB01AC047E10005464A /* HeartTabBsrButton.swift in Sources */,
+				FE27DD301AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift in Sources */,
 				FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */,
 				AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */,
 				AC19B47E1ABD66BD00E332C1 /* ExtendingUIButton.swift in Sources */,
@@ -339,6 +346,7 @@
 				AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */,
 				ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */,
 				FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */,
+				FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */,
 				AC7CD20B1ABF1375007E2B20 /* HunLiBuZhiViewController.swift in Sources */,
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
 				FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */,
