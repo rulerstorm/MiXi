@@ -15,7 +15,9 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
 
     
     @IBOutlet weak var threeCheckBar: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var contentView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +46,15 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
         newNiBar.delegate = self
         
         
-        //3月31日新增，这里开始写页面的主体。
+//-----------------3月31日新增，这里开始写页面的主体。
+        self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: 374)
         
+        setUpThreeCheckBar()
         
-        
+        let excelNib = UINib(nibName: "DaRenExcel", bundle: nil)
+        let excelView = excelNib.instantiateWithOwner(nil, options: nil)[0] as DaRenExcelView
+        excelView.upDate()
+        contentView.insertSubview(excelView ,atIndex: 0)
 
     }
 
@@ -61,21 +68,26 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
 //        //换上备份的老bar
 //        self.navigationController?.view.addSubview(self.backUpView!)
     }
-}
+
 
 
 //-------------------3月31日新增，这里开始写页面的主体。------------------------
 
 
-private func setUpThreeCheckBar(){
+    private func setUpThreeCheckBar(){
+        
+        self.threeCheckBar.layer.borderWidth = 0.5
+        self.threeCheckBar.layer.borderColor = mixiColor.mainCoffie.CGColor
+        self.threeCheckBar.layer.cornerRadius = 12
+        //        self.threeCheckBar.layer.masksToBounds = true     //这句话加了和不加有什么区别？？？
 
-    uibut
-    
+        
+        
+    }
+
+
+
 }
-
-
-
-
 
 
 
