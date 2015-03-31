@@ -473,6 +473,7 @@ class HunLiBuZhiTableViewController: UIViewController,UITableViewDataSource, UIT
             })
         }
         lastOffSet = scrollView.contentOffset.y
+        
     }
     
 

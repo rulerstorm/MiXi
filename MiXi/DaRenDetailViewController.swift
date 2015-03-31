@@ -12,7 +12,11 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
 
 //    var backUpView :UIView?
 //    var myNaviBar :DaRenHeaderView?
-//    
+
+    
+    @IBOutlet weak var threeCheckBar: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,15 +39,17 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
         //更进一步，其实这里根本没有必要定制navigationBar，跳转过来的时候用modula就行了，只是为了练手自定义才这样写
         
         //上面这一坨后来封装到新的［可拆卸更换navibar］的MyNavigationViewController里面去了。。。。
-        
         let myNavi = self.navigationController as MyNavigationViewController
         myNavi.changeNewNaviBar(newNiBar)
         newNiBar.delegate = self
+        
+        
+        //3月31日新增，这里开始写页面的主体。
+        
+        
+        
 
     }
-
-    
-
 
     //光这个不行。。。naviController的pop还有一个手势方式。。。
     //重写了popViewControllerAnimated搞定这个问题
@@ -56,6 +62,28 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
 //        self.navigationController?.view.addSubview(self.backUpView!)
     }
 }
+
+
+//-------------------3月31日新增，这里开始写页面的主体。------------------------
+
+
+private func setUpThreeCheckBar(){
+
+    uibut
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
