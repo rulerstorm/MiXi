@@ -47,13 +47,10 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
         
         
 //-----------------3月31日新增，这里开始写页面的主体。
-        self.scrollView.contentSize = CGSize(width: self.view.frame.width, height: 374)
-        
+        scrollView.contentSize = CGSize(width: 320, height: 420)
         setUpThreeCheckBar()
         
-        let excelNib = UINib(nibName: "DaRenExcel", bundle: nil)
-        let excelView = excelNib.instantiateWithOwner(nil, options: nil)[0] as DaRenExcelView
-        excelView.upDate()
+        let excelView = DaRenExcelView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
         contentView.insertSubview(excelView ,atIndex: 0)
 
     }

@@ -550,7 +550,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iwH-Mq-cYY">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="377"/>
-                                        <color key="backgroundColor" red="0.73583756889999996" green="1" blue="0.87837064970000001" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                             </scrollView>
@@ -561,7 +561,7 @@
                     <navigationItem key="navigationItem" id="iXA-Hs-oEo"/>
                     <connections>
                         <outlet property="contentView" destination="iwH-Mq-cYY" id="abk-Nw-asi"/>
-                        <outlet property="scrollView" destination="a8G-AJ-nOy" id="SEG-fW-Oma"/>
+                        <outlet property="scrollView" destination="a8G-AJ-nOy" id="boJ-xp-osc"/>
                         <outlet property="threeCheckBar" destination="5lf-px-7Wy" id="Ye0-BE-tOF"/>
                     </connections>
                 </viewController>
