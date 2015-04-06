@@ -13,6 +13,31 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
 //    var backUpView :UIView?
 //    var myNaviBar :DaRenHeaderView?
 
+    //下面三个小view
+    let excelView = DaRenExcelView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
+    let workListView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
+    let commentView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
+
+    //三个小view的数据module
+    var _excelInfo :photographerInfo?  //解决get方法的循环调用，可能有更好的方法，暂时先这么搞
+    var excelInfo :photographerInfo?{
+        set{
+            self._excelInfo = newValue
+        }
+        get{    //这里用一个懒加载
+            if self._excelInfo==nil {
+                //这里应该从网络加载数据
+                self._excelInfo = photographerInfo(gender: "男", age: 28, area: "上海 长宁区",
+                    expTime: "5 - 10年", expText: "参与拍摄过上千场婚礼现场摄影，作品曾入选《婚礼风尚》杂志；2013年荣获上海市十佳摄影师荣誉称号，金牌人像摄影师。", goodAt: ["欧美系","奢华等"])
+            }
+            return self._excelInfo
+        }
+    }
+    //下面还有两个module没有写
+    //
+    //
+    
+    
     
     @IBOutlet weak var threeCheckBar: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -47,11 +72,9 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
         
         
 //-----------------3月31日新增，这里开始写页面的主体。
-        scrollView.contentSize = CGSize(width: 320, height: 420)
         setUpThreeCheckBar()
-        
-        let excelView = DaRenExcelView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
-        contentView.insertSubview(excelView ,atIndex: 0)
+
+
 
     }
 
@@ -70,19 +93,102 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
 
 //-------------------3月31日新增，这里开始写页面的主体。------------------------
 
+    @IBOutlet weak var personalInfoBtn: UIButton!
+    @IBOutlet weak var listOfWorkBtn: UIButton!
+    @IBOutlet weak var commentBtn: UIButton!
+    @IBOutlet weak var threeBarImageView: UIImageView!
 
+    private var personalInfoIsSelected:Bool = true{
+        didSet{
+            self.personalInfoBtn.selected = personalInfoIsSelected
+            if(personalInfoIsSelected){
+                self.threeBarImageView.image = UIImage(named: "蜜喜蜜喜－切片iphone5_104")
+                self.excelView._info = self.excelInfo
+                contentView.insertSubview(excelView ,atIndex: 0)
+            }else{
+                self.excelView.removeFromSuperview()
+            }
+        }
+    }
+    private var listOfWorkIsSelected:Bool = false{
+        didSet{
+            self.listOfWorkBtn.selected = listOfWorkIsSelected
+            if(listOfWorkIsSelected){
+                self.threeBarImageView.image = UIImage(named: "蜜喜蜜喜－切片iphone5_106")
+                
+                //这里要向服务器请求数据
+                getWorkListFromServer()
+                
+                contentView.insertSubview(workListView ,atIndex: 0)
+            }else{
+                self.workListView.removeFromSuperview()
+            }
+        }
+    }
+    private var commentIsSelected:Bool = false{
+        didSet{
+            self.commentBtn.selected = commentIsSelected
+            if(commentIsSelected){
+                self.threeBarImageView.image = UIImage(named: "蜜喜蜜喜－切片iphone5_105")
+                
+                //这里要向服务器请求数据
+                getCommentFromServer()
+                
+                contentView.insertSubview(commentView ,atIndex: 0)
+            }else{
+                self.commentView.removeFromSuperview()
+            }
+        }
+    }
+    
+    @IBAction func btnSelfInfoClicked(sender: UIButton) {
+        personalInfoIsSelected = true
+        listOfWorkIsSelected = false
+        commentIsSelected = false
+    }
+    
+    @IBAction func btnWorkListClicked(sender: UIButton) {
+        personalInfoIsSelected = false
+        listOfWorkIsSelected = true
+        commentIsSelected = false
+    }
+    
+    @IBAction func btnCommentClicked(sender: UIButton) {
+        personalInfoIsSelected = false
+        listOfWorkIsSelected = false
+        commentIsSelected = true
+    }
+    
+    
     private func setUpThreeCheckBar(){
-        
-        self.threeCheckBar.layer.borderWidth = 0.5
-        self.threeCheckBar.layer.borderColor = mixiColor.mainCoffie.CGColor
-        self.threeCheckBar.layer.cornerRadius = 12
-        //        self.threeCheckBar.layer.masksToBounds = true     //这句话加了和不加有什么区别？？？
+        scrollView.contentSize = CGSize(width: 320, height: 420)
+        personalInfoIsSelected = true
 
+        //测试用的颜色
+        self.workListView.backgroundColor = UIColor.redColor()
+        self.commentView.backgroundColor = UIColor.blackColor()
         
         
     }
 
+    
+    //向服务器请求数据
+    private func getWorkListFromServer(){
+        
+    }
+    private func getCommentFromServer(){
+        
+    }
+    
+    
+    
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        //这里需要从网络获取“头像”等数据
 
+    }
+    
 
 }
 

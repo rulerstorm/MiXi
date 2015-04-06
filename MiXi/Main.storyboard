@@ -502,46 +502,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5lf-px-7Wy">
-                                <rect key="frame" x="46" y="161" width="228" height="25"/>
+                                <rect key="frame" x="46" y="161" width="233" height="27"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfg-2m-mr9">
-                                        <rect key="frame" x="0.0" y="0.0" width="76" height="25"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蜜喜蜜喜－切片iphone5_104" translatesAutoresizingMaskIntoConstraints="NO" id="dLT-St-T2a">
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="27"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSf-RL-8Ox">
+                                        <rect key="frame" x="150" y="0.0" width="80" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <state key="normal" title=" 个人信息">
-                                            <color key="titleColor" red="0.58039215690000001" green="0.48627450979999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="评价">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="selected" backgroundImage="iphone5_94">
+                                        <state key="selected">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCommentClicked:" destination="0ia-cY-MEt" eventType="touchUpInside" id="k8H-Md-kRp"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihh-55-SCH">
-                                        <rect key="frame" x="76" y="0.0" width="76" height="25"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihh-55-SCH">
+                                        <rect key="frame" x="76" y="0.0" width="77" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="作品列表">
                                             <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                    </button>
-                                    <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ee0-Uu-g12" userLabel="分割线">
-                                        <rect key="frame" x="76" y="5" width="1" height="16"/>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPz-nl-Rs9" userLabel="分割线">
-                                        <rect key="frame" x="152" y="5" width="1" height="16"/>
-                                        <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeU-k4-3Y1">
-                                        <rect key="frame" x="152" y="0.0" width="76" height="25"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <state key="normal" title="评价">
-                                            <color key="titleColor" red="0.58039215690000001" green="0.48627450979999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="selected" backgroundImage="切片iphone5_91">
+                                        <state key="selected">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnWorkListClicked:" destination="0ia-cY-MEt" eventType="touchUpInside" id="VCC-U9-5SZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQn-ZI-DDj">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="个人信息">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnSelfInfoClicked:" destination="0ia-cY-MEt" eventType="touchUpInside" id="EBS-ll-Sqr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </view>
@@ -560,8 +578,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="iXA-Hs-oEo"/>
                     <connections>
+                        <outlet property="commentBtn" destination="fSf-RL-8Ox" id="fd3-Ny-lFW"/>
                         <outlet property="contentView" destination="iwH-Mq-cYY" id="abk-Nw-asi"/>
+                        <outlet property="listOfWorkBtn" destination="ihh-55-SCH" id="Yzf-aW-pEE"/>
+                        <outlet property="personalInfoBtn" destination="AQn-ZI-DDj" id="6R0-2G-ja8"/>
                         <outlet property="scrollView" destination="a8G-AJ-nOy" id="boJ-xp-osc"/>
+                        <outlet property="threeBarImageView" destination="dLT-St-T2a" id="Neh-lR-mu9"/>
                         <outlet property="threeCheckBar" destination="5lf-px-7Wy" id="Ye0-BE-tOF"/>
                     </connections>
                 </viewController>
@@ -1191,6 +1213,7 @@
         <image name="定位－icon" width="8" height="10"/>
         <image name="对号－白色" width="17" height="12"/>
         <image name="收藏白色iphone5_15" width="16" height="16"/>
+        <image name="蜜喜蜜喜－切片iphone5_104" width="233" height="26"/>
         <image name="蜜喜蜜喜－切片iphone5_107" width="93" height="93"/>
         <image name="蜜喜蜜喜－切片iphone5_33" width="12" height="14"/>
         <image name="蜜喜蜜喜－切片iphone5_36" width="18" height="18"/>
