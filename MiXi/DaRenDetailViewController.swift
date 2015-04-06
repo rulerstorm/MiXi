@@ -8,14 +8,16 @@
 
 import UIKit
 
-class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
+class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, DaRenPhotoTableViewDelegation {
 
+    @IBOutlet weak var mask: UIButton!
 //    var backUpView :UIView?
 //    var myNaviBar :DaRenHeaderView?
 
     //下面三个小view
     let excelView = DaRenExcelView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
-    let workListView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
+//    let workListView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
+    var workListViewController :DaRenPhotoTableViewController!
     let commentView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
 
     //三个小view的数据module
@@ -47,8 +49,12 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //默认遮罩为隐藏
+        mask.alpha = 0
+
+        
         let nib = UINib(nibName: "DaRenHeader", bundle: nil)
-        let newNiBar = nib.instantiateWithOwner(nil, options: nil)[0] as DaRenHeaderView
+        let newNaviBar = nib.instantiateWithOwner(nil, options: nil)[0] as DaRenHeaderView
         
         //直接把原来的tabbar干掉就可以了
         //这是我自己摸索出来的方法。。。
@@ -67,14 +73,21 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
         
         //上面这一坨后来封装到新的［可拆卸更换navibar］的MyNavigationViewController里面去了。。。。
         let myNavi = self.navigationController as MyNavigationViewController
-        myNavi.changeNewNaviBar(newNiBar)
-        newNiBar.delegate = self
+        myNavi.changeNewNaviBar(newNaviBar)
+        newNaviBar.delegate = self
         
         
 //-----------------3月31日新增，这里开始写页面的主体。
         setUpThreeCheckBar()
 
-
+//-----------------4月6日新增，这里开始写入“作品列表”的controller
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let workList = storyBoard.instantiateViewControllerWithIdentifier("DaRenPhotoTableViewController") as DaRenPhotoTableViewController
+        self.workListViewController = workList
+        
+        //照片的点击代理
+        workListViewController.delegation = self
 
     }
 
@@ -116,12 +129,11 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
             if(listOfWorkIsSelected){
                 self.threeBarImageView.image = UIImage(named: "蜜喜蜜喜－切片iphone5_106")
                 
-                //这里要向服务器请求数据
-                getWorkListFromServer()
+                //这里需要给view设置数据，就是传modle
                 
-                contentView.insertSubview(workListView ,atIndex: 0)
+                contentView.insertSubview(workListViewController.view ,atIndex: 0)
             }else{
-                self.workListView.removeFromSuperview()
+                self.workListViewController.view.removeFromSuperview()
             }
         }
     }
@@ -131,8 +143,8 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
             if(commentIsSelected){
                 self.threeBarImageView.image = UIImage(named: "蜜喜蜜喜－切片iphone5_105")
                 
-                //这里要向服务器请求数据
-                getCommentFromServer()
+                //这里需要给view设置数据，就是传modle
+
                 
                 contentView.insertSubview(commentView ,atIndex: 0)
             }else{
@@ -165,7 +177,7 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
         personalInfoIsSelected = true
 
         //测试用的颜色
-        self.workListView.backgroundColor = UIColor.redColor()
+//        self.workListViewController.view.backgroundColor = UIColor.redColor()
         self.commentView.backgroundColor = UIColor.blackColor()
         
         
@@ -182,12 +194,57 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation {
     
     
     
-    
+//------------------------------------------------------
     
     override func viewWillAppear(animated: Bool) {
         //这里需要从网络获取“头像”等数据
 
     }
+    
+    
+    
+//--------------------------phototableview代理方法----------------------------
+
+    func photoClicked() {
+        
+        UIView.animateWithDuration(0.5, animations: {[unowned self] in
+
+            let myNavi = self.navigationController as MyNavigationViewController
+            if let header = myNavi.view.subviews[1] as? DaRenHeaderView{
+                header.bookBtn.backgroundColor = mixiColor.mainCoffie
+            }
+            
+            self.mask.alpha = 0.7
+            
+        })
+        
+    }
+    
+    
+    @IBAction func maskClicked() {
+        UIView.animateWithDuration(0.5, animations: {[unowned self] in
+            self.mask.alpha = 0
+            
+            let myNavi = self.navigationController as MyNavigationViewController
+            if let header = myNavi.view.subviews[1] as? DaRenHeaderView{
+                header.bookBtn.backgroundColor = mixiColor.brown
+            }
+            
+            for sub in self.view.subviews{
+                if let view = sub as? UIView{
+                    if view.tag == 99{
+                        view.removeFromSuperview()
+                    }
+                }
+            }
+            
+            
+        })
+        
+
+
+    }
+    
     
 
 }

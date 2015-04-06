@@ -323,7 +323,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="收藏白色iphone5_15" translatesAutoresizingMaskIntoConstraints="NO" id="4ll-GO-wAB">
-                                                                    <rect key="frame" x="269" y="12" width="25" height="25"/>
+                                                                    <rect key="frame" x="270" y="13" width="22" height="22"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
@@ -572,6 +572,16 @@
                                     </view>
                                 </subviews>
                             </scrollView>
+                            <button opaque="NO" alpha="0.69999999999999973" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T34-WF-ZfU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="maskClicked" destination="0ia-cY-MEt" eventType="touchUpInside" id="tdG-rY-7hp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -581,6 +591,7 @@
                         <outlet property="commentBtn" destination="fSf-RL-8Ox" id="fd3-Ny-lFW"/>
                         <outlet property="contentView" destination="iwH-Mq-cYY" id="abk-Nw-asi"/>
                         <outlet property="listOfWorkBtn" destination="ihh-55-SCH" id="Yzf-aW-pEE"/>
+                        <outlet property="mask" destination="T34-WF-ZfU" id="JMy-XU-KER"/>
                         <outlet property="personalInfoBtn" destination="AQn-ZI-DDj" id="6R0-2G-ja8"/>
                         <outlet property="scrollView" destination="a8G-AJ-nOy" id="boJ-xp-osc"/>
                         <outlet property="threeBarImageView" destination="dLT-St-T2a" id="Neh-lR-mu9"/>
@@ -1204,6 +1215,112 @@
             </objects>
             <point key="canvasLocation" x="-1555" y="1441"/>
         </scene>
+        <!--Da Ren Photo Table View Controller-->
+        <scene sceneID="1Ym-hs-JbA">
+            <objects>
+                <tableViewController storyboardIdentifier="DaRenPhotoTableViewController" id="vtd-p6-0rH" customClass="DaRenPhotoTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="etL-ux-5oD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenPhotoCell" id="oYH-Yx-KBA" customClass="DaRenPhotoTableViewCell" customModule="mixi" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oYH-Yx-KBA" id="Bxi-eK-qYA">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfo-rR-HZl">
+                                            <rect key="frame" x="294" y="8" width="18" height="15"/>
+                                            <state key="normal" image="更多">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fL9-IY-Skw">
+                                            <rect key="frame" x="17" y="8" width="55" height="15"/>
+                                            <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <state key="normal" title="2015 04">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OW5-IO-HXe">
+                                            <rect key="frame" x="6" y="13" width="5" height="5"/>
+                                            <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <view alpha="0.80000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="arI-Oy-ilM">
+                                            <rect key="frame" x="8" y="20" width="1" height="128"/>
+                                            <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKD-qh-nx1">
+                                            <rect key="frame" x="17" y="26" width="140" height="121"/>
+                                            <color key="backgroundColor" red="0.80129227240000001" green="1" blue="0.64251676179999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnPhotoClicked:" destination="vtd-p6-0rH" eventType="touchUpInside" id="vJi-dv-Wl2"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QB7-ei-c97">
+                                            <rect key="frame" x="158" y="26" width="83" height="60"/>
+                                            <color key="backgroundColor" red="0.64588220959999998" green="1" blue="0.83509904479999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnPhotoClicked:" destination="vtd-p6-0rH" eventType="touchUpInside" id="3fv-lx-xWk"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wM-I8-18r">
+                                            <rect key="frame" x="158" y="87" width="74" height="60"/>
+                                            <color key="backgroundColor" red="1" green="0.69901934919999997" blue="0.67073314029999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnPhotoClicked:" destination="vtd-p6-0rH" eventType="touchUpInside" id="GRN-5H-hB1"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4F-JO-wi0">
+                                            <rect key="frame" x="233" y="87" width="79" height="60"/>
+                                            <color key="backgroundColor" red="0.66852115359999997" green="0.60649973440000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnPhotoClicked:" destination="vtd-p6-0rH" eventType="touchUpInside" id="mha-HF-EjS"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0V-8m-B7R">
+                                            <rect key="frame" x="242" y="26" width="70" height="60"/>
+                                            <color key="backgroundColor" red="1" green="0.97672771970000005" blue="0.78776274030000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnPhotoClicked:" destination="vtd-p6-0rH" eventType="touchUpInside" id="KkJ-Bc-Cip"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vtd-p6-0rH" id="nLa-Xr-GCn"/>
+                            <outlet property="delegate" destination="vtd-p6-0rH" id="30O-Hp-7Fh"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPU-bn-tcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="657"/>
+        </scene>
     </scenes>
     <resources>
         <image name="iphone5_93" width="63" height="32"/>
@@ -1213,6 +1330,7 @@
         <image name="定位－icon" width="8" height="10"/>
         <image name="对号－白色" width="17" height="12"/>
         <image name="收藏白色iphone5_15" width="16" height="16"/>
+        <image name="更多" width="18" height="12"/>
         <image name="蜜喜蜜喜－切片iphone5_104" width="233" height="26"/>
         <image name="蜜喜蜜喜－切片iphone5_107" width="93" height="93"/>
         <image name="蜜喜蜜喜－切片iphone5_33" width="12" height="14"/>
@@ -1223,15 +1341,15 @@
         <image name="蜜喜蜜喜－切片iphone5_47" width="13" height="13"/>
         <image name="蜜喜蜜喜－切片iphone5_48" width="13" height="13"/>
         <image name="蜜喜蜜喜－切片iphone5_52" width="12" height="14"/>
-        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_01" width="347" height="258"/>
-        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_02" width="276" height="258"/>
-        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_04" width="276" height="206"/>
-        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_05" width="346" height="206"/>
-        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_07" width="460" height="206"/>
-        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_08" width="163" height="206"/>
-        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_09" width="349" height="114"/>
-        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_10" width="274" height="225"/>
-        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_11" width="349" height="107"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_01" width="173" height="129"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_02" width="138" height="129"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_04" width="138" height="103"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_05" width="173" height="103"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_07" width="230" height="103"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_08" width="81" height="103"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_09" width="174" height="57"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_10" width="137" height="112"/>
+        <image name="蜜喜蜜喜－婚礼布置-IPHONE5_11" width="174" height="53"/>
         <image name="蜜喜蜜喜－首页_14" width="182" height="319"/>
         <image name="蜜喜蜜喜－首页_15" width="134" height="164"/>
         <image name="蜜喜蜜喜－首页_17" width="134" height="154"/>
