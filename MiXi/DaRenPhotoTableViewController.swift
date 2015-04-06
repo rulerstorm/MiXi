@@ -22,8 +22,9 @@ class DaRenPhotoTableViewController: UITableViewController {
         delegation.photoClicked()
         
         UIView.animateWithDuration(0.5, animations: {[unowned self] in
+            
+            //这里以后应该是自定义的可以滚动照片的view
             let bigView = UIView(frame: CGRect(x: sender.frame.minX , y: sender.frame.minY + 190, width: sender.frame.width, height: sender.frame.height))
-            //这个以后要加图片
             bigView.backgroundColor = sender.backgroundColor
             bigView.tag = 99
             let susu = self.view.superview!.superview!.superview! as UIView
