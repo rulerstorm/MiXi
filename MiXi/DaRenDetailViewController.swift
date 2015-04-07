@@ -18,7 +18,7 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
     let excelView = DaRenExcelView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
 //    let workListView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
     var workListViewController :DaRenPhotoTableViewController!
-    let commentView = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 377))
+    var commentView :DaRenCommentTableViewController!
 
     //三个小view的数据module
     var _excelInfo :photographerInfo?  //解决get方法的循环调用，可能有更好的方法，暂时先这么搞
@@ -88,6 +88,10 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
         
         //照片的点击代理
         workListViewController.delegation = self
+        
+//-----------------4月7日，这里开始写入“评价”的controller
+        let commentTable = storyBoard.instantiateViewControllerWithIdentifier("DaRenCommentTableViewController") as DaRenCommentTableViewController
+        self.commentView = commentTable
 
     }
 
@@ -146,9 +150,9 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
                 //这里需要给view设置数据，就是传modle
 
                 
-                contentView.insertSubview(commentView ,atIndex: 0)
+                contentView.insertSubview(commentView.view,atIndex: 0)
             }else{
-                self.commentView.removeFromSuperview()
+                self.commentView.view.removeFromSuperview()
             }
         }
     }
@@ -178,7 +182,7 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
 
         //测试用的颜色
 //        self.workListViewController.view.backgroundColor = UIColor.redColor()
-        self.commentView.backgroundColor = UIColor.blackColor()
+//        self.commentView.backgroundColor = UIColor.blackColor()
         
         
     }
