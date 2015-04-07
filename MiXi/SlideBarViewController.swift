@@ -8,17 +8,34 @@
 
 import UIKit
 
-class SlideBarViewController: UITableViewController {
+class SlideBarViewController: UIViewController {
 
+    
+    @IBOutlet weak var btnMainPage: UIButton!
+    @IBOutlet weak var btnDiscover: UIButton!
+    @IBOutlet weak var btnCustomerCenter: UIButton!
+    
+    
+    @IBAction func allBtnClicked(sender: UIButton) {
+        
+    }
+    
+
+    
+    
+    
+    
+    @IBOutlet weak var btnUserCenter: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
     
 
 

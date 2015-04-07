@@ -15,13 +15,17 @@ protocol leftBarButtunDelegate{
 
 class SlideViewController: UIViewController, leftBarButtunDelegate {
     
-    let slideBar = SlideBarViewController()
+    var slideBar :SlideBarViewController!
     var mainviewController = mainTabbarController()
     var lastX :CGFloat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        self.slideBar = storyboard.instantiateViewControllerWithIdentifier("SlideBar")  as SlideBarViewController
+        
+        
     //这个有问题，需要重构
     //功能是各个子页面左上角的barItem设置代理，他们需要通知这个slideViewController来实施侧滑
     for child in mainviewController.childViewControllers{
