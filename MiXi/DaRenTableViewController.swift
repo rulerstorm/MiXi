@@ -13,7 +13,7 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
     //这三个是上面的搜索排序拦的三个准备弹出的滑块，两个用storyboard创建，一个用代码创建
     @IBOutlet weak var overAllBar: UIView!
     @IBOutlet weak var priceSearchBar: UIView!
-    var distrectBar = UIView(frame: CGRect(x: 0, y: -86, width: 320, height: 186))
+    private var distrectBar = UIView(frame: CGRect(x: 0, y: -86, width: 320, height: 186))
     
     //这个方法专门用来初始化distrectBar里面的按钮
     private func initDistrectBar(){

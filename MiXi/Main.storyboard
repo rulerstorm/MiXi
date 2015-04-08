@@ -71,7 +71,7 @@
                                     <constraint firstAttribute="height" constant="36" id="Xx3-K6-HPu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdb-qa-XWQ">
                                 <rect key="frame" x="179" y="199" width="93" height="36"/>
@@ -635,7 +635,7 @@
                                 <rect key="frame" x="0.0" y="234" width="191" height="2"/>
                                 <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmA-H9-yAZ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmA-H9-yAZ">
                                 <rect key="frame" x="0.0" y="234" width="191" height="51"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="21" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -655,7 +655,7 @@
                                 <rect key="frame" x="0.0" y="183" width="191" height="2"/>
                                 <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8s-2Q-Yrh">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8s-2Q-Yrh">
                                 <rect key="frame" x="0.0" y="183" width="191" height="51"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="21" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -678,7 +678,7 @@
                                 <rect key="frame" x="0.0" y="285" width="191" height="2"/>
                                 <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bN-Qp-8jP">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bN-Qp-8jP">
                                 <rect key="frame" x="0.0" y="285" width="191" height="51"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="21" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -700,10 +700,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="191" height="568"/>
                     <connections>
-                        <outlet property="btnCustomerCenter" destination="6bN-Qp-8jP" id="r8w-3I-YeV"/>
-                        <outlet property="btnDiscover" destination="ZmA-H9-yAZ" id="G9w-v8-Vhk"/>
                         <outlet property="btnMainPage" destination="x8s-2Q-Yrh" id="cEQ-ag-Tye"/>
-                        <outlet property="btnUserCenter" destination="wrh-PY-lcs" id="azi-AO-5gm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y92-9L-Q38" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1568,9 +1565,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ADx-VC-VhL"/>
-        <segue reference="wpb-Hm-7cv"/>
         <segue reference="ftU-7a-bEC"/>
+        <segue reference="wpb-Hm-7cv"/>
+        <segue reference="uId-19-EHZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>

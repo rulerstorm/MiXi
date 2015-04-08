@@ -10,7 +10,7 @@ import UIKit
 
 class mainTabbarController: UITabBarController, MyTabBarDelegate {
 
-    var customTabBar :MyTabBar?
+    private var customTabBar :MyTabBar?
     
     override func viewDidLoad() {
         super.viewDidLoad()
