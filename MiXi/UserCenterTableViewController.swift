@@ -10,7 +10,7 @@ import UIKit
 
 class UserCenterTableViewController: UITableViewController {
 
-    var leftItemDelegate :AnyObject?
+    weak var leftItemDelegate :AnyObject?
     
     override func viewDidLoad() {
         super.viewDidLoad()

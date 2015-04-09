@@ -9,13 +9,13 @@
 import UIKit
 
 
-protocol MyTabBarDelegate{
+protocol MyTabBarDelegate :class{
     func tabbarDidSelectButton(#index:Int)
 }
 
 class MyTabBar: UIView {
 
-    var delegate :MyTabBarDelegate?
+    weak var delegate :MyTabBarDelegate?
     
     @IBOutlet weak var btnLeft: MyTabBarButton!
     @IBOutlet weak var btnRight: MyTabBarButton!

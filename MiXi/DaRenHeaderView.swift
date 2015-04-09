@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol DaRenHeaderViewDelegation{
+protocol DaRenHeaderViewDelegation :class{
     func DaRenHeaderleftItemClicked()
 }
 
@@ -16,7 +16,7 @@ protocol DaRenHeaderViewDelegation{
 class DaRenHeaderView: UIView {
     //左上角返回按钮的点击代理
     //这里不给用weak，暂时还没有解决这个循环引用的问题
-    var delegate:DaRenHeaderViewDelegation?
+    weak var delegate:DaRenHeaderViewDelegation?
     
     //“加入预约”按钮
     var bookBtn = UIButton.buttonWithType(UIButtonType.System) as UIButton

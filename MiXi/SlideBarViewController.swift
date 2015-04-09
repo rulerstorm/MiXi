@@ -9,14 +9,14 @@
 import UIKit
 
 
-protocol SlideBarViewDelegate{
+protocol SlideBarViewDelegate :class{
     func changeMainViewToTarget(targetView :String?)
 }
 
 
 class SlideBarViewController: UIViewController {
 
-    var delegate :SlideBarViewDelegate!
+    weak var delegate :SlideBarViewDelegate!
     
     @IBOutlet weak var btnMainPage: UIButton!
 //    @IBOutlet weak var btnDiscover: UIButton!

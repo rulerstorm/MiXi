@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol leftBarButtunDelegate{
+protocol leftBarButtunDelegate :class{      //class关键字可以让这个协议使用weak指针，原因待查
     func leftBarButtunClicked()
 }
 

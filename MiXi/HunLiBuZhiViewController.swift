@@ -11,7 +11,7 @@ import UIKit
 class HunLiBuZhiViewController: UIViewController{
     @IBOutlet weak var srollView: UIScrollView!
 
-    var leftItemDelegate :AnyObject?
+    weak var leftItemDelegate :AnyObject?
     
     override func viewDidLoad() {
         super.viewDidLoad()

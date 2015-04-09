@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol DaRenPhotoTableViewDelegation{
+protocol DaRenPhotoTableViewDelegation :class{
     func photoClicked()
 }
 

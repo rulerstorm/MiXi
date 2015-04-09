@@ -17,7 +17,7 @@ class DaRenViewController: UIViewController {
     @IBOutlet weak var btnGuss: UIButton!
     @IBOutlet weak var btnDaRenKu: UIButton!
     
-    var leftItemDelegate :AnyObject?
+    weak var leftItemDelegate :AnyObject?
     
     override func viewDidLoad() {
         super.viewDidLoad()
