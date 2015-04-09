@@ -48,16 +48,12 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
 
         self.mainviewController["首页"] = mainPageViewController
         self.mainviewController["个人中心"] = UIViewController()
-        self.mainviewController["个人中心"]?.view.backgroundColor = UIColor.blueColor()
-//        self.mainviewController["发现"] = UIViewController()
-//        self.mainviewController["客服中心"] = UIViewController()
+            self.mainviewController["个人中心"]?.view.backgroundColor = UIColor.blueColor()
+        self.mainviewController["发现"] = UIViewController()
+            self.mainviewController["发现"]?.view.backgroundColor = UIColor.purpleColor()
+        self.mainviewController["客服中心"] = UIViewController()
+            self.mainviewController["客服中心"]?.view.backgroundColor = UIColor.greenColor()
 
-
-//        for (_, controller) in self.mainviewController{
-//            controller.view.addGestureRecognizer(gesture)
-//        }
-        
-        
         
         changeMainViewToTarget("首页")
         
@@ -102,7 +98,7 @@ self.view.backgroundColor = UIColor.redColor()
                     self.lastX = viewFrameMinX
             }
             
-            println("lastX:\(self.lastX),,frameX:\(pan.view?.frame.minX)")
+//            println("lastX:\(self.lastX),,frameX:\(pan.view?.frame.minX)")
             
             // 结束拖拽
             if (pan.state == UIGestureRecognizerState.Cancelled || pan.state == UIGestureRecognizerState.Ended) {
@@ -162,17 +158,21 @@ self.view.backgroundColor = UIColor.redColor()
         let gesture = UIPanGestureRecognizer(target: self, action: Selector("didDrag:"))
         
         if let acticeView = self.activeMainViewControler?.view{   //有旧view
-            
             //记录目前view的位置，等下交给新view
-//          let lastFrame = acticeView.frame   //如果这里用frame，则后面手势计算transform的时候会有严重bug
-            let transform = acticeView.transform
+//          let originTransform = acticeView.frame   //如果这里用frame，则后面手势计算transform的时候会有严重bug
+            let originTransform = acticeView.transform
             
-            //重要问题：手势识别器不能同时被多个view注册，否则只认最后一个view的手势
-            //解除手势
-            acticeView.removeGestureRecognizer(gesture)
-            //去除view
-            acticeView.removeFromSuperview()
-            
+            UIView.animateWithDuration(0.5, animations: { [unowned self] in
+                acticeView.transform = CGAffineTransformMakeTranslation(self.view.frame.width, 0)
+                }, completion: {
+                    if $0{
+                        //重要问题：手势识别器不能同时被多个view注册，否则只认最后一个view的手势
+                        //解除手势
+                        acticeView.removeGestureRecognizer(gesture)
+                        //去除view
+                        acticeView.removeFromSuperview()
+                    }
+            })
             //这里开始加新view
             if let target = targetView{
                 if let targetController = mainviewController[target]{
@@ -180,13 +180,18 @@ self.view.backgroundColor = UIColor.redColor()
                     
                     //加入手势
                     targetController.view.addGestureRecognizer(gesture)
-//                                    targetController.view.frame = lastFrame
-                    targetController.view.transform = transform
+                    //一开始从最右边出现
+                    targetController.view.transform = CGAffineTransformMakeTranslation(self.view.frame.width, 0)
+                    //然后移到原来的位置
+                    UIView.animateWithDuration(0.5, animations: { [unowned self] in
+                        targetController.view.transform = originTransform
+                    })
                     
                     self.activeMainViewControler = targetController
                 }
             }
-        }else{   //没有旧view
+        //没有旧view，就是第一次启动
+        }else{
             if let target = targetView{
                 if let targetController = mainviewController[target]{
                     self.view.addSubview(targetController.view)
@@ -198,6 +203,4 @@ self.view.backgroundColor = UIColor.redColor()
         }
     }
     
-    
-
 }
