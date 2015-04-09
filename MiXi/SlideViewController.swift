@@ -96,7 +96,6 @@ self.view.backgroundColor = UIColor.redColor()
     //里面关于translation的不是恨理解
     func didDrag(pan:UIPanGestureRecognizer){
         
-//        println(self.lastX)
         
         let point = pan.translationInView(pan.view!)
         let slideBarWidth = self.slideBar.view.frame.width
@@ -107,42 +106,43 @@ self.view.backgroundColor = UIColor.redColor()
             self.lastX = pan.view?.frame.minX
         }
         
+        
         // 结束拖拽
-        if (pan.state == UIGestureRecognizerState.Cancelled || pan.state == UIGestureRecognizerState.Ended) {
-            if self.lastX != nil{
-                if(pan.view?.frame.minX > self.lastX!){ //如果向右拖
-                    if (pan.view?.frame.minX >= slideBarWidth * 0.2) { // 往右边至少走动了五分之一
-                        UIView.animateWithDuration(duration, animations: {
-                            pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
-                        })
+        if self.lastX != nil{
+            if (pan.state == UIGestureRecognizerState.Cancelled || pan.state == UIGestureRecognizerState.Ended) {
+                    if(pan.view?.frame.minX > self.lastX!){ //如果向右拖
+                        if (pan.view?.frame.minX >= slideBarWidth * 0.2) { // 往右边至少走动了五分之一
+                            UIView.animateWithDuration(duration, animations: {
+                                pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
+                            })
 
-                    } else{ // 走动距离的没有达到四分之一
-                        UIView.animateWithDuration(duration, animations: {
-                            pan.view!.transform = CGAffineTransformIdentity   //这个参数需要理解，能复原位置
-                        })
+                        } else{ // 走动距离的没有达到四分之一
+                            UIView.animateWithDuration(duration, animations: {
+                                pan.view!.transform = CGAffineTransformIdentity   //这个参数需要理解，能复原位置
+                            })
+                        }
+                    }else{
+                        if (pan.view?.frame.minX <= slideBarWidth * 0.8) { // 往左边至少走动了五分之一
+                            UIView.animateWithDuration(duration, animations: {
+                                pan.view!.transform = CGAffineTransformIdentity
+                            })
+                            
+                        } else{
+                            UIView.animateWithDuration(duration, animations: {
+                                pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
+                            })
+                        }
                     }
-                }else{
-                    if (pan.view?.frame.minX <= slideBarWidth * 0.8) { // 往左边至少走动了五分之一
-                        UIView.animateWithDuration(duration, animations: {
-                            pan.view!.transform = CGAffineTransformIdentity
-                        })
-                        
-                    } else{
-                        UIView.animateWithDuration(duration, animations: {
-                            pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
-                        })
+                } else { // begin和changed都会进来
+                    pan.view!.transform = CGAffineTransformTranslate(pan.view!.transform, point.x, 0)
+                    pan.setTranslation(CGPointZero, inView: pan.view!)
+                    if (pan.view!.frame.minX >= slideBarWidth) {
+                        pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0);
+                    } else if (pan.view!.frame.minX <= 0) {
+                        pan.view!.transform = CGAffineTransformIdentity
                     }
-                }
-            } else { // begin和changed都会进来
-                pan.view!.transform = CGAffineTransformTranslate(pan.view!.transform, point.x, 0)
-                pan.setTranslation(CGPointZero, inView: pan.view!)
-                if (pan.view!.frame.minX >= slideBarWidth) {
-                    pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0);
-                } else if (pan.view!.frame.minX <= 0) {
-                    pan.view!.transform = CGAffineTransformIdentity
                 }
             }
-        }
     }
 
     
