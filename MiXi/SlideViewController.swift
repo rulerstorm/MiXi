@@ -52,11 +52,8 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
 //        self.mainviewController["发现"] = UIViewController()
 //        self.mainviewController["客服中心"] = UIViewController()
 
-        //监听手势
-        let gesture = UIPanGestureRecognizer(target: self, action: Selector("didDrag:"))
-        mainPageViewController.view.addGestureRecognizer(gesture)
-//        
-//        for (name, controller) in self.mainviewController{
+
+//        for (_, controller) in self.mainviewController{
 //            controller.view.addGestureRecognizer(gesture)
 //        }
         
@@ -69,7 +66,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
     
     
     //用来记录侧滑手势的上一个偏移值
-    private var lastX :CGFloat?
+    private var lastX :CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,25 +90,24 @@ self.view.backgroundColor = UIColor.redColor()
         
     }//viewDidLoad
     
-    //里面关于translation的不是恨理解
+    //translation不是翻译的意思，意思是“移动量”
     func didDrag(pan:UIPanGestureRecognizer){
-        
         
         let point = pan.translationInView(pan.view!)
         let slideBarWidth = self.slideBar.view.frame.width
         let duration = 0.25
-        
-        if (pan.state == UIGestureRecognizerState.Changed){
-            //这里记录上次的位置，以确定拖拽方向
-            self.lastX = pan.view?.frame.minX
-        }
-        
-        
-        // 结束拖拽
-        if self.lastX != nil{
+        if let viewFrameMinX = pan.view?.frame.minX{
+            if (pan.state == UIGestureRecognizerState.Changed){
+                //这里记录上次的位置，以确定拖拽方向
+                    self.lastX = viewFrameMinX
+            }
+            
+            println("lastX:\(self.lastX),,frameX:\(pan.view?.frame.minX)")
+            
+            // 结束拖拽
             if (pan.state == UIGestureRecognizerState.Cancelled || pan.state == UIGestureRecognizerState.Ended) {
-                    if(pan.view?.frame.minX > self.lastX!){ //如果向右拖
-                        if (pan.view?.frame.minX >= slideBarWidth * 0.2) { // 往右边至少走动了五分之一
+                    if(viewFrameMinX > self.lastX){ //如果向右拖
+                        if (viewFrameMinX >= slideBarWidth * 0.2) { // 往右边至少走动了五分之一
                             UIView.animateWithDuration(duration, animations: {
                                 pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
                             })
@@ -122,9 +118,10 @@ self.view.backgroundColor = UIColor.redColor()
                             })
                         }
                     }else{
-                        if (pan.view?.frame.minX <= slideBarWidth * 0.8) { // 往左边至少走动了五分之一
+                        if (viewFrameMinX <= slideBarWidth * 0.8) { // 往左边至少走动了五分之一
                             UIView.animateWithDuration(duration, animations: {
                                 pan.view!.transform = CGAffineTransformIdentity
+
                             })
                             
                         } else{
@@ -133,7 +130,7 @@ self.view.backgroundColor = UIColor.redColor()
                             })
                         }
                     }
-                } else { // begin和changed都会进来
+            } else { // begin和changed都会进来
                     pan.view!.transform = CGAffineTransformTranslate(pan.view!.transform, point.x, 0)
                     pan.setTranslation(CGPointZero, inView: pan.view!)
                     if (pan.view!.frame.minX >= slideBarWidth) {
@@ -141,8 +138,8 @@ self.view.backgroundColor = UIColor.redColor()
                     } else if (pan.view!.frame.minX <= 0) {
                         pan.view!.transform = CGAffineTransformIdentity
                     }
-                }
             }
+        }
     }
 
     
@@ -161,20 +158,44 @@ self.view.backgroundColor = UIColor.redColor()
 
     //代理方法，监听左边bar的点击，切换主view
     func changeMainViewToTarget(targetView: String?) {
-        println(targetView!)
-        let frame = self.activeMainViewControler?.view.frame
-        self.activeMainViewControler?.view.removeFromSuperview()
+
+        let gesture = UIPanGestureRecognizer(target: self, action: Selector("didDrag:"))
         
-        if let target = targetView{
-            if let targetController = mainviewController[target]{
-                self.view.addSubview(targetController.view)
-                if frame !=  nil{
-                    targetController.view.frame = frame!
+        if let acticeView = self.activeMainViewControler?.view{   //有旧view
+            
+            //记录目前view的位置，等下交给新view
+//          let lastFrame = acticeView.frame   //如果这里用frame，则后面手势计算transform的时候会有严重bug
+            let transform = acticeView.transform
+            
+            //重要问题：手势识别器不能同时被多个view注册，否则只认最后一个view的手势
+            //解除手势
+            acticeView.removeGestureRecognizer(gesture)
+            //去除view
+            acticeView.removeFromSuperview()
+            
+            //这里开始加新view
+            if let target = targetView{
+                if let targetController = mainviewController[target]{
+                    self.view.addSubview(targetController.view)
+                    
+                    //加入手势
+                    targetController.view.addGestureRecognizer(gesture)
+//                                    targetController.view.frame = lastFrame
+                    targetController.view.transform = transform
+                    
+                    self.activeMainViewControler = targetController
                 }
-                self.activeMainViewControler = targetController
+            }
+        }else{   //没有旧view
+            if let target = targetView{
+                if let targetController = mainviewController[target]{
+                    self.view.addSubview(targetController.view)
+                    //加入手势
+                    targetController.view.addGestureRecognizer(gesture)
+                    self.activeMainViewControler = targetController
+                }
             }
         }
-        
     }
     
     
