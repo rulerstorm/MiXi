@@ -71,7 +71,7 @@ class DaRenPhotoTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("DaRenPhotoCell", forIndexPath: indexPath) as DaRenPhotoTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("DaRenPhotoCell", forIndexPath: indexPath) as! DaRenPhotoTableViewCell
 
         // Configure the cell...
 

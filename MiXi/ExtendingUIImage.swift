@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 LuRock. All rights reserved.
 //
 
-import UIkit
+import UIKit
 
 extension UIImage{
     //返回一张拉伸中央点、不会变形的图片

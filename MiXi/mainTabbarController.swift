@@ -17,7 +17,7 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         
         //初始化自定义的tabbar
         let nib = UINib(nibName: "TabBarView", bundle: nil)
-        let newTabBar = nib.instantiateWithOwner(nil, options: nil)[0] as MyTabBar
+        let newTabBar = nib.instantiateWithOwner(nil, options: nil)[0] as! MyTabBar
 
         newTabBar.delegate = self
 //        self.tabBar.frame = CGRect(x: self.tabBar.frame.minX, y: self.tabBar.frame.minY-8, width: self.tabBar.frame.width, height: self.tabBar.frame.height+8)
@@ -54,13 +54,13 @@ class mainTabbarController: UITabBarController, MyTabBarDelegate {
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
-        let daRen = storyBoard.instantiateViewControllerWithIdentifier("daren") as DaRenViewController
+        let daRen = storyBoard.instantiateViewControllerWithIdentifier("daren") as! DaRenViewController
         self.setupChildViewController(daRen, title: "婚礼达人", imageName: "婚礼达人黄")
         
-        let userCenter = storyBoard.instantiateViewControllerWithIdentifier("userCenter") as UserCenterTableViewController
+        let userCenter = storyBoard.instantiateViewControllerWithIdentifier("userCenter") as! UserCenterTableViewController
         self.setupChildViewController(userCenter, title: "预约车", imageName: "购物车")
         
-        let buZhi = storyBoard.instantiateViewControllerWithIdentifier("buZhi") as HunLiBuZhiViewController
+        let buZhi = storyBoard.instantiateViewControllerWithIdentifier("buZhi") as! HunLiBuZhiViewController
         self.setupChildViewController(buZhi, title: "婚礼布置", imageName: "婚礼布置黄")
         
     }

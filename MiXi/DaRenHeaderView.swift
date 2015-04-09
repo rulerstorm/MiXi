@@ -19,7 +19,7 @@ class DaRenHeaderView: UIView {
     weak var delegate:DaRenHeaderViewDelegation?
     
     //“加入预约”按钮
-    var bookBtn = UIButton.buttonWithType(UIButtonType.System) as UIButton
+    var bookBtn = UIButton.buttonWithType(UIButtonType.System) as! UIButton
     
     //从代码创建用这个
     override init(frame: CGRect) {
@@ -31,7 +31,7 @@ class DaRenHeaderView: UIView {
         super.init(coder: aDecoder)
         
         //左上角的“返回”按钮
-        let leftItem = UIButton.buttonWithType(UIButtonType.System) as UIButton
+        let leftItem = UIButton.buttonWithType(UIButtonType.System) as! UIButton
         leftItem.setBackgroundImage(UIImage(named: "标题栏－返回iphone5_01"), forState: UIControlState.Normal)
         leftItem.frame = CGRect(x: 2, y: 26, width: 44, height: 44)
         self.addSubview(leftItem)

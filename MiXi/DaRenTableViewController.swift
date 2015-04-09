@@ -58,7 +58,7 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
     //区域选择按钮们的点击事件
     func distrectBtnPressed(sender: UIButton){
         if(sender.titleLabel?.text == "不限"){
-            for btn in distrectBar.subviews as [UIButton]{
+            for btn in distrectBar.subviews as! [UIButton]{
                 btn.selected = false
             }
             sender.selected = true
@@ -240,7 +240,7 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
 
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("DaRenCell", forIndexPath: indexPath) as DaRenTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("DaRenCell", forIndexPath: indexPath) as! DaRenTableViewCell
 
         // Configure the cell...
 

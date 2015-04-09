@@ -30,15 +30,15 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
         //这个有问题，需要重构
         //功能是各个子页面左上角的barItem设置代理，他们需要通知这个slideViewController来实施侧滑
         for child in mainPageViewController.childViewControllers{
-            let navi = child as UINavigationController
+            let navi = child as! UINavigationController
             if(navi.childViewControllers[0] is DaRenViewController){
-                let final = navi.childViewControllers[0] as DaRenViewController
+                let final = navi.childViewControllers[0] as! DaRenViewController
                 final.leftItemDelegate = self
             }else if(navi.childViewControllers[0] is HunLiBuZhiViewController){
-                let final = navi.childViewControllers[0] as HunLiBuZhiViewController
+                let final = navi.childViewControllers[0] as! HunLiBuZhiViewController
                 final.leftItemDelegate = self
             }else if(navi.childViewControllers[0] is UserCenterTableViewController){
-                let final = navi.childViewControllers[0] as UserCenterTableViewController
+                let final = navi.childViewControllers[0] as! UserCenterTableViewController
                 final.leftItemDelegate = self
             }
         }//for
@@ -70,7 +70,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
         self.view.backgroundColor = mixiColor.mainBlack
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        self.slideBar = storyboard.instantiateViewControllerWithIdentifier("SlideBar")  as SlideBarViewController
+        self.slideBar = storyboard.instantiateViewControllerWithIdentifier("SlideBar") as! SlideBarViewController
         self.slideBar.delegate = self
         
         //设置侧边栏的frame

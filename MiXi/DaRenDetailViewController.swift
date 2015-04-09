@@ -54,7 +54,7 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
 
         
         let nib = UINib(nibName: "DaRenHeader", bundle: nil)
-        let newNaviBar = nib.instantiateWithOwner(nil, options: nil)[0] as DaRenHeaderView
+        let newNaviBar = nib.instantiateWithOwner(nil, options: nil)[0] as! DaRenHeaderView
         
         //直接把原来的tabbar干掉就可以了
         //这是我自己摸索出来的方法。。。
@@ -72,7 +72,7 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
         //更进一步，其实这里根本没有必要定制navigationBar，跳转过来的时候用modula就行了，只是为了练手自定义才这样写
         
         //上面这一坨后来封装到新的［可拆卸更换navibar］的MyNavigationViewController里面去了。。。。
-        let myNavi = self.navigationController as MyNavigationViewController
+        let myNavi = self.navigationController as! MyNavigationViewController
         myNavi.changeNewNaviBar(newNaviBar)
         newNaviBar.delegate = self
         
@@ -83,14 +83,14 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
 //-----------------4月6日新增，这里开始写入“作品列表”的controller
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
-        let workList = storyBoard.instantiateViewControllerWithIdentifier("DaRenPhotoTableViewController") as DaRenPhotoTableViewController
+        let workList = storyBoard.instantiateViewControllerWithIdentifier("DaRenPhotoTableViewController") as! DaRenPhotoTableViewController
         self.workListViewController = workList
         
         //照片的点击代理
         workListViewController.delegation = self
         
 //-----------------4月7日，这里开始写入“评价”的controller
-        let commentTable = storyBoard.instantiateViewControllerWithIdentifier("DaRenCommentTableViewController") as DaRenCommentTableViewController
+        let commentTable = storyBoard.instantiateViewControllerWithIdentifier("DaRenCommentTableViewController") as! DaRenCommentTableViewController
         self.commentView = commentTable
 
     }
@@ -213,7 +213,7 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
         
         UIView.animateWithDuration(0.5, animations: {[unowned self] in
 
-            let myNavi = self.navigationController as MyNavigationViewController
+            let myNavi = self.navigationController as! MyNavigationViewController
             if let header = myNavi.view.subviews[1] as? DaRenHeaderView{
                 header.bookBtn.backgroundColor = mixiColor.mainCoffie
             }
@@ -229,7 +229,7 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
         UIView.animateWithDuration(0.5, animations: {[unowned self] in
             self.mask.alpha = 0
             
-            let myNavi = self.navigationController as MyNavigationViewController
+            let myNavi = self.navigationController as! MyNavigationViewController
             if let header = myNavi.view.subviews[1] as? DaRenHeaderView{
                 header.bookBtn.backgroundColor = mixiColor.brown
             }

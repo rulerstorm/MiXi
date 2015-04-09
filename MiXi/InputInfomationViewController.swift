@@ -27,7 +27,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
     let userInfo = registerInfo()
     //保存数据的方法
     private func saveToModule(){
-        userInfo.userName = textNikname.text?
+        userInfo.userName = textNikname.text
         userInfo.userGender = (buttonMale.selected) ? (registerInfo.gender.male) : (registerInfo.gender.female)
         userInfo.userBudget = textBudget.text?.toInt()
 //        userInfo.userStyle 这个随时保存
@@ -77,7 +77,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
             let floatIndex = CGFloat(index)
             let realX = (floatIndex % 4 + 1) * gapW + floatIndex % 4 * btnW
             let realY = firstHight + CGFloat(index / 4) * ( gapH + btnH)
-            let btn = UIButton.buttonWithType(UIButtonType.System) as UIButton
+            let btn = UIButton.buttonWithType(UIButtonType.System) as! UIButton
             btn.frame = CGRectMake(realX, realY, btnW, btnH)
             btn.setTitle(btnName[index], forState: UIControlState.Normal)
             self.view.addSubview(btn)
@@ -148,7 +148,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         let userInfo = note.userInfo!
         let keyboardFrame = userInfo[UIKeyboardFrameEndUserInfoKey]?.CGRectValue()
         let transformY = keyboardFrame!.origin.y - self.view.frame.size.height
-        let duration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as Double
+        let duration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as! Double
         if transformY == 0 {    //这句是垃圾，为了修正前面那个shift＝200。。。
             shift = 0
         }

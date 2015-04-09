@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 LuRock. All rights reserved.
 //
 
-import UIkit
+import UIKit
 
 extension UIButton{
     

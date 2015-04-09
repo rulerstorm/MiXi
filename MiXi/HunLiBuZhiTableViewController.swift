@@ -247,7 +247,7 @@ class HunLiBuZhiTableViewController: UIViewController,UITableViewDataSource, UIT
     //区域选择按钮们的点击事件
     func distrectBtnPressed(sender: UIButton){
         if(sender.titleLabel?.text == "不限"){
-            for btn in distrectBar.subviews as [UIButton]{
+            for btn in distrectBar.subviews as! [UIButton]{
                 btn.selected = false
             }
             sender.selected = true
@@ -437,7 +437,7 @@ class HunLiBuZhiTableViewController: UIViewController,UITableViewDataSource, UIT
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("HunLiBuZhiCell", forIndexPath: indexPath) as HunLiBuZhiTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("HunLiBuZhiCell", forIndexPath: indexPath) as! HunLiBuZhiTableViewCell
         
         // Configure the cell...
         
