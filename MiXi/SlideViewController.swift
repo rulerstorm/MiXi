@@ -66,8 +66,8 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//测试用色
-self.view.backgroundColor = UIColor.redColor()
+        //主view的底色
+        self.view.backgroundColor = mixiColor.mainBlack
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         self.slideBar = storyboard.instantiateViewControllerWithIdentifier("SlideBar")  as SlideBarViewController
@@ -154,10 +154,16 @@ self.view.backgroundColor = UIColor.redColor()
 
     //代理方法，监听左边bar的点击，切换主view
     func changeMainViewToTarget(targetView: String?) {
-
+        
         let gesture = UIPanGestureRecognizer(target: self, action: Selector("didDrag:"))
         
         if let acticeView = self.activeMainViewControler?.view{   //有旧view
+            
+            //如果点击已经活动的view，那就不要切换了
+            if self.activeMainViewControler! == mainviewController[targetView!]!{
+                return
+            }
+            
             //记录目前view的位置，等下交给新view
 //          let originTransform = acticeView.frame   //如果这里用frame，则后面手势计算transform的时候会有严重bug
             let originTransform = acticeView.transform
