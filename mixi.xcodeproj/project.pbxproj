@@ -29,7 +29,9 @@
 		FE1DCEF21AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCEF11AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift */; };
 		FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */; };
 		FE27DD301AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */; };
-		FE7565A21AD43363001B27BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7565A11AD43363001B27BF /* Main.storyboard */; };
+		FE6823951AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */; };
+		FE68239D1AD9B83A00BCAAD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE68239C1AD9B83A00BCAAD4 /* Main.storyboard */; };
+		FE68239F1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */; };
 		FE8081A71AC6F05D00A70DE3 /* DaRenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */; };
 		FE8081A91AC6F0C500A70DE3 /* DaRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */; };
 		FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE929E981ACB82160095F04A /* DaRenHeader.xib */; };
@@ -84,7 +86,9 @@
 		FE1DCEF11AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenPhotoTableViewCell.swift; path = MiXi/DaRenPhotoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewController.swift; path = MiXi/HunLiBuZhiTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewCell.swift; path = MiXi/HunLiBuZhiTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		FE7565A11AD43363001B27BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookedBuZhiTableViewCell.swift; path = MiXi/BookedBuZhiTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		FE68239C1AD9B83A00BCAAD4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookedDaRenTableViewCell.swift; sourceTree = "<group>"; };
 		FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewController.swift; path = MiXi/DaRenTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewCell.swift; path = MiXi/DaRenTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE929E981ACB82160095F04A /* DaRenHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaRenHeader.xib; sourceTree = "<group>"; };
@@ -141,8 +145,8 @@
 		AC19A0081AB56EFD00167523 /* mixi */ = {
 			isa = PBXGroup;
 			children = (
-				FE7565A11AD43363001B27BF /* Main.storyboard */,
 				AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */,
+				FE68239C1AD9B83A00BCAAD4 /* Main.storyboard */,
 				AC323AB41ABEA41100F46563 /* views */,
 				AC1CF6A41AB72FE30095B58C /* Utility */,
 				AC1CF6A51AB73AB20095B58C /* Controller */,
@@ -234,6 +238,8 @@
 				FE929E981ACB82160095F04A /* DaRenHeader.xib */,
 				FEEE33BC1AD4042900707AE1 /* DaRenCommentTableViewCell.swift */,
 				FEEEF8131AC198ED0050B0D0 /* DaRenHeaderView.swift */,
+				FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */,
+				FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */,
 				FE1DCEF11AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift */,
 				FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */,
 				FEDFADAD1AC023610005464A /* MyTabBar.swift */,
@@ -325,7 +331,7 @@
 				AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */,
 				FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */,
 				AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */,
-				FE7565A21AD43363001B27BF /* Main.storyboard in Resources */,
+				FE68239D1AD9B83A00BCAAD4 /* Main.storyboard in Resources */,
 				FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */,
 				AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */,
 			);
@@ -371,6 +377,8 @@
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
 				FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */,
 				AC118A321ABCA1BC00A1915C /* mainTabbarController.swift in Sources */,
+				FE68239F1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift in Sources */,
+				FE6823951AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift in Sources */,
 				FEEEF8141AC198ED0050B0D0 /* DaRenHeaderView.swift in Sources */,
 				FE8081A91AC6F0C500A70DE3 /* DaRenTableViewCell.swift in Sources */,
 				FE8081A71AC6F05D00A70DE3 /* DaRenTableViewController.swift in Sources */,
@@ -482,7 +490,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = mixi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -500,7 +508,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = mixi/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
