@@ -43,11 +43,24 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
             }
         }//for
         
-    
+        
+        
+        //设置个人中心
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let persionalCenter = storyBoard.instantiateViewControllerWithIdentifier("personalCenter") as! PersonalCenterViewController
+        persionalCenter.delegate = self
+        
+        //包装一个导航控制器
+        let persionalCenterNavi = MyNavigationViewController(rootViewController: persionalCenter)
+        persionalCenterNavi.navigationBar.barTintColor = mixiColor.mainPink
+        //这个是导航控制器左右两个item的主题色
+        persionalCenterNavi.navigationBar.tintColor = mixiColor.mainCoffie
+        //改所有子bar上面的title颜色，这个字典里面的key和oc中有变化
+        persionalCenterNavi.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mixiColor.mainCoffie]
 
 
         self.mainviewController["首页"] = mainPageViewController
-        self.mainviewController["个人中心"] = UIViewController()
+        self.mainviewController["个人中心"] = persionalCenterNavi
             self.mainviewController["个人中心"]?.view.backgroundColor = UIColor.blueColor()
         self.mainviewController["发现"] = UIViewController()
             self.mainviewController["发现"]?.view.backgroundColor = UIColor.purpleColor()

@@ -30,8 +30,9 @@
 		FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */; };
 		FE27DD301AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */; };
 		FE6823951AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */; };
-		FE68239D1AD9B83A00BCAAD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE68239C1AD9B83A00BCAAD4 /* Main.storyboard */; };
 		FE68239F1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */; };
+		FE6823B31AD9DD2E00BCAAD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6823B21AD9DD2E00BCAAD4 /* Main.storyboard */; };
+		FE6823B51AD9DD5500BCAAD4 /* PersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6823B41AD9DD5500BCAAD4 /* PersonalCenterViewController.swift */; };
 		FE8081A71AC6F05D00A70DE3 /* DaRenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */; };
 		FE8081A91AC6F0C500A70DE3 /* DaRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */; };
 		FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE929E981ACB82160095F04A /* DaRenHeader.xib */; };
@@ -87,8 +88,9 @@
 		FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewController.swift; path = MiXi/HunLiBuZhiTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewCell.swift; path = MiXi/HunLiBuZhiTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookedBuZhiTableViewCell.swift; path = MiXi/BookedBuZhiTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		FE68239C1AD9B83A00BCAAD4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookedDaRenTableViewCell.swift; sourceTree = "<group>"; };
+		FE6823B21AD9DD2E00BCAAD4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE6823B41AD9DD5500BCAAD4 /* PersonalCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCenterViewController.swift; sourceTree = "<group>"; };
 		FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewController.swift; path = MiXi/DaRenTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewCell.swift; path = MiXi/DaRenTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE929E981ACB82160095F04A /* DaRenHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaRenHeader.xib; sourceTree = "<group>"; };
@@ -146,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */,
-				FE68239C1AD9B83A00BCAAD4 /* Main.storyboard */,
+				FE6823B21AD9DD2E00BCAAD4 /* Main.storyboard */,
 				AC323AB41ABEA41100F46563 /* views */,
 				AC1CF6A41AB72FE30095B58C /* Utility */,
 				AC1CF6A51AB73AB20095B58C /* Controller */,
@@ -211,6 +213,7 @@
 				FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */,
 				FEEEF80B1AC183A30050B0D0 /* DaRenDetailViewController.swift */,
 				ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */,
+				FE6823B41AD9DD5500BCAAD4 /* PersonalCenterViewController.swift */,
 				ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */,
 				AC7CD2081ABF1351007E2B20 /* DaRenViewController.swift */,
 				AC7CD20A1ABF1375007E2B20 /* HunLiBuZhiViewController.swift */,
@@ -331,7 +334,7 @@
 				AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */,
 				FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */,
 				AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */,
-				FE68239D1AD9B83A00BCAAD4 /* Main.storyboard in Resources */,
+				FE6823B31AD9DD2E00BCAAD4 /* Main.storyboard in Resources */,
 				FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */,
 				AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */,
 			);
@@ -365,6 +368,7 @@
 				AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */,
 				FEEE33BD1AD4042900707AE1 /* DaRenCommentTableViewCell.swift in Sources */,
 				AC19B47E1ABD66BD00E332C1 /* ExtendingUIButton.swift in Sources */,
+				FE6823B51AD9DD5500BCAAD4 /* PersonalCenterViewController.swift in Sources */,
 				ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */,
 				AC7CD20D1ABF171D007E2B20 /* RegisterViewController.swift in Sources */,
 				AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */,

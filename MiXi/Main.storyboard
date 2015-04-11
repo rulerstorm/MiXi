@@ -31,7 +31,7 @@
         <!--登陆-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -118,7 +118,7 @@
         <!--Slide View Controller-->
         <scene sceneID="bUg-wV-5de">
             <objects>
-                <viewController id="CKT-yC-lxP" customClass="SlideViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CKT-yC-lxP" customClass="SlideViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="leI-5i-cmh"/>
                         <viewControllerLayoutGuide type="bottom" id="YqU-xd-RQp"/>
@@ -136,7 +136,7 @@
         <!--Da Ren View Controller-->
         <scene sceneID="2t5-8K-mzp">
             <objects>
-                <viewController storyboardIdentifier="daren" id="q09-xd-9RI" customClass="DaRenViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="daren" id="q09-xd-9RI" customClass="DaRenViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b6I-Kf-sMd"/>
                         <viewControllerLayoutGuide type="bottom" id="pwN-6o-V6i"/>
@@ -238,7 +238,7 @@
         <!--Da Ren Table View Controller-->
         <scene sceneID="EK3-bO-1cc">
             <objects>
-                <viewController id="5rQ-Z3-Ocf" customClass="DaRenTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5rQ-Z3-Ocf" customClass="DaRenTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6MV-dR-5kS"/>
                         <viewControllerLayoutGuide type="bottom" id="JiE-ot-Jaq"/>
@@ -252,7 +252,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.92156862750000001" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenCell" id="D5F-EO-qxd" customClass="DaRenTableViewCell" customModule="mixi" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenCell" id="D5F-EO-qxd" customClass="DaRenTableViewCell" customModule="justSave" customModuleProvider="target">
                                         <rect key="frame" x="10" y="111" width="320" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D5F-EO-qxd" id="03E-MQ-zPq">
@@ -491,7 +491,7 @@
         <!--Da Ren Detail View Controller-->
         <scene sceneID="NU8-H6-5Qw">
             <objects>
-                <viewController id="0ia-cY-MEt" customClass="DaRenDetailViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0ia-cY-MEt" customClass="DaRenDetailViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7UL-Cf-RI9"/>
                         <viewControllerLayoutGuide type="bottom" id="WcJ-xn-r2P"/>
@@ -604,7 +604,7 @@
         <!--Slide Bar View Controller-->
         <scene sceneID="WYA-vY-2h5">
             <objects>
-                <viewController storyboardIdentifier="SlideBar" id="gaa-6d-vR1" customClass="SlideBarViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SlideBar" id="gaa-6d-vR1" customClass="SlideBarViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pKH-1i-kDI"/>
                         <viewControllerLayoutGuide type="bottom" id="rvN-I3-LgQ"/>
@@ -704,12 +704,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y92-9L-Q38" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1112.5" y="1352"/>
+            <point key="canvasLocation" x="-1157.5" y="2611"/>
+        </scene>
+        <!--Personal Center View Controller-->
+        <scene sceneID="Gfx-88-DoV">
+            <objects>
+                <viewController storyboardIdentifier="personalCenter" id="sAe-jz-gHY" customClass="PersonalCenterViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o69-eh-R6x"/>
+                        <viewControllerLayoutGuide type="bottom" id="Olt-6O-5SS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UYN-bG-sgC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小碎花" translatesAutoresizingMaskIntoConstraints="NO" id="9JS-9m-E9A">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KVs-2L-bPg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ST-5F-BEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-718" y="2611"/>
         </scene>
         <!--User Center Table View Controller-->
         <scene sceneID="dUi-Yo-RVK">
             <objects>
-                <viewController storyboardIdentifier="userCenter" id="qxq-cX-gnW" customClass="UserCenterTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userCenter" id="qxq-cX-gnW" customClass="UserCenterTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1GI-nN-gwn"/>
                         <viewControllerLayoutGuide type="bottom" id="cyt-AH-00H"/>
@@ -775,7 +799,7 @@
                                 <rect key="frame" x="0.0" y="101" width="320" height="425"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookedBuZhi" rowHeight="114" id="rdo-59-Vlp" customClass="BookedBuZhiTableViewCell" customModule="mixi" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookedBuZhi" rowHeight="114" id="rdo-59-Vlp" customClass="BookedBuZhiTableViewCell" customModule="justSave" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rdo-59-Vlp" id="fVC-LM-4cE">
@@ -851,7 +875,7 @@
                                             <outlet property="bookTimeBtn" destination="Bmy-Oi-I37" id="mOA-ix-p9P"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookedDaRen" rowHeight="114" id="ld8-rh-XjB" customClass="BookedDaRenTableViewCell" customModule="mixi" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookedDaRen" rowHeight="114" id="ld8-rh-XjB" customClass="BookedDaRenTableViewCell" customModule="justSave" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ld8-rh-XjB" id="ueD-7v-bHw">
@@ -1063,7 +1087,7 @@
         <!--Hun Li Bu Zhi Table View Controller-->
         <scene sceneID="yIW-1S-Jpl">
             <objects>
-                <viewController id="Khh-Xv-wnR" customClass="HunLiBuZhiTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Khh-Xv-wnR" customClass="HunLiBuZhiTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tg7-lP-9j2"/>
                         <viewControllerLayoutGuide type="bottom" id="8Hi-s2-v9c"/>
@@ -1077,7 +1101,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.92156862750000001" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HunLiBuZhiCell" id="iiQ-pP-kMx" userLabel="HunLiBuZhiCell" customClass="HunLiBuZhiTableViewCell" customModule="mixi" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HunLiBuZhiCell" id="iiQ-pP-kMx" userLabel="HunLiBuZhiCell" customClass="HunLiBuZhiTableViewCell" customModule="justSave" customModuleProvider="target">
                                         <rect key="frame" x="10" y="111" width="320" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iiQ-pP-kMx" id="cT9-Vl-sE6">
@@ -1309,7 +1333,7 @@
         <!--Hun Li Bu Zhi View Controller-->
         <scene sceneID="35Z-0r-HHh">
             <objects>
-                <viewController storyboardIdentifier="buZhi" id="zbp-r3-pfI" customClass="HunLiBuZhiViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="buZhi" id="zbp-r3-pfI" customClass="HunLiBuZhiViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YlB-KV-8H8"/>
                         <viewControllerLayoutGuide type="bottom" id="KI3-hF-PNi"/>
@@ -1427,7 +1451,7 @@
         <!--注册-->
         <scene sceneID="6uv-QF-7CC">
             <objects>
-                <viewController id="HIK-Ux-wgG" customClass="RegisterViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HIK-Ux-wgG" customClass="RegisterViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5pL-Ii-dp2"/>
                         <viewControllerLayoutGuide type="bottom" id="tu9-ke-BQN"/>
@@ -1513,7 +1537,7 @@
         <!--填写资料-->
         <scene sceneID="0Ni-Rl-xbC">
             <objects>
-                <viewController id="bPZ-Nx-5nh" customClass="InputInfomationViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bPZ-Nx-5nh" customClass="InputInfomationViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jag-3t-2pZ"/>
                         <viewControllerLayoutGuide type="bottom" id="tN0-rh-aeA"/>
@@ -1650,13 +1674,13 @@
         <!--Da Ren Photo Table View Controller-->
         <scene sceneID="1Ym-hs-JbA">
             <objects>
-                <tableViewController storyboardIdentifier="DaRenPhotoTableViewController" id="vtd-p6-0rH" customClass="DaRenPhotoTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DaRenPhotoTableViewController" id="vtd-p6-0rH" customClass="DaRenPhotoTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="etL-ux-5oD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenPhotoCell" id="oYH-Yx-KBA" customClass="DaRenPhotoTableViewCell" customModule="mixi" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenPhotoCell" id="oYH-Yx-KBA" customClass="DaRenPhotoTableViewCell" customModule="justSave" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oYH-Yx-KBA" id="Bxi-eK-qYA">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1756,13 +1780,13 @@
         <!--Da Ren Comment Table View Controller-->
         <scene sceneID="agq-wP-EgG">
             <objects>
-                <tableViewController storyboardIdentifier="DaRenCommentTableViewController" id="uAJ-Gh-7rg" customClass="DaRenCommentTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DaRenCommentTableViewController" id="uAJ-Gh-7rg" customClass="DaRenCommentTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" id="pTr-wI-5X5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenCommentCell" id="jyH-vQ-q67" customClass="DaRenCommentTableViewCell" customModule="mixi" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenCommentCell" id="jyH-vQ-q67" customClass="DaRenCommentTableViewCell" customModule="justSave" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jyH-vQ-q67" id="j7V-DK-Id4">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1848,6 +1872,7 @@
         <image name="商家图标－切片iphone5_06" width="15" height="16"/>
         <image name="定位－icon" width="8" height="10"/>
         <image name="对号－白色" width="17" height="12"/>
+        <image name="小碎花" width="320" height="171"/>
         <image name="收藏白色iphone5_15" width="16" height="16"/>
         <image name="时间图标" width="16" height="16"/>
         <image name="更多" width="18" height="12"/>

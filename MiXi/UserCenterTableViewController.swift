@@ -21,6 +21,11 @@ class UserCenterTableViewController: UIViewController, BookedBuZhiDaRenCellDeleg
         bookSucceedView.layer.cornerRadius = 4
         bookDateView.layer.masksToBounds = true
         bookSucceedView.layer.masksToBounds = true
+        //还是为ip4微调一下吧。。。
+        if self.view.frame.height == 480{
+            self.bookDateView.transform = CGAffineTransformMakeTranslation(0, -50)
+        }
+        
         
         
         //设置左上角item
