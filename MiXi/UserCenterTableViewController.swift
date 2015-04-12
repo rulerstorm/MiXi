@@ -135,7 +135,8 @@ class UserCenterTableViewController: UIViewController, BookedBuZhiDaRenCellDeleg
                 UIView.animateWithDuration(0.3, animations: {[unowned self] in
                     self.bookSucceedView.alpha = 1
                 })
-            } }
+            }
+        }
         
     }
     

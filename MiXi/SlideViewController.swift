@@ -171,6 +171,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
     
     //代理方法，监听左上角点击
     func leftBarButtunClicked(){
+        self.view.endEditing(true)
         if(self.activeMainViewControler.view.frame.minX == 0){
             UIView.animateWithDuration(0.5, animations: {
                 self.activeMainViewControler.view.transform = CGAffineTransformMakeTranslation(self.slideBar.view.frame.width, 0)

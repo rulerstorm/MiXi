@@ -12,6 +12,11 @@ class CustomerServiceViewController: UIViewController {
     
     weak var delegate :leftBarButtunDelegate!
     
+    //两个子controller
+    var ChatController :InquiryChatTableViewController!
+    var ComplainController :ComplainViewController!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,10 +29,23 @@ class CustomerServiceViewController: UIViewController {
         //这个是网上查来的。。。好神奇，可以左移item的位置
         self.navigationItem.leftBarButtonItem?.imageInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
         
+        //从storyBoard中读取两个contorller
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let chat = storyBoard.instantiateViewControllerWithIdentifier("inquiry") as! InquiryChatTableViewController
+        let complain = storyBoard.instantiateViewControllerWithIdentifier("complain") as! ComplainViewController
+        
+        self.ChatController = chat
+        self.ComplainController = complain
+        
+        if self.view.frame.height == 480{
+            self.contentView.frame = CGRect(x: 0, y: 125, width: 320, height: 355)
+        }
+        
+        
+        
+        
         //默认选中“客服咨询”按钮
-        inquiryBtn.selected = true
-        
-        
+        inquiryBtnSelected = true
     }
     
     
@@ -45,9 +63,9 @@ class CustomerServiceViewController: UIViewController {
                 //这里需要给view设置数据，就是传modle
                 
                 
-                //                contentView.insertSubview(commentView.view,atIndex: 0)
+                contentView.insertSubview(ChatController.view,atIndex: 0)
             }else{
-                //                self.commentView.view.removeFromSuperview()
+                self.ChatController.view.removeFromSuperview()
             }
         }
     }
@@ -61,9 +79,9 @@ class CustomerServiceViewController: UIViewController {
                 //这里需要给view设置数据，就是传modle
                 
                 
-                //                contentView.insertSubview(commentView.view,atIndex: 0)
+                contentView.insertSubview(ComplainController.view,atIndex: 0)
             }else{
-                //                self.commentView.view.removeFromSuperview()
+                self.ComplainController.view.removeFromSuperview()
             }
         }
     }
