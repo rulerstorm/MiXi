@@ -195,6 +195,8 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
                 return
             }
             
+            leftBarButtunClicked()
+            
             //记录目前view的位置，等下交给新view
 //          let originTransform = acticeView.frame   //如果这里用frame，则后面手势计算transform的时候会有严重bug
             let originTransform = acticeView.transform

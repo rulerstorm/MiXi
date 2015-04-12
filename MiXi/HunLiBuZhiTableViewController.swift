@@ -415,7 +415,7 @@ class HunLiBuZhiTableViewController: UIViewController,UITableViewDataSource, UIT
     override func viewWillAppear(animated: Bool) {
         overAllBar.hidden = false
         priceSearchBar.hidden = false
-        self.navigationItem.title = "摄影"
+        self.navigationItem.title = "婚礼布置"
     }
     
     
