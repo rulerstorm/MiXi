@@ -244,9 +244,6 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
             
             
         })
-        
-
-
     }
     
     

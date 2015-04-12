@@ -45,7 +45,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
         
         
         
-        //设置个人中心
+        //----------------设置个人中心--------------------------------------------------------
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let persionalCenter = storyBoard.instantiateViewControllerWithIdentifier("personalCenter") as! PersonalCenterViewController
         persionalCenter.delegate = self
@@ -59,13 +59,30 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
         persionalCenterNavi.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mixiColor.mainCoffie]
 
 
+        //----------------设置客服中心--------------------------------------------------------
+        let customerService = storyBoard.instantiateViewControllerWithIdentifier("CustomerService") as! CustomerServiceViewController
+        customerService.delegate = self
+        
+        //包装一个导航控制器
+        let customerServiceNavi = MyNavigationViewController(rootViewController: customerService)
+        customerServiceNavi.navigationBar.barTintColor = mixiColor.mainPink
+        //这个是导航控制器左右两个item的主题色
+        customerServiceNavi.navigationBar.tintColor = mixiColor.mainCoffie
+        //改所有子bar上面的title颜色，这个字典里面的key和oc中有变化
+        customerServiceNavi.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mixiColor.mainCoffie]
+        
+        
+        
+        
+        
         self.mainviewController["首页"] = mainPageViewController
         self.mainviewController["个人中心"] = persionalCenterNavi
-            self.mainviewController["个人中心"]?.view.backgroundColor = UIColor.blueColor()
+
         self.mainviewController["发现"] = UIViewController()
             self.mainviewController["发现"]?.view.backgroundColor = UIColor.purpleColor()
-        self.mainviewController["客服中心"] = UIViewController()
-            self.mainviewController["客服中心"]?.view.backgroundColor = UIColor.greenColor()
+        
+        self.mainviewController["客服中心"] = customerServiceNavi
+
 
         
         changeMainViewToTarget("首页")

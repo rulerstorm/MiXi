@@ -31,7 +31,7 @@
         <!--登陆-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -118,7 +118,7 @@
         <!--Slide View Controller-->
         <scene sceneID="bUg-wV-5de">
             <objects>
-                <viewController id="CKT-yC-lxP" customClass="SlideViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CKT-yC-lxP" customClass="SlideViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="leI-5i-cmh"/>
                         <viewControllerLayoutGuide type="bottom" id="YqU-xd-RQp"/>
@@ -136,7 +136,7 @@
         <!--Da Ren View Controller-->
         <scene sceneID="2t5-8K-mzp">
             <objects>
-                <viewController storyboardIdentifier="daren" id="q09-xd-9RI" customClass="DaRenViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="daren" id="q09-xd-9RI" customClass="DaRenViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b6I-Kf-sMd"/>
                         <viewControllerLayoutGuide type="bottom" id="pwN-6o-V6i"/>
@@ -238,7 +238,7 @@
         <!--Da Ren Table View Controller-->
         <scene sceneID="EK3-bO-1cc">
             <objects>
-                <viewController id="5rQ-Z3-Ocf" customClass="DaRenTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5rQ-Z3-Ocf" customClass="DaRenTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6MV-dR-5kS"/>
                         <viewControllerLayoutGuide type="bottom" id="JiE-ot-Jaq"/>
@@ -252,7 +252,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.92156862750000001" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenCell" id="D5F-EO-qxd" customClass="DaRenTableViewCell" customModule="justSave" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenCell" id="D5F-EO-qxd" customClass="DaRenTableViewCell" customModule="mixi" customModuleProvider="target">
                                         <rect key="frame" x="10" y="111" width="320" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D5F-EO-qxd" id="03E-MQ-zPq">
@@ -491,7 +491,7 @@
         <!--Da Ren Detail View Controller-->
         <scene sceneID="NU8-H6-5Qw">
             <objects>
-                <viewController id="0ia-cY-MEt" customClass="DaRenDetailViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0ia-cY-MEt" customClass="DaRenDetailViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7UL-Cf-RI9"/>
                         <viewControllerLayoutGuide type="bottom" id="WcJ-xn-r2P"/>
@@ -604,7 +604,7 @@
         <!--Slide Bar View Controller-->
         <scene sceneID="WYA-vY-2h5">
             <objects>
-                <viewController storyboardIdentifier="SlideBar" id="gaa-6d-vR1" customClass="SlideBarViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SlideBar" id="gaa-6d-vR1" customClass="SlideBarViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pKH-1i-kDI"/>
                         <viewControllerLayoutGuide type="bottom" id="rvN-I3-LgQ"/>
@@ -704,12 +704,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y92-9L-Q38" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1157.5" y="2611"/>
+            <point key="canvasLocation" x="-1427.5" y="2983"/>
         </scene>
         <!--Personal Center View Controller-->
         <scene sceneID="Gfx-88-DoV">
             <objects>
-                <viewController storyboardIdentifier="personalCenter" id="sAe-jz-gHY" customClass="PersonalCenterViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="personalCenter" id="sAe-jz-gHY" customClass="PersonalCenterViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o69-eh-R6x"/>
                         <viewControllerLayoutGuide type="bottom" id="Olt-6O-5SS"/>
@@ -719,21 +719,169 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小碎花" translatesAutoresizingMaskIntoConstraints="NO" id="9JS-9m-E9A">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蜜喜蜜喜－切片iphone5_107" translatesAutoresizingMaskIntoConstraints="NO" id="Nae-Fo-FYQ">
+                                <rect key="frame" x="118" y="91" width="85" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luce" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jor-Rd-6Av">
+                                <rect key="frame" x="88" y="178" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="26岁" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSZ-L0-vwn">
+                                <rect key="frame" x="154" y="180" width="42" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－性别iphone5_05" translatesAutoresizingMaskIntoConstraints="NO" id="Lk0-hH-i83">
+                                <rect key="frame" x="204" y="182" width="9" height="14"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tre-Vt-56B">
+                                <rect key="frame" x="10" y="215" width="300" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAh-cV-4Rr">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="我的收藏" image="蜜喜蜜喜－切片iphone5_08">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="蜜喜蜜喜－侧滑栏切片_02">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="allBtnClicked:" destination="gaa-6d-vR1" eventType="touchUpInside" id="ueT-wD-eEX"/>
+                                            <segue destination="V1U-eT-ln2" kind="push" id="ez3-Vd-ce8"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－指示图标" translatesAutoresizingMaskIntoConstraints="NO" id="DFj-Gl-QP6">
+                                        <rect key="frame" x="282" y="10" width="10" height="15"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edY-md-x70">
+                                <rect key="frame" x="10" y="256" width="300" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlS-zx-Exw">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="我的预约" image="蜜喜蜜喜－切片iphone5_09">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="蜜喜蜜喜－侧滑栏切片_02">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="allBtnClicked:" destination="gaa-6d-vR1" eventType="touchUpInside" id="19F-Ne-2BL"/>
+                                            <segue destination="Lz5-NB-hLj" kind="push" id="tpy-6b-Tyd"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－指示图标" translatesAutoresizingMaskIntoConstraints="NO" id="7fU-9u-V5V">
+                                        <rect key="frame" x="282" y="10" width="10" height="15"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZrH-NN-B9C">
+                                <rect key="frame" x="10" y="297" width="300" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnO-3g-kF1">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="待评价订单" image="蜜喜蜜喜－切片iphone5_12">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="蜜喜蜜喜－侧滑栏切片_02">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="allBtnClicked:" destination="gaa-6d-vR1" eventType="touchUpInside" id="vvP-re-8B2"/>
+                                            <segue destination="Owt-8A-spl" kind="push" id="eFN-hh-eTg"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－指示图标" translatesAutoresizingMaskIntoConstraints="NO" id="90S-hP-MBV">
+                                        <rect key="frame" x="282" y="10" width="10" height="15"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0GS-ON-HP4">
+                                <rect key="frame" x="10" y="338" width="300" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZl-EG-lu6">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="清除缓存" image="蜜喜蜜喜－切片iphone5_11">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="蜜喜蜜喜－侧滑栏切片_02">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="allBtnClicked:" destination="gaa-6d-vR1" eventType="touchUpInside" id="hrK-dl-qmo"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－指示图标" translatesAutoresizingMaskIntoConstraints="NO" id="GEv-gL-fh8">
+                                        <rect key="frame" x="282" y="10" width="10" height="15"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rL9-ci-2hI">
+                                <rect key="frame" x="10" y="379" width="300" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5j-Ic-NdP">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="版本更新" image="蜜喜蜜喜－切片iphone5_10">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="蜜喜蜜喜－侧滑栏切片_02">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="allBtnClicked:" destination="gaa-6d-vR1" eventType="touchUpInside" id="r13-Qh-ZdP"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－指示图标" translatesAutoresizingMaskIntoConstraints="NO" id="RJv-T9-MRG">
+                                        <rect key="frame" x="282" y="10" width="10" height="15"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="KVs-2L-bPg"/>
+                    <connections>
+                        <outlet property="cleanBtn" destination="fZl-EG-lu6" id="zhv-pe-Srm"/>
+                        <outlet property="myBookBtn" destination="FlS-zx-Exw" id="Jtm-k1-IPc"/>
+                        <outlet property="myShouCangBtn" destination="xAh-cV-4Rr" id="gt5-4F-8La"/>
+                        <outlet property="upDateBtn" destination="y5j-Ic-NdP" id="x1J-sI-0QV"/>
+                        <outlet property="waitCommentBtn" destination="nnO-3g-kF1" id="Nl6-zW-oKp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ST-5F-BEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-718" y="2611"/>
+            <point key="canvasLocation" x="-1048" y="2983"/>
         </scene>
         <!--User Center Table View Controller-->
         <scene sceneID="dUi-Yo-RVK">
             <objects>
-                <viewController storyboardIdentifier="userCenter" id="qxq-cX-gnW" customClass="UserCenterTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userCenter" id="qxq-cX-gnW" customClass="UserCenterTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1GI-nN-gwn"/>
                         <viewControllerLayoutGuide type="bottom" id="cyt-AH-00H"/>
@@ -799,7 +947,7 @@
                                 <rect key="frame" x="0.0" y="101" width="320" height="425"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookedBuZhi" rowHeight="114" id="rdo-59-Vlp" customClass="BookedBuZhiTableViewCell" customModule="justSave" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookedBuZhi" rowHeight="114" id="rdo-59-Vlp" customClass="BookedBuZhiTableViewCell" customModule="mixi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rdo-59-Vlp" id="fVC-LM-4cE">
@@ -875,7 +1023,7 @@
                                             <outlet property="bookTimeBtn" destination="Bmy-Oi-I37" id="mOA-ix-p9P"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookedDaRen" rowHeight="114" id="ld8-rh-XjB" customClass="BookedDaRenTableViewCell" customModule="justSave" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookedDaRen" rowHeight="114" id="ld8-rh-XjB" customClass="BookedDaRenTableViewCell" customModule="mixi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ld8-rh-XjB" id="ueD-7v-bHw">
@@ -1087,7 +1235,7 @@
         <!--Hun Li Bu Zhi Table View Controller-->
         <scene sceneID="yIW-1S-Jpl">
             <objects>
-                <viewController id="Khh-Xv-wnR" customClass="HunLiBuZhiTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Khh-Xv-wnR" customClass="HunLiBuZhiTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tg7-lP-9j2"/>
                         <viewControllerLayoutGuide type="bottom" id="8Hi-s2-v9c"/>
@@ -1101,7 +1249,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.92156862750000001" green="0.87843137250000003" blue="0.87843137250000003" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HunLiBuZhiCell" id="iiQ-pP-kMx" userLabel="HunLiBuZhiCell" customClass="HunLiBuZhiTableViewCell" customModule="justSave" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HunLiBuZhiCell" id="iiQ-pP-kMx" userLabel="HunLiBuZhiCell" customClass="HunLiBuZhiTableViewCell" customModule="mixi" customModuleProvider="target">
                                         <rect key="frame" x="10" y="111" width="320" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iiQ-pP-kMx" id="cT9-Vl-sE6">
@@ -1333,7 +1481,7 @@
         <!--Hun Li Bu Zhi View Controller-->
         <scene sceneID="35Z-0r-HHh">
             <objects>
-                <viewController storyboardIdentifier="buZhi" id="zbp-r3-pfI" customClass="HunLiBuZhiViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="buZhi" id="zbp-r3-pfI" customClass="HunLiBuZhiViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YlB-KV-8H8"/>
                         <viewControllerLayoutGuide type="bottom" id="KI3-hF-PNi"/>
@@ -1451,7 +1599,7 @@
         <!--注册-->
         <scene sceneID="6uv-QF-7CC">
             <objects>
-                <viewController id="HIK-Ux-wgG" customClass="RegisterViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HIK-Ux-wgG" customClass="RegisterViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5pL-Ii-dp2"/>
                         <viewControllerLayoutGuide type="bottom" id="tu9-ke-BQN"/>
@@ -1537,7 +1685,7 @@
         <!--填写资料-->
         <scene sceneID="0Ni-Rl-xbC">
             <objects>
-                <viewController id="bPZ-Nx-5nh" customClass="InputInfomationViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bPZ-Nx-5nh" customClass="InputInfomationViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jag-3t-2pZ"/>
                         <viewControllerLayoutGuide type="bottom" id="tN0-rh-aeA"/>
@@ -1674,13 +1822,13 @@
         <!--Da Ren Photo Table View Controller-->
         <scene sceneID="1Ym-hs-JbA">
             <objects>
-                <tableViewController storyboardIdentifier="DaRenPhotoTableViewController" id="vtd-p6-0rH" customClass="DaRenPhotoTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DaRenPhotoTableViewController" id="vtd-p6-0rH" customClass="DaRenPhotoTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="etL-ux-5oD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenPhotoCell" id="oYH-Yx-KBA" customClass="DaRenPhotoTableViewCell" customModule="justSave" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenPhotoCell" id="oYH-Yx-KBA" customClass="DaRenPhotoTableViewCell" customModule="mixi" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oYH-Yx-KBA" id="Bxi-eK-qYA">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1780,13 +1928,13 @@
         <!--Da Ren Comment Table View Controller-->
         <scene sceneID="agq-wP-EgG">
             <objects>
-                <tableViewController storyboardIdentifier="DaRenCommentTableViewController" id="uAJ-Gh-7rg" customClass="DaRenCommentTableViewController" customModule="justSave" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DaRenCommentTableViewController" id="uAJ-Gh-7rg" customClass="DaRenCommentTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" id="pTr-wI-5X5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenCommentCell" id="jyH-vQ-q67" customClass="DaRenCommentTableViewCell" customModule="justSave" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenCommentCell" id="jyH-vQ-q67" customClass="DaRenCommentTableViewCell" customModule="mixi" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jyH-vQ-q67" id="j7V-DK-Id4">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -1862,10 +2010,224 @@
             </objects>
             <point key="canvasLocation" x="1174" y="657"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="2Md-R7-mTa">
+            <objects>
+                <viewController id="V1U-eT-ln2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wNK-x3-uBy"/>
+                        <viewControllerLayoutGuide type="bottom" id="pKi-Zq-ZvN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="REU-M1-QHz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小碎花" translatesAutoresizingMaskIntoConstraints="NO" id="gTd-qF-xet">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蜜喜蜜喜－切片iphone5_107" translatesAutoresizingMaskIntoConstraints="NO" id="3PS-mn-eUw">
+                                <rect key="frame" x="118" y="91" width="85" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luce" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUT-IM-2nz">
+                                <rect key="frame" x="88" y="178" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="26岁" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6d-u3-Gbo">
+                                <rect key="frame" x="154" y="180" width="42" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－性别iphone5_05" translatesAutoresizingMaskIntoConstraints="NO" id="YXA-57-7Vg">
+                                <rect key="frame" x="204" y="182" width="9" height="14"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k3H-kP-Y2W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oUy-JL-1gL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-529" y="2531"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uKT-Al-77O">
+            <objects>
+                <viewController id="Lz5-NB-hLj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dav-j8-pTB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ft9-2q-xag"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kf3-2A-dPn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小碎花" translatesAutoresizingMaskIntoConstraints="NO" id="GYk-51-lzy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蜜喜蜜喜－切片iphone5_107" translatesAutoresizingMaskIntoConstraints="NO" id="6kP-PO-j9x">
+                                <rect key="frame" x="118" y="91" width="85" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luce" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zta-4E-G6Z">
+                                <rect key="frame" x="88" y="178" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="26岁" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oA-jw-w6U">
+                                <rect key="frame" x="154" y="180" width="42" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－性别iphone5_05" translatesAutoresizingMaskIntoConstraints="NO" id="CRG-w7-InI">
+                                <rect key="frame" x="204" y="182" width="9" height="14"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fPD-o6-gSu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBj-C9-PWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="2917"/>
+        </scene>
+        <!--Customer Service View Controller-->
+        <scene sceneID="grq-4Q-Ken">
+            <objects>
+                <viewController storyboardIdentifier="CustomerService" id="672-WX-iSh" customClass="CustomerServiceViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oC5-X7-paC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uhd-rG-Uj6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Skf-Fd-t4K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20i-vu-bJg" userLabel="TwoView">
+                                <rect key="frame" x="44" y="70" width="233" height="27"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蜜喜蜜喜－切片iphone5_101" translatesAutoresizingMaskIntoConstraints="NO" id="4vg-r4-Lfj">
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="26"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6t-Dg-tNJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="客服咨询">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnInquiryClicked" destination="672-WX-iSh" eventType="touchUpInside" id="fUe-Qn-tX9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob0-jm-HI9">
+                                        <rect key="frame" x="116" y="0.0" width="117" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="投诉">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnComplainClicked" destination="672-WX-iSh" eventType="touchUpInside" id="bcC-eU-ZJe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="蜜喜天使 Angle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjy-y8-kek">
+                                <rect key="frame" x="67" y="105" width="89" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.64705882349999999" green="0.5568627451" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正在为您服务" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCo-3R-PiP">
+                                <rect key="frame" x="164" y="105" width="89" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.64705882349999999" green="0.5568627451" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNs-UQ-ukr" userLabel="contentView">
+                                <rect key="frame" x="0.0" y="125" width="320" height="443"/>
+                                <color key="backgroundColor" red="1" green="0.97672771970000005" blue="0.78776274030000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="complainBtn" destination="ob0-jm-HI9" id="P1x-cr-PWL"/>
+                        <outlet property="contentView" destination="NNs-UQ-ukr" id="Pqv-tp-ZlH"/>
+                        <outlet property="inquiryBtn" destination="f6t-Dg-tNJ" id="jRx-Zj-Y85"/>
+                        <outlet property="twoBarImageView" destination="4vg-r4-Lfj" id="ecU-xP-ip2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="233-8b-5a1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1048" y="3877"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3Q6-NR-ADT">
+            <objects>
+                <viewController id="Owt-8A-spl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f6H-G6-su1"/>
+                        <viewControllerLayoutGuide type="bottom" id="eBu-ot-WIE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CGG-OZ-xsy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小碎花" translatesAutoresizingMaskIntoConstraints="NO" id="GIL-z0-Z4N">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蜜喜蜜喜－切片iphone5_107" translatesAutoresizingMaskIntoConstraints="NO" id="QI4-ch-LPU">
+                                <rect key="frame" x="118" y="91" width="85" height="85"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luce" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mT-xf-kO6">
+                                <rect key="frame" x="88" y="178" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="26岁" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WY9-BJ-W3a">
+                                <rect key="frame" x="154" y="180" width="42" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－性别iphone5_05" translatesAutoresizingMaskIntoConstraints="NO" id="7uK-EK-mVr">
+                                <rect key="frame" x="204" y="182" width="9" height="14"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fp2-pu-az7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Sr-0X-oeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-529" y="3248"/>
+        </scene>
     </scenes>
     <resources>
         <image name="iphone5_93" width="63" height="32"/>
         <image name="iphone5_94" width="63" height="32"/>
+        <image name="个人中心－性别iphone5_05" width="9" height="13"/>
+        <image name="个人中心－指示图标" width="11" height="20"/>
         <image name="关闭" width="16" height="16"/>
         <image name="切片iphone5_91" width="77" height="40"/>
         <image name="切片iphone5_92" width="77" height="40"/>
@@ -1883,8 +2245,13 @@
         <image name="蜜喜蜜喜－侧滑栏切片_06" width="25" height="22"/>
         <image name="蜜喜蜜喜－侧滑栏切片_07" width="25" height="22"/>
         <image name="蜜喜蜜喜－侧滑栏切片_08" width="26" height="16"/>
+        <image name="蜜喜蜜喜－切片iphone5_08" width="16" height="16"/>
+        <image name="蜜喜蜜喜－切片iphone5_09" width="16" height="16"/>
+        <image name="蜜喜蜜喜－切片iphone5_10" width="16" height="16"/>
+        <image name="蜜喜蜜喜－切片iphone5_101" width="233" height="26"/>
         <image name="蜜喜蜜喜－切片iphone5_104" width="233" height="26"/>
         <image name="蜜喜蜜喜－切片iphone5_107" width="93" height="93"/>
+        <image name="蜜喜蜜喜－切片iphone5_11" width="16" height="16"/>
         <image name="蜜喜蜜喜－切片iphone5_12" width="16" height="16"/>
         <image name="蜜喜蜜喜－切片iphone5_22" width="24" height="22"/>
         <image name="蜜喜蜜喜－切片iphone5_33" width="12" height="14"/>
