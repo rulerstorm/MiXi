@@ -95,6 +95,7 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
 
     }
 
+    
     //光这个不行。。。naviController的pop还有一个手势方式。。。
     //重写了popViewControllerAnimated搞定这个问题
     func DaRenHeaderleftItemClicked() {

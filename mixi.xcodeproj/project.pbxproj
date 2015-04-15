@@ -37,12 +37,15 @@
 		FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE929E981ACB82160095F04A /* DaRenHeader.xib */; };
 		FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97600A1AC85A290041486D /* MBProgressHUD.m */; };
 		FE9B17F11ACB347D0052A9FD /* DaRenExcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B17F01ACB347D0052A9FD /* DaRenExcelView.swift */; };
+		FEB71A4E1ADCFEFA00F7B87F /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB71A4D1ADCFEFA00F7B87F /* DiscoverTableViewController.swift */; };
+		FEB71A521ADD039A00F7B87F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB71A511ADD039A00F7B87F /* Main.storyboard */; };
+		FEB71A541ADD03A000F7B87F /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB71A531ADD03A000F7B87F /* DiscoverTableViewCell.swift */; };
+		FEB71A581ADD195500F7B87F /* DiscoverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB71A571ADD195500F7B87F /* DiscoverData.swift */; };
 		FEBCF2CB1ADA014500E68BE7 /* CustomerServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2CA1ADA014400E68BE7 /* CustomerServiceViewController.swift */; };
 		FEBCF2D31ADA0B1600E68BE7 /* InquiryChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2D21ADA0B1600E68BE7 /* InquiryChatTableViewController.swift */; };
 		FEBCF2DD1ADA0BDA00E68BE7 /* ComplainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2DC1ADA0BDA00E68BE7 /* ComplainViewController.swift */; };
 		FEBCF2DF1ADA10BC00E68BE7 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2DE1ADA10BC00E68BE7 /* ChatTableViewCell.swift */; };
 		FEBCF2E11ADA118800E68BE7 /* ChatOppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2E01ADA118800E68BE7 /* ChatOppTableViewCell.swift */; };
-		FEBCF2ED1ADA1B1400E68BE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBCF2EC1ADA1B1400E68BE7 /* Main.storyboard */; };
 		FEBCF2EF1ADA22C100E68BE7 /* ChatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2EE1ADA22C100E68BE7 /* ChatData.swift */; };
 		FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEDFADA91AC0093D0005464A /* TabBarView.xib */; };
 		FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */; };
@@ -102,12 +105,15 @@
 		FE9760091AC85A290041486D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		FE97600A1AC85A290041486D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		FE9B17F01ACB347D0052A9FD /* DaRenExcelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenExcelView.swift; path = MiXi/DaRenExcelView.swift; sourceTree = SOURCE_ROOT; };
+		FEB71A4D1ADCFEFA00F7B87F /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		FEB71A511ADD039A00F7B87F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FEB71A531ADD03A000F7B87F /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
+		FEB71A571ADD195500F7B87F /* DiscoverData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoverData.swift; path = MiXi/DiscoverData.swift; sourceTree = SOURCE_ROOT; };
 		FEBCF2CA1ADA014400E68BE7 /* CustomerServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomerServiceViewController.swift; path = MiXi/CustomerServiceViewController.swift; sourceTree = SOURCE_ROOT; };
 		FEBCF2D21ADA0B1600E68BE7 /* InquiryChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InquiryChatTableViewController.swift; path = MiXi/InquiryChatTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FEBCF2DC1ADA0BDA00E68BE7 /* ComplainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplainViewController.swift; sourceTree = "<group>"; };
 		FEBCF2DE1ADA10BC00E68BE7 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatTableViewCell.swift; path = MiXi/ChatTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FEBCF2E01ADA118800E68BE7 /* ChatOppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatOppTableViewCell.swift; path = MiXi/ChatOppTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		FEBCF2EC1ADA1B1400E68BE7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FEBCF2EE1ADA22C100E68BE7 /* ChatData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatData.swift; path = MiXi/ChatData.swift; sourceTree = SOURCE_ROOT; };
 		FEDFADA91AC0093D0005464A /* TabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabBarView.xib; path = MiXi/TabBarView.xib; sourceTree = SOURCE_ROOT; };
 		FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBarButton.swift; path = MiXi/MyTabBarButton.swift; sourceTree = SOURCE_ROOT; };
@@ -160,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */,
-				FEBCF2EC1ADA1B1400E68BE7 /* Main.storyboard */,
+				FEB71A511ADD039A00F7B87F /* Main.storyboard */,
 				AC323AB41ABEA41100F46563 /* views */,
 				AC1CF6A41AB72FE30095B58C /* Utility */,
 				AC1CF6A51AB73AB20095B58C /* Controller */,
@@ -222,6 +228,7 @@
 				AC19A00D1AB56EFD00167523 /* ViewController.swift */,
 				ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */,
 				ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */,
+				FEB71A4D1ADCFEFA00F7B87F /* DiscoverTableViewController.swift */,
 				FEEE33881AD3F74B00707AE1 /* DaRenCommentTableViewController.swift */,
 				FEBCF2CA1ADA014400E68BE7 /* CustomerServiceViewController.swift */,
 				FEBCF2D21ADA0B1600E68BE7 /* InquiryChatTableViewController.swift */,
@@ -242,6 +249,7 @@
 			children = (
 				AC30A3961AB9960D001054B9 /* registerInfo.swift */,
 				FEBCF2EE1ADA22C100E68BE7 /* ChatData.swift */,
+				FEB71A571ADD195500F7B87F /* DiscoverData.swift */,
 			);
 			name = module;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 				FEEEF8131AC198ED0050B0D0 /* DaRenHeaderView.swift */,
 				FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */,
 				FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */,
+				FEB71A531ADD03A000F7B87F /* DiscoverTableViewCell.swift */,
 				FE1DCEF11AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift */,
 				FEBCF2DE1ADA10BC00E68BE7 /* ChatTableViewCell.swift */,
 				FEBCF2E01ADA118800E68BE7 /* ChatOppTableViewCell.swift */,
@@ -352,7 +361,7 @@
 				AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */,
 				FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */,
 				AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */,
-				FEBCF2ED1ADA1B1400E68BE7 /* Main.storyboard in Resources */,
+				FEB71A521ADD039A00F7B87F /* Main.storyboard in Resources */,
 				FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */,
 				AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */,
 			);
@@ -400,6 +409,7 @@
 				FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */,
 				FEEE33891AD3F74B00707AE1 /* DaRenCommentTableViewController.swift in Sources */,
 				FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */,
+				FEB71A541ADD03A000F7B87F /* DiscoverTableViewCell.swift in Sources */,
 				AC7CD20B1ABF1375007E2B20 /* HunLiBuZhiViewController.swift in Sources */,
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
 				FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */,
@@ -408,8 +418,10 @@
 				FE6823951AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift in Sources */,
 				FEEEF8141AC198ED0050B0D0 /* DaRenHeaderView.swift in Sources */,
 				FE8081A91AC6F0C500A70DE3 /* DaRenTableViewCell.swift in Sources */,
+				FEB71A581ADD195500F7B87F /* DiscoverData.swift in Sources */,
 				FEBCF2D31ADA0B1600E68BE7 /* InquiryChatTableViewController.swift in Sources */,
 				FE8081A71AC6F05D00A70DE3 /* DaRenTableViewController.swift in Sources */,
+				FEB71A4E1ADCFEFA00F7B87F /* DiscoverTableViewController.swift in Sources */,
 				AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

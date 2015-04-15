@@ -43,8 +43,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
             }
         }//for
         
-        
-        
+        //下面四个contorller的创建和设置可以抽取出一个函数重构
         //----------------设置个人中心--------------------------------------------------------
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let persionalCenter = storyBoard.instantiateViewControllerWithIdentifier("personalCenter") as! PersonalCenterViewController
@@ -71,20 +70,26 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
         //改所有子bar上面的title颜色，这个字典里面的key和oc中有变化
         customerServiceNavi.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mixiColor.mainCoffie]
         
+        //----------------设置发现--------------------------------------------------------
+
+        let discoverController = storyBoard.instantiateViewControllerWithIdentifier("Discover") as! DiscoverTableViewController
+        
+        //包装一个导航控制器
+        let discoverControllerNavi = MyNavigationViewController(rootViewController: discoverController)
+        discoverControllerNavi.navigationBar.barTintColor = mixiColor.mainPink
+        //这个是导航控制器左右两个item的主题色
+        discoverControllerNavi.navigationBar.tintColor = mixiColor.mainCoffie
+        //改所有子bar上面的title颜色，这个字典里面的key和oc中有变化
+        discoverControllerNavi.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mixiColor.mainCoffie]
+
         
         
-        
-        
+        //设置四个view进入数组hold住
         self.mainviewController["首页"] = mainPageViewController
         self.mainviewController["个人中心"] = persionalCenterNavi
-
-        self.mainviewController["发现"] = UIViewController()
-            self.mainviewController["发现"]?.view.backgroundColor = UIColor.purpleColor()
-        
+        self.mainviewController["发现"] = discoverControllerNavi
         self.mainviewController["客服中心"] = customerServiceNavi
 
-
-        
         changeMainViewToTarget("首页")
         
     }
@@ -173,11 +178,11 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
     func leftBarButtunClicked(){
         self.view.endEditing(true)
         if(self.activeMainViewControler.view.frame.minX == 0){
-            UIView.animateWithDuration(0.5, animations: {
+            UIView.animateWithDuration(0.4, animations: {
                 self.activeMainViewControler.view.transform = CGAffineTransformMakeTranslation(self.slideBar.view.frame.width, 0)
             })
         }else{
-            UIView.animateWithDuration(0.5, animations: {
+            UIView.animateWithDuration(0.4, animations: {
                 self.activeMainViewControler.view.transform = CGAffineTransformIdentity
             })
         }
@@ -201,7 +206,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
 //          let originTransform = acticeView.frame   //如果这里用frame，则后面手势计算transform的时候会有严重bug
             let originTransform = acticeView.transform
             
-            UIView.animateWithDuration(0.5, animations: { [unowned self] in
+            UIView.animateWithDuration(0.4, animations: { [unowned self] in
                 acticeView.transform = CGAffineTransformMakeTranslation(self.view.frame.width, 0)
                 }, completion: {
                     if $0{
@@ -222,7 +227,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
                     //一开始从最右边出现
                     targetController.view.transform = CGAffineTransformMakeTranslation(self.view.frame.width, 0)
                     //然后移到原来的位置
-                    UIView.animateWithDuration(0.5, animations: { [unowned self] in
+                    UIView.animateWithDuration(0.4, animations: { [unowned self] in
                         targetController.view.transform = originTransform
                     })
                     
