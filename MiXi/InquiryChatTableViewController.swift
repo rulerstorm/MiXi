@@ -83,16 +83,34 @@ class InquiryChatTableViewController: UIViewController, UITextFieldDelegate {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        if self.chatData.data[indexPath.row].chatType{  //如果是服务员对话
-            let cell = tableView.dequeueReusableCellWithIdentifier("chat", forIndexPath: indexPath) as! ChatTableViewCell
-            cell.data = self.chatData.data[indexPath.row]
-            return cell
-        }else{
-            let cell = tableView.dequeueReusableCellWithIdentifier("chatOpp", forIndexPath: indexPath) as! ChatOppTableViewCell
-            cell.data = self.chatData.data[indexPath.row]
-            return cell
+//        if self.chatData.data[indexPath.row].chatType{  //如果是服务员对话
+//            let cell = tableView.dequeueReusableCellWithIdentifier("chat", forIndexPath: indexPath) as! ChatTableViewCell
+//            cell.data = self.chatData.data[indexPath.row]
+//            return cell
+//        }else{
+//            let cell = tableView.dequeueReusableCellWithIdentifier("chatOpp", forIndexPath: indexPath) as! ChatOppTableViewCell
+//            cell.data = self.chatData.data[indexPath.row]
+//            return cell
+//        }
+        
+        let cellIdentifier = NSStringFromClass(MessageBubbleCell)
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier) as! MessageBubbleCell!
+        if cell == nil {
+            cell = MessageBubbleCell(style: .Default, reuseIdentifier: cellIdentifier)
+            
+            // Add gesture recognizers #CopyMessage
+            let action: Selector = "messageShowMenuAction:"
+            let doubleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: action)
+            doubleTapGestureRecognizer.numberOfTapsRequired = 2
+            cell.bubbleImageView.addGestureRecognizer(doubleTapGestureRecognizer)
+            cell.bubbleImageView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: action))
         }
+//        let message = chat.loadedMessages[indexPath.section][indexPath.row-1]
+        cell.configureWithMessage(self.chatData.data[indexPath.row].toMessage())
+        return cell
 
+        
+        
     }
 
     
@@ -142,6 +160,11 @@ class InquiryChatTableViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    
+    //呵呵，那个气泡对话的库要调用这个函数。。。我也不知道它在哪里添加的，就给你调用吧。。。
+    func messageShowMenuAction(ss:AnyObject){
+//        println("dd")
+    }
     
     /*
     // Override to support conditional editing of the table view.

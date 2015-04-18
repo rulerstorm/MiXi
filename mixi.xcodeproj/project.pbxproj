@@ -37,6 +37,8 @@
 		FE8081A71AC6F05D00A70DE3 /* DaRenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */; };
 		FE8081A91AC6F0C500A70DE3 /* DaRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */; };
 		FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE929E981ACB82160095F04A /* DaRenHeader.xib */; };
+		FE9598761AE2B183005F73CE /* MessageBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9598751AE2B183005F73CE /* MessageBubbleCell.swift */; };
+		FE9598781AE2B231005F73CE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9598771AE2B231005F73CE /* Message.swift */; };
 		FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97600A1AC85A290041486D /* MBProgressHUD.m */; };
 		FE9B17F11ACB347D0052A9FD /* DaRenExcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B17F01ACB347D0052A9FD /* DaRenExcelView.swift */; };
 		FEB71A4E1ADCFEFA00F7B87F /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB71A4D1ADCFEFA00F7B87F /* DiscoverTableViewController.swift */; };
@@ -105,6 +107,8 @@
 		FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewController.swift; path = MiXi/DaRenTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenTableViewCell.swift; path = MiXi/DaRenTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE929E981ACB82160095F04A /* DaRenHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaRenHeader.xib; sourceTree = "<group>"; };
+		FE9598751AE2B183005F73CE /* MessageBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleCell.swift; sourceTree = "<group>"; };
+		FE9598771AE2B231005F73CE /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FE9760091AC85A290041486D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		FE97600A1AC85A290041486D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		FE9B17F01ACB347D0052A9FD /* DaRenExcelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenExcelView.swift; path = MiXi/DaRenExcelView.swift; sourceTree = SOURCE_ROOT; };
@@ -251,6 +255,7 @@
 			children = (
 				AC30A3961AB9960D001054B9 /* registerInfo.swift */,
 				FEBCF2EE1ADA22C100E68BE7 /* ChatData.swift */,
+				FE9598771AE2B231005F73CE /* Message.swift */,
 				FEB71A571ADD195500F7B87F /* DiscoverData.swift */,
 			);
 			name = module;
@@ -276,6 +281,7 @@
 				FEBCF2E01ADA118800E68BE7 /* ChatOppTableViewCell.swift */,
 				FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */,
 				FEDFADAD1AC023610005464A /* MyTabBar.swift */,
+				FE9598751AE2B183005F73CE /* MessageBubbleCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				FEBCF2EF1ADA22C100E68BE7 /* ChatData.swift in Sources */,
 				FE1DCEEF1AD2F272001F900D /* DaRenPhotoTableViewController.swift in Sources */,
 				FE1DCEF21AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift in Sources */,
+				FE9598781AE2B231005F73CE /* Message.swift in Sources */,
 				FE27DD301AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift in Sources */,
 				FE9B17F11ACB347D0052A9FD /* DaRenExcelView.swift in Sources */,
 				FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */,
@@ -411,6 +418,7 @@
 				ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */,
 				FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */,
 				FEEE33891AD3F74B00707AE1 /* DaRenCommentTableViewController.swift in Sources */,
+				FE9598761AE2B183005F73CE /* MessageBubbleCell.swift in Sources */,
 				FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */,
 				FEB71A541ADD03A000F7B87F /* DiscoverTableViewCell.swift in Sources */,
 				AC7CD20B1ABF1375007E2B20 /* HunLiBuZhiViewController.swift in Sources */,

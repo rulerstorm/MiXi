@@ -126,6 +126,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
     }//viewDidLoad
     
     
+    //这个代理，是为了统一化侧滑栏的阴影和移动
     var slideBarTransform :CGAffineTransform = CGAffineTransformIdentity{
         didSet{
             self.slideBar.view.transform = slideBarTransform
