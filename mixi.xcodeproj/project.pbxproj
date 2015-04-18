@@ -29,6 +29,8 @@
 		FE1DCEF21AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCEF11AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift */; };
 		FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */; };
 		FE27DD301AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */; };
+		FE30134B1AE28A3500003FE2 /* DiscoverDetailedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE30134A1AE28A3500003FE2 /* DiscoverDetailedTableViewCell.swift */; };
+		FE3013571AE293AE00003FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3013561AE293AE00003FE2 /* Main.storyboard */; };
 		FE6823951AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */; };
 		FE68239F1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */; };
 		FE6823B51AD9DD5500BCAAD4 /* PersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6823B41AD9DD5500BCAAD4 /* PersonalCenterViewController.swift */; };
@@ -38,7 +40,6 @@
 		FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97600A1AC85A290041486D /* MBProgressHUD.m */; };
 		FE9B17F11ACB347D0052A9FD /* DaRenExcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B17F01ACB347D0052A9FD /* DaRenExcelView.swift */; };
 		FEB71A4E1ADCFEFA00F7B87F /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB71A4D1ADCFEFA00F7B87F /* DiscoverTableViewController.swift */; };
-		FEB71A521ADD039A00F7B87F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB71A511ADD039A00F7B87F /* Main.storyboard */; };
 		FEB71A541ADD03A000F7B87F /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB71A531ADD03A000F7B87F /* DiscoverTableViewCell.swift */; };
 		FEB71A581ADD195500F7B87F /* DiscoverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB71A571ADD195500F7B87F /* DiscoverData.swift */; };
 		FEBCF2CB1ADA014500E68BE7 /* CustomerServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2CA1ADA014400E68BE7 /* CustomerServiceViewController.swift */; };
@@ -96,6 +97,8 @@
 		FE1DCEF11AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenPhotoTableViewCell.swift; path = MiXi/DaRenPhotoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewController.swift; path = MiXi/HunLiBuZhiTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewCell.swift; path = MiXi/HunLiBuZhiTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		FE30134A1AE28A3500003FE2 /* DiscoverDetailedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoverDetailedTableViewCell.swift; path = MiXi/DiscoverDetailedTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		FE3013561AE293AE00003FE2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookedBuZhiTableViewCell.swift; path = MiXi/BookedBuZhiTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookedDaRenTableViewCell.swift; sourceTree = "<group>"; };
 		FE6823B41AD9DD5500BCAAD4 /* PersonalCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCenterViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +109,6 @@
 		FE97600A1AC85A290041486D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		FE9B17F01ACB347D0052A9FD /* DaRenExcelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenExcelView.swift; path = MiXi/DaRenExcelView.swift; sourceTree = SOURCE_ROOT; };
 		FEB71A4D1ADCFEFA00F7B87F /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
-		FEB71A511ADD039A00F7B87F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FEB71A531ADD03A000F7B87F /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		FEB71A571ADD195500F7B87F /* DiscoverData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoverData.swift; path = MiXi/DiscoverData.swift; sourceTree = SOURCE_ROOT; };
 		FEBCF2CA1ADA014400E68BE7 /* CustomerServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomerServiceViewController.swift; path = MiXi/CustomerServiceViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -166,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */,
-				FEB71A511ADD039A00F7B87F /* Main.storyboard */,
+				FE3013561AE293AE00003FE2 /* Main.storyboard */,
 				AC323AB41ABEA41100F46563 /* views */,
 				AC1CF6A41AB72FE30095B58C /* Utility */,
 				AC1CF6A51AB73AB20095B58C /* Controller */,
@@ -268,6 +270,7 @@
 				FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */,
 				FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */,
 				FEB71A531ADD03A000F7B87F /* DiscoverTableViewCell.swift */,
+				FE30134A1AE28A3500003FE2 /* DiscoverDetailedTableViewCell.swift */,
 				FE1DCEF11AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift */,
 				FEBCF2DE1ADA10BC00E68BE7 /* ChatTableViewCell.swift */,
 				FEBCF2E01ADA118800E68BE7 /* ChatOppTableViewCell.swift */,
@@ -361,7 +364,7 @@
 				AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */,
 				FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */,
 				AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */,
-				FEB71A521ADD039A00F7B87F /* Main.storyboard in Resources */,
+				FE3013571AE293AE00003FE2 /* Main.storyboard in Resources */,
 				FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */,
 				AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */,
 			);
@@ -411,6 +414,7 @@
 				FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */,
 				FEB71A541ADD03A000F7B87F /* DiscoverTableViewCell.swift in Sources */,
 				AC7CD20B1ABF1375007E2B20 /* HunLiBuZhiViewController.swift in Sources */,
+				FE30134B1AE28A3500003FE2 /* DiscoverDetailedTableViewCell.swift in Sources */,
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
 				FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */,
 				AC118A321ABCA1BC00A1915C /* mainTabbarController.swift in Sources */,

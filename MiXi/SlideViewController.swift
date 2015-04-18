@@ -8,6 +8,9 @@
 
 import UIKit
 
+//侧滑栏的宽度比例
+let SLIDERATE :CGFloat = 0.6
+
 protocol leftBarButtunDelegate :class{      //class关键字可以让这个协议使用weak指针，原因待查
     func leftBarButtunClicked()
 }
@@ -73,6 +76,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
         //----------------设置发现--------------------------------------------------------
 
         let discoverController = storyBoard.instantiateViewControllerWithIdentifier("Discover") as! DiscoverTableViewController
+        discoverController.leftItemDelegate = self
         
         //包装一个导航控制器
         let discoverControllerNavi = MyNavigationViewController(rootViewController: discoverController)
@@ -109,7 +113,7 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
         self.slideBar.delegate = self
         
         //设置侧边栏的frame
-        self.slideBar.view.frame = CGRect(x: 0, y: 0, width: self.view.frame.width * 0.6, height: self.view.frame.height)
+        self.slideBar.view.frame = CGRect(x: -self.view.frame.width * SLIDERATE * 0.25, y: 0, width: self.view.frame.width * SLIDERATE, height: self.view.frame.height)
         
         //先加到数组里面的view会在下面
         self.addChildViewController(slideBar)
@@ -120,6 +124,15 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
         setUpMainViewController()
         
     }//viewDidLoad
+    
+    
+    var slideBarTransform :CGAffineTransform = CGAffineTransformIdentity{
+        didSet{
+            self.slideBar.view.transform = slideBarTransform
+            self.slideBar.shadow.alpha = 1 - slideBarTransform.tx / (self.slideBar.view.frame.width * SLIDERATE * 0.5)
+        }
+    }
+    
     
     //translation不是翻译的意思，意思是“移动量”
     func didDrag(pan:UIPanGestureRecognizer){
@@ -141,33 +154,43 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
                         if (viewFrameMinX >= slideBarWidth * 0.2) { // 往右边至少走动了五分之一
                             UIView.animateWithDuration(duration, animations: {
                                 pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
+                                self.slideBarTransform = CGAffineTransformMakeTranslation(slideBarWidth * SLIDERATE * 0.5, 0)
+
                             })
 
                         } else{ // 走动距离的没有达到四分之一
                             UIView.animateWithDuration(duration, animations: {
                                 pan.view!.transform = CGAffineTransformIdentity   //这个参数需要理解，能复原位置
+                                self.slideBarTransform = CGAffineTransformIdentity
+
                             })
                         }
                     }else{
                         if (viewFrameMinX <= slideBarWidth * 0.8) { // 往左边至少走动了五分之一
                             UIView.animateWithDuration(duration, animations: {
                                 pan.view!.transform = CGAffineTransformIdentity
-
+                                self.slideBarTransform = CGAffineTransformIdentity
                             })
                             
                         } else{
                             UIView.animateWithDuration(duration, animations: {
                                 pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
+                           self.slideBarTransform = CGAffineTransformMakeTranslation(slideBarWidth * SLIDERATE * 0.5, 0)
+
                             })
                         }
                     }
             } else { // begin和changed都会进来
                     pan.view!.transform = CGAffineTransformTranslate(pan.view!.transform, point.x, 0)
+                    slideBarTransform = CGAffineTransformTranslate(self.slideBar.view.transform, point.x * SLIDERATE * 0.5, 0)
                     pan.setTranslation(CGPointZero, inView: pan.view!)
                     if (pan.view!.frame.minX >= slideBarWidth) {
-                        pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0);
+                        pan.view!.transform = CGAffineTransformMakeTranslation(slideBarWidth, 0)
+                        slideBarTransform = CGAffineTransformMakeTranslation(slideBarWidth * SLIDERATE * 0.5, 0)
+
                     } else if (pan.view!.frame.minX <= 0) {
                         pan.view!.transform = CGAffineTransformIdentity
+                        slideBarTransform = CGAffineTransformIdentity
                     }
             }
         }
@@ -180,10 +203,13 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
         if(self.activeMainViewControler.view.frame.minX == 0){
             UIView.animateWithDuration(0.4, animations: {
                 self.activeMainViewControler.view.transform = CGAffineTransformMakeTranslation(self.slideBar.view.frame.width, 0)
+           self.slideBarTransform = CGAffineTransformMakeTranslation(self.slideBar.view.frame.width * SLIDERATE * 0.5, 0)
+
             })
         }else{
             UIView.animateWithDuration(0.4, animations: {
                 self.activeMainViewControler.view.transform = CGAffineTransformIdentity
+                self.slideBarTransform = CGAffineTransformIdentity
             })
         }
     }

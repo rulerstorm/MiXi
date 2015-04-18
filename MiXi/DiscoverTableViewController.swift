@@ -8,16 +8,42 @@
 
 import UIKit
 
-class DiscoverTableViewController: UITableViewController {
+class DiscoverTableViewController: UITableViewController, DiscoverTableViewCellDelegate {
 
+    var cellData = [DiscoverData]()
+    
+    
+    //模拟数据
+    func simulateData(){
+        for index in 0...9{
+            cellData.append(DiscoverData(image: nil, detail: nil))
+//            if index == 3{
+//                cellData[3].detailed = true
+//            }
+        }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.title = "发现"
+    }
+    
+    //左上角代理
+    weak var leftItemDelegate :AnyObject!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        simulateData()
+        
+        
+        
+        //设置左上角item
+        let leftItem = UIBarButtonItem(image: UIImage(named: "蜜喜蜜喜－首页_07"), style: UIBarButtonItemStyle.Plain, target: self.leftItemDelegate, action: Selector("leftBarButtunClicked"))
+        self.navigationItem.leftBarButtonItem = leftItem
+        //这个是网上查来的。。。好神奇，可以左移item的位置
+        self.navigationItem.leftBarButtonItem?.imageInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
+        
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,19 +62,54 @@ class DiscoverTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 10
+        return cellData.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("discoverCell", forIndexPath: indexPath) as! UITableViewCell
-
-        // Configure the cell...
-
-        return cell
+        
+        if cellData[indexPath.row].detailed{  //detailed的版本
+            let cell = tableView.dequeueReusableCellWithIdentifier("discoverDetailedCell", forIndexPath: indexPath) as! DiscoverDetailedTableViewCell
+            // Configure the cell...
+            cell.number = indexPath.row
+            cell.delegate = self
+            return cell
+        }else{              //普通的版本
+            let cell = tableView.dequeueReusableCellWithIdentifier("discoverCell", forIndexPath: indexPath) as! DiscoverTableViewCell
+            // Configure the cell...
+            cell.number = indexPath.row
+            cell.delegate = self
+        
+            return cell
+        }
     }
 
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        println("aaaa")
+        if cellData[indexPath.row].detailed{
+//            println("ssss")
+            return self.tableView.rowHeight * 2
+        }
+        return self.tableView.rowHeight
+    }
 
+    
+
+    //--------------------代理-----------------------
+    func detailBtnClicked(#rowNmuber: Int) {
+        self.cellData[rowNmuber].detailed = true
+//        self.tableView.reloadData()
+        
+        //刷新制定的行，注意是一个数组，而且可以有动画，赞！
+        self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: rowNmuber, inSection: 0)] , withRowAnimation: UITableViewRowAnimation.Automatic)
+    }
+    
+    func detailBtnCanceled(#rowNmuber: Int) {
+        self.cellData[rowNmuber].detailed = false
+//        self.tableView.reloadData()
+        self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: rowNmuber, inSection: 0)] , withRowAnimation: UITableViewRowAnimation.Automatic)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

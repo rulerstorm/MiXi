@@ -10,7 +10,12 @@ import Foundation
 
 
 struct DiscoverData{
-    let detailed :Bool
-    let image :UIImage
-    let detailImage :UIImage
+    var detailed :Bool = false
+    let image :UIImage?
+    let detailImage :UIImage?
+    
+    init(image: UIImage?, detail :UIImage?){
+        self.image = image
+        self.detailImage = detail
+    }
 }

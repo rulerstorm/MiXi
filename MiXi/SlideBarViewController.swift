@@ -45,6 +45,7 @@ class SlideBarViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var shadow: UIView!
     
 
 

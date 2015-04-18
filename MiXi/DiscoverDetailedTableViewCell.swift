@@ -1,20 +1,14 @@
 //
-//  DiscoverTableViewCell.swift
-//  justSave
+//  DiscoverDetailedTableViewCell.swift
+//  mixi
 //
-//  Created by LuRock on 15/4/14.
+//  Created by LuRock on 15/4/18.
 //  Copyright (c) 2015年 LuRock. All rights reserved.
 //
 
 import UIKit
 
-protocol DiscoverTableViewCellDelegate :class{
-    func detailBtnClicked(#rowNmuber:Int)
-    func detailBtnCanceled(#rowNmuber:Int)
-}
-
-
-class DiscoverTableViewCell: UITableViewCell {
+class DiscoverDetailedTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,9 +32,9 @@ class DiscoverTableViewCell: UITableViewCell {
     
     weak var delegate :DiscoverTableViewCellDelegate!
     
-    @IBAction func detailedButtonClicked(sender: UIButton) {
-        self.delegate.detailBtnClicked(rowNmuber: number)
+    @IBAction func detailButtonClicked(sender: UIButton) {
+        self.delegate.detailBtnCanceled(rowNmuber: number)
+
     }
-    
 
 }

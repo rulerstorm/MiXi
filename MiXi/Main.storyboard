@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mZq-Jx-TbZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mZq-Jx-TbZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
@@ -694,6 +694,10 @@
                                     <action selector="allBtnClicked:" destination="gaa-6d-vR1" eventType="touchUpInside" id="DMu-x4-VBu"/>
                                 </connections>
                             </button>
+                            <view alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V62-lt-m4L" userLabel="shadow">
+                                <rect key="frame" x="0.0" y="0.0" width="191" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -701,6 +705,7 @@
                     <size key="freeformSize" width="191" height="568"/>
                     <connections>
                         <outlet property="btnMainPage" destination="x8s-2Q-Yrh" id="cEQ-ag-Tye"/>
+                        <outlet property="shadow" destination="V62-lt-m4L" id="wkn-4y-EQB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y92-9L-Q38" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2202,7 +2207,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <action selector="popOverBtnclicked:" destination="PRK-XE-2Cj" eventType="touchUpInside" id="sZN-HH-VUn"/>
+                                                <action selector="detailedButtonClicked:" destination="PRK-XE-2Cj" eventType="touchUpInside" id="wVm-Sx-lYj"/>
                                             </connections>
                                         </button>
                                         <view alpha="0.59999999999999964" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="64H-Tw-yG5">
@@ -2212,6 +2217,45 @@
                                                     <rect key="frame" x="296" y="3" width="12" height="12"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="详情" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaE-Lf-6II">
+                                                    <rect key="frame" x="267" y="0.0" width="26" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.73583756889999996" green="1" blue="0.87837064970000001" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="discoverDetailedCell" rowHeight="250" id="kW2-BC-owJ" customClass="DiscoverDetailedTableViewCell" customModule="mixi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kW2-BC-owJ" id="Ogy-PV-cXU">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpN-GP-zYo">
+                                            <rect key="frame" x="2" y="2" width="316" height="122"/>
+                                            <color key="backgroundColor" red="1" green="0.97672771970000005" blue="0.78776274030000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="detailButtonClicked:" destination="kW2-BC-owJ" eventType="touchUpInside" id="foK-94-wox"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tKK-La-fxZ">
+                                            <rect key="frame" x="2" y="124" width="316" height="125"/>
+                                            <color key="backgroundColor" red="0.66852115359999997" green="0.60649973440000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <view alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNM-dt-FGI">
+                                            <rect key="frame" x="2" y="106" width="316" height="18"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蜜喜蜜喜－切片iphone5_02" translatesAutoresizingMaskIntoConstraints="NO" id="ygi-kf-Vnc">
+                                                    <rect key="frame" x="296" y="3" width="12" height="12"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="详情" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIz-ls-gTc">
                                                     <rect key="frame" x="267" y="0.0" width="26" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -2547,6 +2591,7 @@
         <image name="蜜喜蜜喜－侧滑栏切片_06" width="25" height="22"/>
         <image name="蜜喜蜜喜－侧滑栏切片_07" width="25" height="22"/>
         <image name="蜜喜蜜喜－侧滑栏切片_08" width="26" height="16"/>
+        <image name="蜜喜蜜喜－切片iphone5_02" width="12" height="12"/>
         <image name="蜜喜蜜喜－切片iphone5_08" width="16" height="16"/>
         <image name="蜜喜蜜喜－切片iphone5_09" width="16" height="16"/>
         <image name="蜜喜蜜喜－切片iphone5_10" width="16" height="16"/>
