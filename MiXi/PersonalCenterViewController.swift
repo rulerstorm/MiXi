@@ -12,11 +12,19 @@ class PersonalCenterViewController: UIViewController {
 
     weak var delegate :leftBarButtunDelegate!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    
+    override func viewWillAppear(animated: Bool) {
         //设置页面的title，这要记笔记！！
         self.title = "个人中心"
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.title = ""
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         
         //设置左上角item
         let leftItem = UIBarButtonItem(image: UIImage(named: "蜜喜蜜喜－首页_07"), style: UIBarButtonItemStyle.Plain, target: self.delegate, action: Selector("leftBarButtunClicked"))

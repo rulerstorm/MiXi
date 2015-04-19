@@ -11,6 +11,8 @@ import UIKit
 class UserCenterTableViewController: UIViewController, BookedBuZhiDaRenCellDelegate{
 
     weak var leftItemDelegate :AnyObject?
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

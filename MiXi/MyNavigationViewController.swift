@@ -20,6 +20,19 @@ class MyNavigationViewController: UINavigationController{
         //先把这个bar保存起来。。。
         backUpNaviBar = self.view.subviews[1] as? UIView
 
+        
+        self.navigationBar.barTintColor = mixiColor.mainPink
+        //这个是导航控制器左右两个item的主题色
+        self.navigationBar.tintColor = mixiColor.mainCoffie
+        
+        //改所有子bar上面的title颜色，这个字典里面的key和oc中有变化
+        //以下四个是oc中key的名字和解释：
+        //        UITextAttributeFont – Key to the font
+        //        UITextAttributeTextColor – Key to the text color
+        //        UITextAttributeTextShadowColor – Key to the text shadow color
+        //        UITextAttributeTextShadowOffset – Key to the offset used for the text shadow
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: mixiColor.mainCoffie]
+        
     }
     
     //重写这个方法，让控制器pop的时候自动换上默认的naviBar
@@ -56,5 +69,6 @@ class MyNavigationViewController: UINavigationController{
         })
 
     }
+    
     
 }

@@ -30,7 +30,6 @@
 		FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */; };
 		FE27DD301AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */; };
 		FE30134B1AE28A3500003FE2 /* DiscoverDetailedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE30134A1AE28A3500003FE2 /* DiscoverDetailedTableViewCell.swift */; };
-		FE3013571AE293AE00003FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3013561AE293AE00003FE2 /* Main.storyboard */; };
 		FE6823951AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */; };
 		FE68239F1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */; };
 		FE6823B51AD9DD5500BCAAD4 /* PersonalCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6823B41AD9DD5500BCAAD4 /* PersonalCenterViewController.swift */; };
@@ -39,6 +38,13 @@
 		FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE929E981ACB82160095F04A /* DaRenHeader.xib */; };
 		FE9598761AE2B183005F73CE /* MessageBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9598751AE2B183005F73CE /* MessageBubbleCell.swift */; };
 		FE9598781AE2B231005F73CE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9598771AE2B231005F73CE /* Message.swift */; };
+		FE95987A1AE2C239005F73CE /* MycellectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9598791AE2C239005F73CE /* MycellectionViewController.swift */; };
+		FE95987C1AE38B24005F73CE /* MyBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95987B1AE38B24005F73CE /* MyBookingViewController.swift */; };
+		FE95987E1AE38B43005F73CE /* MyWaitToCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95987D1AE38B43005F73CE /* MyWaitToCommentViewController.swift */; };
+		FE95988A1AE3DFF4005F73CE /* AppIocn.png in Resources */ = {isa = PBXBuildFile; fileRef = FE9598891AE3DFF4005F73CE /* AppIocn.png */; };
+		FE95988E1AE3EEB9005F73CE /* BuZhiCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95988D1AE3EEB9005F73CE /* BuZhiCollectionTableViewController.swift */; };
+		FE9598901AE3EEC9005F73CE /* DaRenCollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95988F1AE3EEC9005F73CE /* DaRenCollectionTableViewController.swift */; };
+		FE95989E1AE3F82B005F73CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE95989D1AE3F82B005F73CE /* Main.storyboard */; };
 		FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97600A1AC85A290041486D /* MBProgressHUD.m */; };
 		FE9B17F11ACB347D0052A9FD /* DaRenExcelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9B17F01ACB347D0052A9FD /* DaRenExcelView.swift */; };
 		FEB71A4E1ADCFEFA00F7B87F /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB71A4D1ADCFEFA00F7B87F /* DiscoverTableViewController.swift */; };
@@ -100,7 +106,6 @@
 		FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewController.swift; path = MiXi/HunLiBuZhiTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE27DD2F1AC940FB003A1F2E /* HunLiBuZhiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewCell.swift; path = MiXi/HunLiBuZhiTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE30134A1AE28A3500003FE2 /* DiscoverDetailedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoverDetailedTableViewCell.swift; path = MiXi/DiscoverDetailedTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		FE3013561AE293AE00003FE2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookedBuZhiTableViewCell.swift; path = MiXi/BookedBuZhiTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookedDaRenTableViewCell.swift; sourceTree = "<group>"; };
 		FE6823B41AD9DD5500BCAAD4 /* PersonalCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalCenterViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +114,13 @@
 		FE929E981ACB82160095F04A /* DaRenHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DaRenHeader.xib; sourceTree = "<group>"; };
 		FE9598751AE2B183005F73CE /* MessageBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleCell.swift; sourceTree = "<group>"; };
 		FE9598771AE2B231005F73CE /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FE9598791AE2C239005F73CE /* MycellectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MycellectionViewController.swift; path = MiXi/MycellectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		FE95987B1AE38B24005F73CE /* MyBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyBookingViewController.swift; path = MiXi/MyBookingViewController.swift; sourceTree = SOURCE_ROOT; };
+		FE95987D1AE38B43005F73CE /* MyWaitToCommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyWaitToCommentViewController.swift; path = MiXi/MyWaitToCommentViewController.swift; sourceTree = SOURCE_ROOT; };
+		FE9598891AE3DFF4005F73CE /* AppIocn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIocn.png; sourceTree = "<group>"; };
+		FE95988D1AE3EEB9005F73CE /* BuZhiCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuZhiCollectionTableViewController.swift; path = MiXi/BuZhiCollectionTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		FE95988F1AE3EEC9005F73CE /* DaRenCollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenCollectionTableViewController.swift; path = MiXi/DaRenCollectionTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		FE95989D1AE3F82B005F73CE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FE9760091AC85A290041486D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		FE97600A1AC85A290041486D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		FE9B17F01ACB347D0052A9FD /* DaRenExcelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenExcelView.swift; path = MiXi/DaRenExcelView.swift; sourceTree = SOURCE_ROOT; };
@@ -172,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */,
-				FE3013561AE293AE00003FE2 /* Main.storyboard */,
+				FE95989D1AE3F82B005F73CE /* Main.storyboard */,
 				AC323AB41ABEA41100F46563 /* views */,
 				AC1CF6A41AB72FE30095B58C /* Utility */,
 				AC1CF6A51AB73AB20095B58C /* Controller */,
@@ -187,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				AC19A00B1AB56EFD00167523 /* AppDelegate.swift */,
+				FE9598891AE3DFF4005F73CE /* AppIocn.png */,
 				AC37DFCE1AB57ABD00AA6B53 /* Default@2x.png */,
 				AC37DFD21AB57B2B00AA6B53 /* Default-568h@2x.png */,
 				AC19A00A1AB56EFD00167523 /* Info.plist */,
@@ -230,6 +243,8 @@
 				FEEEF8151AC1A64D0050B0D0 /* MyNavigationViewController.swift */,
 				AC1CF6A61AB73E1F0095B58C /* InputInfomationViewController.swift */,
 				FE1DCEED1AD2F272001F900D /* DaRenPhotoTableViewController.swift */,
+				FE95988D1AE3EEB9005F73CE /* BuZhiCollectionTableViewController.swift */,
+				FE95988F1AE3EEC9005F73CE /* DaRenCollectionTableViewController.swift */,
 				FE8081A61AC6F05D00A70DE3 /* DaRenTableViewController.swift */,
 				AC19A00D1AB56EFD00167523 /* ViewController.swift */,
 				ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */,
@@ -243,6 +258,9 @@
 				FEEEF80B1AC183A30050B0D0 /* DaRenDetailViewController.swift */,
 				FE6823B41AD9DD5500BCAAD4 /* PersonalCenterViewController.swift */,
 				ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */,
+				FE9598791AE2C239005F73CE /* MycellectionViewController.swift */,
+				FE95987B1AE38B24005F73CE /* MyBookingViewController.swift */,
+				FE95987D1AE38B43005F73CE /* MyWaitToCommentViewController.swift */,
 				AC7CD2081ABF1351007E2B20 /* DaRenViewController.swift */,
 				AC7CD20A1ABF1375007E2B20 /* HunLiBuZhiViewController.swift */,
 				AC7CD20C1ABF171D007E2B20 /* RegisterViewController.swift */,
@@ -367,10 +385,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE95989E1AE3F82B005F73CE /* Main.storyboard in Resources */,
 				AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */,
 				FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */,
 				AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */,
-				FE3013571AE293AE00003FE2 /* Main.storyboard in Resources */,
+				FE95988A1AE3DFF4005F73CE /* AppIocn.png in Resources */,
 				FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */,
 				AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */,
 			);
@@ -418,7 +437,9 @@
 				ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */,
 				FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */,
 				FEEE33891AD3F74B00707AE1 /* DaRenCommentTableViewController.swift in Sources */,
+				FE95988E1AE3EEB9005F73CE /* BuZhiCollectionTableViewController.swift in Sources */,
 				FE9598761AE2B183005F73CE /* MessageBubbleCell.swift in Sources */,
+				FE9598901AE3EEC9005F73CE /* DaRenCollectionTableViewController.swift in Sources */,
 				FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */,
 				FEB71A541ADD03A000F7B87F /* DiscoverTableViewCell.swift in Sources */,
 				AC7CD20B1ABF1375007E2B20 /* HunLiBuZhiViewController.swift in Sources */,
@@ -426,14 +447,17 @@
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
 				FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */,
 				AC118A321ABCA1BC00A1915C /* mainTabbarController.swift in Sources */,
+				FE95987A1AE2C239005F73CE /* MycellectionViewController.swift in Sources */,
 				FE68239F1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift in Sources */,
 				FE6823951AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift in Sources */,
+				FE95987C1AE38B24005F73CE /* MyBookingViewController.swift in Sources */,
 				FEEEF8141AC198ED0050B0D0 /* DaRenHeaderView.swift in Sources */,
 				FE8081A91AC6F0C500A70DE3 /* DaRenTableViewCell.swift in Sources */,
 				FEB71A581ADD195500F7B87F /* DiscoverData.swift in Sources */,
 				FEBCF2D31ADA0B1600E68BE7 /* InquiryChatTableViewController.swift in Sources */,
 				FE8081A71AC6F05D00A70DE3 /* DaRenTableViewController.swift in Sources */,
 				FEB71A4E1ADCFEFA00F7B87F /* DiscoverTableViewController.swift in Sources */,
+				FE95987E1AE38B43005F73CE /* MyWaitToCommentViewController.swift in Sources */,
 				AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,7 +561,7 @@
 		AC19A0261AB56EFD00167523 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -555,7 +579,7 @@
 		AC19A0271AB56EFD00167523 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

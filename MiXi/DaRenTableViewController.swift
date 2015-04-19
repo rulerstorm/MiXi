@@ -212,12 +212,14 @@ class DaRenTableViewController: UIViewController,UITableViewDataSource, UITableV
     override func viewWillDisappear(animated: Bool) {
         overAllBar.hidden = true
         priceSearchBar.hidden = true
+        distrectBar.hidden = true
         self.navigationItem.title = " "
     }
     
     override func viewWillAppear(animated: Bool) {
         overAllBar.hidden = false
         priceSearchBar.hidden = false
+        distrectBar.hidden = false
         self.navigationItem.title = "摄影"
     }
     

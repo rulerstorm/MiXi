@@ -8,6 +8,9 @@
 
 import UIKit
 
+protocol collectionDelegation :class{
+    func collectionBtnClicked()
+}
 
 //记得设置相框button周围的金色边框
 class DaRenTableViewCell: UITableViewCell {
@@ -26,4 +29,16 @@ class DaRenTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+
+    @IBAction func mainBtnClicked(sender: UIButton) {
+        
+        //如果这个值被设置过，说明在收藏的view里面
+        if self.collectDelegation != nil{
+            self.collectDelegation!.collectionBtnClicked()
+        }
+        
+        
+    }
+    
+    var collectDelegation :collectionDelegation?
 }

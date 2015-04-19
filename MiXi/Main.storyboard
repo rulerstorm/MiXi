@@ -269,6 +269,7 @@
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                             <connections>
+                                                                <action selector="mainBtnClicked:" destination="D5F-EO-qxd" eventType="touchUpInside" id="nVc-k0-hh7"/>
                                                                 <segue destination="0ia-cY-MEt" kind="push" id="N5b-dU-HIN"/>
                                                             </connections>
                                                         </button>
@@ -1241,7 +1242,7 @@
         <!--Hun Li Bu Zhi Table View Controller-->
         <scene sceneID="yIW-1S-Jpl">
             <objects>
-                <viewController id="Khh-Xv-wnR" customClass="HunLiBuZhiTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="hunLiBuZhiTable" id="Khh-Xv-wnR" customClass="HunLiBuZhiTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tg7-lP-9j2"/>
                         <viewControllerLayoutGuide type="bottom" id="8Hi-s2-v9c"/>
@@ -2016,10 +2017,10 @@
             </objects>
             <point key="canvasLocation" x="1174" y="657"/>
         </scene>
-        <!--View Controller-->
+        <!--My Collection View Controller-->
         <scene sceneID="2Md-R7-mTa">
             <objects>
-                <viewController id="V1U-eT-ln2" sceneMemberID="viewController">
+                <viewController id="V1U-eT-ln2" customClass="MyCollectionViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wNK-x3-uBy"/>
                         <viewControllerLayoutGuide type="bottom" id="pKi-Zq-ZvN"/>
@@ -2049,19 +2050,275 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－性别iphone5_05" translatesAutoresizingMaskIntoConstraints="NO" id="YXA-57-7Vg">
                                 <rect key="frame" x="204" y="182" width="9" height="14"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wh1-hb-bKA" userLabel="TwoView">
+                                <rect key="frame" x="44" y="204" width="233" height="27"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蜜喜蜜喜－切片iphone5_101" translatesAutoresizingMaskIntoConstraints="NO" id="NSs-pH-cMD">
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="26"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83D-KJ-lYp">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="婚礼达人">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="daRenBtnClicked" destination="V1U-eT-ln2" eventType="touchUpInside" id="Jcs-SO-GgW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OF0-ow-C5p">
+                                        <rect key="frame" x="116" y="0.0" width="117" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="婚礼布置">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="kuleBtnClicked" destination="V1U-eT-ln2" eventType="touchUpInside" id="O7q-Nl-PPd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1h1-iH-oKB" userLabel="contentView">
+                                <rect key="frame" x="0.0" y="239" width="320" height="329"/>
+                                <color key="backgroundColor" red="0.72486077096716794" green="1" blue="0.97278977903435482" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="k3H-kP-Y2W"/>
+                    <connections>
+                        <outlet property="barImageView" destination="NSs-pH-cMD" id="rwd-FA-rJX"/>
+                        <outlet property="contentView" destination="1h1-iH-oKB" id="kER-rJ-XPS"/>
+                        <outlet property="daRenBtn" destination="83D-KJ-lYp" id="Jpw-Td-yba"/>
+                        <outlet property="kuLeBtn" destination="OF0-ow-C5p" id="4j8-qv-egB"/>
+                        <segue destination="MAw-Ku-7j3" kind="modal" identifier="myCollection" id="FQp-NB-ago"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUy-JL-1gL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-529" y="2531"/>
         </scene>
-        <!--View Controller-->
+        <!--Bu Zhi Collection Table View Controller-->
+        <scene sceneID="5lz-Hh-7Pu">
+            <objects>
+                <tableViewController storyboardIdentifier="BuZhiCollectionTableViewController" id="Ppe-do-jXZ" customClass="BuZhiCollectionTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" id="GNh-tK-pSI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HunLiBuZhiCell" id="71V-XC-9YJ" userLabel="HunLiBuZhiCell" customClass="HunLiBuZhiTableViewCell" customModule="mixi" customModuleProvider="target">
+                                <rect key="frame" x="10" y="111" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="71V-XC-9YJ" id="imA-uG-G1s">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ZB-Bi-nzh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABr-DF-cwW">
+                                                    <rect key="frame" x="7" y="0.0" width="306" height="193"/>
+                                                    <color key="backgroundColor" red="1" green="0.90529179670000004" blue="0.42611283560000002" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xuw-qq-tIL">
+                                                    <rect key="frame" x="14" y="96" width="78" height="78"/>
+                                                    <state key="normal" backgroundImage="蜜喜蜜喜－切片iphone5_107">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tEI-B2-iZs">
+                                                    <rect key="frame" x="7" y="121" width="306" height="67"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥ 20000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OO-57-Ceg">
+                                                            <rect key="frame" x="173" y="26" width="65" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="定位－icon" translatesAutoresizingMaskIntoConstraints="NO" id="thh-6d-xJr">
+                                                            <rect key="frame" x="100" y="8" width="8" height="12"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="长宁区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQw-rJ-PZg">
+                                                            <rect key="frame" x="110" y="9" width="51" height="12"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="收藏" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywh-2B-UXy">
+                                                            <rect key="frame" x="269" y="36" width="30" height="15"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="收藏白色iphone5_15" translatesAutoresizingMaskIntoConstraints="NO" id="hwA-jv-Axi">
+                                                            <rect key="frame" x="269" y="12" width="22" height="22"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue Sea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEU-S9-YsD">
+                                                            <rect key="frame" x="100" y="26" width="65" height="16"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ppe-do-jXZ" id="JBH-bO-3ap"/>
+                            <outlet property="delegate" destination="Ppe-do-jXZ" id="NDM-yV-0F4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cp-Gi-Wo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="2517"/>
+        </scene>
+        <!--My Navigation View Controller-->
+        <scene sceneID="rRg-oz-kwY">
+            <objects>
+                <navigationController id="MAw-Ku-7j3" customClass="MyNavigationViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jij-WK-XUe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0ia-cY-MEt" kind="relationship" relationship="rootViewController" id="Dpr-x8-YGQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dos-8K-fTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="1386"/>
+        </scene>
+        <!--Da Ren Collection Table View Controller-->
+        <scene sceneID="5gM-r5-DJ1">
+            <objects>
+                <tableViewController storyboardIdentifier="DaRenCollectionTableViewController" id="Dag-Cl-IGr" customClass="DaRenCollectionTableViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" id="ffu-V8-lyl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DaRenCell" id="zBT-sr-RXm" customClass="DaRenTableViewCell" customModule="mixi" customModuleProvider="target">
+                                <rect key="frame" x="10" y="111" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zBT-sr-RXm" id="Leg-HJ-Enp">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kas-BR-Zls">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh1-kj-j7V">
+                                                    <rect key="frame" x="7" y="0.0" width="306" height="193"/>
+                                                    <color key="backgroundColor" red="0.73583756889999996" green="1" blue="0.87837064970000001" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="mainBtnClicked:" destination="zBT-sr-RXm" eventType="touchUpInside" id="pDW-wf-mec"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdI-RL-hSD">
+                                                    <rect key="frame" x="14" y="96" width="80" height="80"/>
+                                                    <state key="normal" backgroundImage="蜜喜蜜喜－切片iphone5_107">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x0H-S1-ZFK">
+                                                    <rect key="frame" x="7" y="121" width="306" height="67"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNH-AC-IEk">
+                                                            <rect key="frame" x="104" y="7" width="56" height="16"/>
+                                                            <color key="backgroundColor" red="1" green="0.3350426125" blue="0.3838580593" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <state key="normal" title="Elisse">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥ 200" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U79-qg-GAw">
+                                                            <rect key="frame" x="104" y="30" width="52" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="/h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAk-WW-9G7">
+                                                            <rect key="frame" x="145" y="32" width="19" height="13"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="定位－icon" translatesAutoresizingMaskIntoConstraints="NO" id="0kN-GX-G66">
+                                                            <rect key="frame" x="173" y="33" width="8" height="12"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="长宁区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7f-kd-cTw">
+                                                            <rect key="frame" x="182" y="34" width="51" height="12"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="收藏" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myO-Cu-hrR">
+                                                            <rect key="frame" x="270" y="39" width="30" height="15"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="小清新 复古" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGs-BL-3t5">
+                                                            <rect key="frame" x="103" y="50" width="87" height="12"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="收藏白色iphone5_15" translatesAutoresizingMaskIntoConstraints="NO" id="guu-Xe-YWU">
+                                                            <rect key="frame" x="270" y="13" width="22" height="22"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Dag-Cl-IGr" id="WrA-bp-0yH"/>
+                            <outlet property="delegate" destination="Dag-Cl-IGr" id="D9a-Qz-B2H"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j19-Gu-6T8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="2517"/>
+        </scene>
+        <!--My Booking View Controller-->
         <scene sceneID="uKT-Al-77O">
             <objects>
-                <viewController id="Lz5-NB-hLj" sceneMemberID="viewController">
+                <viewController id="Lz5-NB-hLj" customClass="MyBookingViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Dav-j8-pTB"/>
                         <viewControllerLayoutGuide type="bottom" id="Ft9-2q-xag"/>
@@ -2091,6 +2348,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－性别iphone5_05" translatesAutoresizingMaskIntoConstraints="NO" id="CRG-w7-InI">
                                 <rect key="frame" x="204" y="182" width="9" height="14"/>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-x5-kso">
+                                <rect key="frame" x="92" y="269" width="118" height="31"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2098,7 +2358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UBj-C9-PWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-41" y="2917"/>
+            <point key="canvasLocation" x="-195" y="3115"/>
         </scene>
         <!--Customer Service View Controller-->
         <scene sceneID="grq-4Q-Ken">
@@ -2526,10 +2786,10 @@
             </objects>
             <point key="canvasLocation" x="-276" y="3877"/>
         </scene>
-        <!--View Controller-->
+        <!--My Wait To Comment View Controller-->
         <scene sceneID="3Q6-NR-ADT">
             <objects>
-                <viewController id="Owt-8A-spl" sceneMemberID="viewController">
+                <viewController id="Owt-8A-spl" customClass="MyWaitToCommentViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f6H-G6-su1"/>
                         <viewControllerLayoutGuide type="bottom" id="eBu-ot-WIE"/>
@@ -2559,6 +2819,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="个人中心－性别iphone5_05" translatesAutoresizingMaskIntoConstraints="NO" id="7uK-EK-mVr">
                                 <rect key="frame" x="204" y="182" width="9" height="14"/>
                             </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qId-W2-hIG">
+                                <rect key="frame" x="99" y="329" width="123" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -2566,7 +2833,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Sr-0X-oeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-529" y="3248"/>
+            <point key="canvasLocation" x="-489" y="3374"/>
         </scene>
     </scenes>
     <resources>
@@ -2637,9 +2904,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ftU-7a-bEC"/>
-        <segue reference="wpb-Hm-7cv"/>
         <segue reference="uId-19-EHZ"/>
+        <segue reference="ftU-7a-bEC"/>
+        <segue reference="N5b-dU-HIN"/>
+        <segue reference="wpb-Hm-7cv"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>

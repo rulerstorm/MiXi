@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, DaRenPhotoTableViewDelegation {
 
     @IBOutlet weak var mask: UIButton!
@@ -75,7 +76,7 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
         let myNavi = self.navigationController as! MyNavigationViewController
         myNavi.changeNewNaviBar(newNaviBar)
         newNaviBar.delegate = self
-        
+
         
 //-----------------3月31日新增，这里开始写页面的主体。
         setUpThreeCheckBar()
@@ -105,8 +106,13 @@ class DaRenDetailViewController: UIViewController, DaRenHeaderViewDelegation, Da
 //        self.myNaviBar?.removeFromSuperview()
 //        //换上备份的老bar
 //        self.navigationController?.view.addSubview(self.backUpView!)
+        
+        //4月19日新增
+        //这个是从收藏那里过来的，我想dismiss自己
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
+    
 
 
 //-------------------3月31日新增，这里开始写页面的主体。------------------------
