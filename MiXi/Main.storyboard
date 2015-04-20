@@ -154,12 +154,27 @@
                                         <state key="normal" backgroundImage="蜜喜蜜喜－首页_14">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Imw-bE-9em" kind="push" id="7ow-lB-3Bf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZw-B7-SkJ">
                                         <rect key="frame" x="183" y="0.0" width="135" height="174"/>
                                         <state key="normal" backgroundImage="蜜喜蜜喜－首页_15">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Imw-bE-9em" kind="push" id="FpP-Sv-amy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucD-7H-gEU">
+                                        <rect key="frame" x="183" y="176" width="135" height="144"/>
+                                        <state key="normal" backgroundImage="蜜喜蜜喜－首页_17">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Imw-bE-9em" kind="push" id="A47-MP-9qJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9A-LI-vcv">
                                         <rect key="frame" x="0.0" y="8" width="83" height="19"/>
@@ -214,12 +229,6 @@
                                         <connections>
                                             <segue destination="5rQ-Z3-Ocf" kind="push" id="DL9-nO-yAK"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucD-7H-gEU">
-                                        <rect key="frame" x="183" y="176" width="135" height="144"/>
-                                        <state key="normal" backgroundImage="蜜喜蜜喜－首页_17">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -1271,6 +1280,9 @@
                                                             <state key="normal" title="Button">
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
+                                                            <connections>
+                                                                <segue destination="Imw-bE-9em" kind="push" id="piM-g4-efd"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e4-od-xCG">
                                                             <rect key="frame" x="14" y="96" width="78" height="78"/>
@@ -1484,6 +1496,220 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gy1-7A-Ouu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-95" y="1879"/>
+        </scene>
+        <!--Hun Li Bu Zhi Detail View Controller-->
+        <scene sceneID="ghA-QJ-U0v">
+            <objects>
+                <viewController storyboardIdentifier="HunLiBuZhiDetailViewController" id="Imw-bE-9em" customClass="HunLiBuZhiDetailViewController" customModule="mixi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r2l-UP-dDg"/>
+                        <viewControllerLayoutGuide type="bottom" id="kEj-nm-pCF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aov-C5-v4x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTi-hl-DEX">
+                                <rect key="frame" x="0.0" y="63" width="320" height="217"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12V-8D-40B">
+                                        <rect key="frame" x="0.0" y="0.0" width="640" height="217"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15n-VU-MmF">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                                <color key="backgroundColor" red="0.71368816329999996" green="0.74006689869999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="&lt;--尝试向左滑动">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.97672771970000005" blue="0.78776274030000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.60929091729999996" blue="0.64650969300000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ll9-3e-Pqf" userLabel="Middle Scroll View">
+                                <rect key="frame" x="0.0" y="284" width="320" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSw-Eo-Umy">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                        <color key="backgroundColor" red="0.80324511306012747" green="0.92156862750000001" blue="0.63358301230285763" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5SA-yo-CxT" userLabel="contentView">
+                                <rect key="frame" x="5" y="332" width="310" height="195"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4h-Yy-Wqe">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="30"/>
+                                        <color key="backgroundColor" red="0.64705882349999999" green="0.5568627451" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="2" minY="1" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Stars" image="评价－未点星星">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="蜜喜蜜喜－侧滑栏切片_02">
+                                            <color key="titleColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PcI-hR-hTt">
+                                        <rect key="frame" x="0.0" y="32" width="310" height="40"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="详情1" translatesAutoresizingMaskIntoConstraints="NO" id="CUL-Ym-izc">
+                                                <rect key="frame" x="47" y="4" width="216" height="15"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07K-Eh-WLE">
+                                                <rect key="frame" x="34" y="0.0" width="44" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="个性宣言">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.64705882349999999" green="0.5568627451" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="individualClicked:" destination="Imw-bE-9em" eventType="touchUpInside" id="X0v-bA-sJd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed4-Ua-xu8">
+                                                <rect key="frame" x="101" y="0.0" width="44" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="主题介绍">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.64705882349999999" green="0.5568627451" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="themeClicked:" destination="Imw-bE-9em" eventType="touchUpInside" id="chv-zV-2lc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzP-hU-UZf">
+                                                <rect key="frame" x="168" y="0.0" width="44" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="评价">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.64705882349999999" green="0.5568627451" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="commentClicked:" destination="Imw-bE-9em" eventType="touchUpInside" id="yZc-CZ-Tw0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itt-nm-B1d">
+                                                <rect key="frame" x="235" y="0.0" width="44" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="更多">
+                                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" red="0.64705882349999999" green="0.5568627451" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="moreClicked:" destination="Imw-bE-9em" eventType="touchUpInside" id="F2k-f6-cNe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DdF-za-KUT" userLabel="finalContentView">
+                                        <rect key="frame" x="0.0" y="72" width="310" height="123"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDq-0O-UZI" userLabel="book">
+                                                <rect key="frame" x="87" y="23" width="136" height="26"/>
+                                                <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                <state key="normal" title="进入企业查看更多">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="eLc-ID-1aJ" kind="push" id="wvy-su-I8f"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="由Wedding Time婚礼策划提供" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfx-Og-aT4">
+                                                <rect key="frame" x="65" y="57" width="181" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最终解释权归Wedding Time所有" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff0-hI-40v">
+                                                <rect key="frame" x="65" y="83" width="181" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bo-LH-zti" userLabel="book">
+                                        <rect key="frame" x="252" y="3" width="50" height="23"/>
+                                        <color key="backgroundColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="加入预约">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5XC-kL-qfC"/>
+                    <connections>
+                        <outlet property="barImageView" destination="CUL-Ym-izc" id="PSW-mh-jtr"/>
+                        <outlet property="bookBtn" destination="7bo-LH-zti" id="wNX-qa-LiI"/>
+                        <outlet property="commentBtn" destination="pzP-hU-UZf" id="dSk-Mv-hzH"/>
+                        <outlet property="contentView" destination="5SA-yo-CxT" id="dbd-kL-RQw"/>
+                        <outlet property="finalContentView" destination="DdF-za-KUT" id="u5W-jV-GxP"/>
+                        <outlet property="individualSayingBtn" destination="07K-Eh-WLE" id="dNQ-EN-ENh"/>
+                        <outlet property="middleScrollView" destination="Ll9-3e-Pqf" id="Cjm-tZ-tUp"/>
+                        <outlet property="moreBtn" destination="itt-nm-B1d" id="7gb-6h-ixs"/>
+                        <outlet property="scrollView" destination="ZTi-hl-DEX" id="fMV-uv-gjh"/>
+                        <outlet property="seeMoreBtn" destination="DDq-0O-UZI" id="eNF-rk-lGf"/>
+                        <outlet property="themeExplainBtn" destination="Ed4-Ua-xu8" id="vAq-Jf-AG1"/>
+                        <outlet property="topScrollInnerView" destination="12V-8D-40B" id="keF-oC-7Di"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0m-AD-gaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="1879"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m9F-S9-xIX">
+            <objects>
+                <viewController id="eLc-ID-1aJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="78I-oO-wms"/>
+                        <viewControllerLayoutGuide type="bottom" id="bgV-8A-HUt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="78h-eX-a4c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f23-zx-IsQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnm-Mo-Wrq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="1879"/>
         </scene>
         <!--Hun Li Bu Zhi View Controller-->
         <scene sceneID="35Z-0r-HHh">
@@ -2112,7 +2338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUy-JL-1gL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-529" y="2531"/>
+            <point key="canvasLocation" x="-562" y="2529"/>
         </scene>
         <!--Bu Zhi Collection Table View Controller-->
         <scene sceneID="5lz-Hh-7Pu">
@@ -2212,7 +2438,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dos-8K-fTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352" y="1386"/>
+            <point key="canvasLocation" x="-95" y="1284"/>
         </scene>
         <!--Da Ren Collection Table View Controller-->
         <scene sceneID="5gM-r5-DJ1">
@@ -2358,7 +2584,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UBj-C9-PWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-195" y="3115"/>
+            <point key="canvasLocation" x="-562" y="3163"/>
         </scene>
         <!--Customer Service View Controller-->
         <scene sceneID="grq-4Q-Ken">
@@ -2444,7 +2670,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="233-8b-5a1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1048" y="3877"/>
+            <point key="canvasLocation" x="-1048" y="4437"/>
         </scene>
         <!--Discover Table View Controller-->
         <scene sceneID="k3P-Tj-Hjd">
@@ -2462,7 +2688,7 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ7-WF-UiI">
                                             <rect key="frame" x="2" y="2" width="316" height="122"/>
-                                            <color key="backgroundColor" red="1" green="0.60929091734371799" blue="0.64650969295052541" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.73172032649593421" green="1" blue="0.61034115898477437" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" title="Button">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
@@ -2497,7 +2723,7 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpN-GP-zYo">
                                             <rect key="frame" x="2" y="2" width="316" height="122"/>
-                                            <color key="backgroundColor" red="1" green="0.60929091729999996" blue="0.64650969300000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.73172032649999996" green="1" blue="0.61034115899999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <state key="normal" title="Button">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
@@ -2507,6 +2733,20 @@
                                         </button>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tKK-La-fxZ">
                                             <rect key="frame" x="2" y="124" width="316" height="125"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zW9-43-QwH">
+                                                    <rect key="frame" x="105" y="87" width="107" height="30"/>
+                                                    <color key="backgroundColor" red="1" green="0.69901934919999997" blue="0.67073314029999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <state key="normal" title="立即报名">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="eLc-ID-1aJ" kind="push" id="Fth-RH-wuU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                             <color key="backgroundColor" red="0.66852115359999997" green="0.60649973440000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNM-dt-FGI">
@@ -2527,6 +2767,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.73583756889999996" green="1" blue="0.87837064970000001" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="subscribeNowBtn" destination="zW9-43-QwH" id="rzE-SP-xpv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -2537,7 +2780,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfY-8w-YpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1048" y="4536"/>
+            <point key="canvasLocation" x="-1048" y="5100"/>
         </scene>
         <!--Inquiry Chat Table View Controller-->
         <scene sceneID="Z98-yv-v30">
@@ -2689,7 +2932,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doV-vC-dWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-660" y="3877"/>
+            <point key="canvasLocation" x="-562" y="4437"/>
         </scene>
         <!--Complain View Controller-->
         <scene sceneID="swb-J0-pZz">
@@ -2784,7 +3027,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xoj-SG-H3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-276" y="3877"/>
+            <point key="canvasLocation" x="-185" y="4437"/>
         </scene>
         <!--My Wait To Comment View Controller-->
         <scene sceneID="3Q6-NR-ADT">
@@ -2833,7 +3076,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Sr-0X-oeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-489" y="3374"/>
+            <point key="canvasLocation" x="-562" y="3792"/>
         </scene>
     </scenes>
     <resources>
@@ -2897,6 +3140,8 @@
         <image name="蜜喜蜜喜－首页_27" width="64" height="64"/>
         <image name="蜜喜蜜喜－首页_28" width="64" height="64"/>
         <image name="蜜喜蜜喜－首页_29" width="64" height="64"/>
+        <image name="评价－未点星星" width="20" height="20"/>
+        <image name="详情1" width="216" height="15"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -2904,10 +3149,12 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="wpb-Hm-7cv"/>
+        <segue reference="Dpr-x8-YGQ"/>
         <segue reference="uId-19-EHZ"/>
         <segue reference="ftU-7a-bEC"/>
-        <segue reference="N5b-dU-HIN"/>
-        <segue reference="wpb-Hm-7cv"/>
+        <segue reference="FpP-Sv-amy"/>
+        <segue reference="Fth-RH-wuU"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.5568627451" green="0.47450980390000003" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>

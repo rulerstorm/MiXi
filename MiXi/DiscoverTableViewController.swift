@@ -110,6 +110,9 @@ class DiscoverTableViewController: UITableViewController, DiscoverTableViewCellD
         self.tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: rowNmuber, inSection: 0)] , withRowAnimation: UITableViewRowAnimation.Automatic)
     }
     
+    
+
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

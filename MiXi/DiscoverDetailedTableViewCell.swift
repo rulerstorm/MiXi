@@ -37,4 +37,25 @@ class DiscoverDetailedTableViewCell: UITableViewCell {
 
     }
 
+
+    @IBOutlet weak var subscribeNowBtn: UIButton!{
+        didSet{
+            subscribeNowBtn.layer.cornerRadius = 3
+            subscribeNowBtn.backgroundColor = mixiColor.brown
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
