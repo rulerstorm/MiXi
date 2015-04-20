@@ -148,7 +148,6 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
             }
             
 //            println("lastX:\(self.lastX),,frameX:\(pan.view?.frame.minX)")
-            
             // 结束拖拽
             if (pan.state == UIGestureRecognizerState.Cancelled || pan.state == UIGestureRecognizerState.Ended) {
                     if(viewFrameMinX > self.lastX){ //如果向右拖
@@ -273,5 +272,12 @@ class SlideViewController: UIViewController, leftBarButtunDelegate, SlideBarView
             }
         }
     }
+    
+    
+    //4月20日新增，侧滑栏底下碰到可以收回去，体验友好
+    func gestureBtnclicked(){
+        leftBarButtunClicked()
+    }
+    
     
 }

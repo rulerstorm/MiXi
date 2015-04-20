@@ -704,6 +704,15 @@
                                     <action selector="allBtnClicked:" destination="gaa-6d-vR1" eventType="touchUpInside" id="DMu-x4-VBu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOi-rn-1UW" userLabel="GestureButton">
+                                <rect key="frame" x="0.0" y="336" width="191" height="215"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gestureBtnclicked" destination="gaa-6d-vR1" eventType="touchUpInside" id="o2C-gv-EWj"/>
+                                </connections>
+                            </button>
                             <view alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V62-lt-m4L" userLabel="shadow">
                                 <rect key="frame" x="0.0" y="0.0" width="191" height="568"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

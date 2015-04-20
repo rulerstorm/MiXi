@@ -11,6 +11,7 @@ import UIKit
 
 protocol SlideBarViewDelegate :class{
     func changeMainViewToTarget(targetView :String?)
+    func gestureBtnclicked()
 }
 
 
@@ -48,6 +49,9 @@ class SlideBarViewController: UIViewController {
     @IBOutlet weak var shadow: UIView!
     
 
+    @IBAction func gestureBtnclicked() {
+        delegate.gestureBtnclicked()
+    }
 
 
 }

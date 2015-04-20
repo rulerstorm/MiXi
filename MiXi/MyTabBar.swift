@@ -23,20 +23,21 @@ class MyTabBar: UIView {
     
     func addTabBarButtonWithItem(#item:UITabBarItem){   //垃圾代码
         if(item.title == "预约车"){
-            btnHeart.addTarget(self, action: Selector("buttonClick:"), forControlEvents: UIControlEvents.TouchDown)
+            btnHeart.addTarget(self, action: Selector("buttonClick:"), forControlEvents: UIControlEvents.TouchUpInside)
         }
         if(item.title == "婚礼达人"){
             btnLeft.item = item
-            btnLeft.addTarget(self, action: Selector("buttonClick:"), forControlEvents: UIControlEvents.TouchDown)
+            btnLeft.addTarget(self, action: Selector("buttonClick:"), forControlEvents: UIControlEvents.TouchUpInside)
         }
         if(item.title == "婚礼布置"){
             btnRight.item = item
-            btnRight.addTarget(self, action: Selector("buttonClick:"), forControlEvents: UIControlEvents.TouchDown)
+            btnRight.addTarget(self, action: Selector("buttonClick:"), forControlEvents: UIControlEvents.TouchUpInside)
         }
     }
     
     
     func buttonClick(button:MyTabBarButton){
+        
         var index = 0
         if(button.titleLabel?.text == "婚礼布置"){
             index = 2
