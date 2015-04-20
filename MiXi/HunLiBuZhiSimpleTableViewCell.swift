@@ -1,14 +1,14 @@
 //
-//  DaRenPhotoTableViewCell.swift
-//  mixi
+//  HunLiBuZhiSimpleTableViewCell.swift
+//  justSave
 //
-//  Created by LuRock on 15/4/7.
+//  Created by LuRock on 15/4/20.
 //  Copyright (c) 2015年 LuRock. All rights reserved.
 //
 
 import UIKit
 
-class DaRenPhotoTableViewCell: UITableViewCell {
+class HunLiBuZhiSimpleTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,10 +21,9 @@ class DaRenPhotoTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    @IBOutlet weak var dateLabelBtn: UIButton!{
+    @IBOutlet weak var collectBtn: UIButton!{
         didSet{
-            dateLabelBtn.setBackgroundImage(UIImage.resizabelImage(name: "我的预约－时间底色iphone5_26"), forState: UIControlState.Normal)
-            dateLabelBtn.backgroundColor = UIColor.clearColor()
+            collectBtn.layer.cornerRadius = 3
         }
     }
 }

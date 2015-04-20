@@ -10,10 +10,16 @@ import UIKit
 
 class MyBookingViewController: UIViewController {
 
+    var BookingStatus :BookingStatusTableViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let hunLiBuZhi = storyBoard.instantiateViewControllerWithIdentifier("BookingStatusTableViewController") as! BookingStatusTableViewController
+        self.BookingStatus = hunLiBuZhi
+        
+        self.contentView.addSubview(BookingStatus.view)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +27,7 @@ class MyBookingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var contentView: UIView!
 
     /*
     // MARK: - Navigation

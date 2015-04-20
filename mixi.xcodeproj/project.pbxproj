@@ -55,12 +55,20 @@
 		FEBCF2DF1ADA10BC00E68BE7 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2DE1ADA10BC00E68BE7 /* ChatTableViewCell.swift */; };
 		FEBCF2E11ADA118800E68BE7 /* ChatOppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2E01ADA118800E68BE7 /* ChatOppTableViewCell.swift */; };
 		FEBCF2EF1ADA22C100E68BE7 /* ChatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBCF2EE1ADA22C100E68BE7 /* ChatData.swift */; };
+		FECC27641AE50BC0004AB6C0 /* EnterpriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27631AE50BC0004AB6C0 /* EnterpriseViewController.swift */; };
+		FECC27681AE51070004AB6C0 /* EnterpriseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27671AE51070004AB6C0 /* EnterpriseHeaderView.swift */; };
+		FECC276E1AE510C5004AB6C0 /* EnterpriseHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECC276D1AE510C5004AB6C0 /* EnterpriseHeaderView.xib */; };
+		FECC27761AE514D8004AB6C0 /* HunLiBuZhiSimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27751AE514D8004AB6C0 /* HunLiBuZhiSimpleTableViewCell.swift */; };
+		FECC277A1AE514E6004AB6C0 /* HunLiBuZhiSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27791AE514E6004AB6C0 /* HunLiBuZhiSimpleTableViewController.swift */; };
+		FECC27851AE5188E004AB6C0 /* BookingStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27831AE5188E004AB6C0 /* BookingStatusTableViewCell.swift */; };
+		FECC27861AE5188E004AB6C0 /* BookingStatusFinishedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27841AE5188E004AB6C0 /* BookingStatusFinishedTableViewCell.swift */; };
+		FECC27881AE51896004AB6C0 /* BookingStatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC27871AE51896004AB6C0 /* BookingStatusTableViewController.swift */; };
+		FECC278A1AE518B1004AB6C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECC27891AE518B1004AB6C0 /* Main.storyboard */; };
 		FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEDFADA91AC0093D0005464A /* TabBarView.xib */; };
 		FEDFADAC1AC021D70005464A /* MyTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */; };
 		FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAD1AC023610005464A /* MyTabBar.swift */; };
 		FEDFADB01AC047E10005464A /* HeartTabBsrButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */; };
 		FEE281C51AE4D7260004B75D /* HunLiBuZhiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE281C41AE4D7260004B75D /* HunLiBuZhiDetailViewController.swift */; };
-		FEE281CB1AE4D7AA0004B75D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE281CA1AE4D7AA0004B75D /* Main.storyboard */; };
 		FEEE33891AD3F74B00707AE1 /* DaRenCommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE33881AD3F74B00707AE1 /* DaRenCommentTableViewController.swift */; };
 		FEEE33BD1AD4042900707AE1 /* DaRenCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEE33BC1AD4042900707AE1 /* DaRenCommentTableViewCell.swift */; };
 		FEEEF80C1AC183A30050B0D0 /* DaRenDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEF80B1AC183A30050B0D0 /* DaRenDetailViewController.swift */; };
@@ -133,12 +141,20 @@
 		FEBCF2DE1ADA10BC00E68BE7 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatTableViewCell.swift; path = MiXi/ChatTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FEBCF2E01ADA118800E68BE7 /* ChatOppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatOppTableViewCell.swift; path = MiXi/ChatOppTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FEBCF2EE1ADA22C100E68BE7 /* ChatData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatData.swift; path = MiXi/ChatData.swift; sourceTree = SOURCE_ROOT; };
+		FECC27631AE50BC0004AB6C0 /* EnterpriseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseViewController.swift; sourceTree = "<group>"; };
+		FECC27671AE51070004AB6C0 /* EnterpriseHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterpriseHeaderView.swift; path = MiXi/EnterpriseHeaderView.swift; sourceTree = SOURCE_ROOT; };
+		FECC276D1AE510C5004AB6C0 /* EnterpriseHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterpriseHeaderView.xib; sourceTree = "<group>"; };
+		FECC27751AE514D8004AB6C0 /* HunLiBuZhiSimpleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HunLiBuZhiSimpleTableViewCell.swift; sourceTree = "<group>"; };
+		FECC27791AE514E6004AB6C0 /* HunLiBuZhiSimpleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HunLiBuZhiSimpleTableViewController.swift; sourceTree = "<group>"; };
+		FECC27831AE5188E004AB6C0 /* BookingStatusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingStatusTableViewCell.swift; sourceTree = "<group>"; };
+		FECC27841AE5188E004AB6C0 /* BookingStatusFinishedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingStatusFinishedTableViewCell.swift; sourceTree = "<group>"; };
+		FECC27871AE51896004AB6C0 /* BookingStatusTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingStatusTableViewController.swift; sourceTree = "<group>"; };
+		FECC27891AE518B1004AB6C0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FEDFADA91AC0093D0005464A /* TabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabBarView.xib; path = MiXi/TabBarView.xib; sourceTree = SOURCE_ROOT; };
 		FEDFADAB1AC021D70005464A /* MyTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBarButton.swift; path = MiXi/MyTabBarButton.swift; sourceTree = SOURCE_ROOT; };
 		FEDFADAD1AC023610005464A /* MyTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTabBar.swift; path = MiXi/MyTabBar.swift; sourceTree = SOURCE_ROOT; };
 		FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeartTabBsrButton.swift; path = MiXi/HeartTabBsrButton.swift; sourceTree = SOURCE_ROOT; };
 		FEE281C41AE4D7260004B75D /* HunLiBuZhiDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiDetailViewController.swift; path = MiXi/HunLiBuZhiDetailViewController.swift; sourceTree = SOURCE_ROOT; };
-		FEE281CA1AE4D7AA0004B75D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FEEE33881AD3F74B00707AE1 /* DaRenCommentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenCommentTableViewController.swift; path = MiXi/DaRenCommentTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FEEE33BC1AD4042900707AE1 /* DaRenCommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenCommentTableViewCell.swift; path = MiXi/DaRenCommentTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FEEEF80B1AC183A30050B0D0 /* DaRenDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenDetailViewController.swift; path = MiXi/DaRenDetailViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -186,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */,
-				FEE281CA1AE4D7AA0004B75D /* Main.storyboard */,
+				FECC27891AE518B1004AB6C0 /* Main.storyboard */,
 				AC323AB41ABEA41100F46563 /* views */,
 				AC1CF6A41AB72FE30095B58C /* Utility */,
 				AC1CF6A51AB73AB20095B58C /* Controller */,
@@ -241,6 +257,8 @@
 		AC1CF6A51AB73AB20095B58C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FECC27871AE51896004AB6C0 /* BookingStatusTableViewController.swift */,
+				FECC27791AE514E6004AB6C0 /* HunLiBuZhiSimpleTableViewController.swift */,
 				AC118A311ABCA1BC00A1915C /* mainTabbarController.swift */,
 				FEEEF8151AC1A64D0050B0D0 /* MyNavigationViewController.swift */,
 				AC1CF6A61AB73E1F0095B58C /* InputInfomationViewController.swift */,
@@ -266,6 +284,7 @@
 				FE95987D1AE38B43005F73CE /* MyWaitToCommentViewController.swift */,
 				AC7CD2081ABF1351007E2B20 /* DaRenViewController.swift */,
 				AC7CD20A1ABF1375007E2B20 /* HunLiBuZhiViewController.swift */,
+				FECC27631AE50BC0004AB6C0 /* EnterpriseViewController.swift */,
 				AC7CD20C1ABF171D007E2B20 /* RegisterViewController.swift */,
 			);
 			name = Controller;
@@ -291,8 +310,11 @@
 				FE8081A81AC6F0C500A70DE3 /* DaRenTableViewCell.swift */,
 				FE9B17F01ACB347D0052A9FD /* DaRenExcelView.swift */,
 				FE929E981ACB82160095F04A /* DaRenHeader.xib */,
+				FECC276D1AE510C5004AB6C0 /* EnterpriseHeaderView.xib */,
+				FECC27751AE514D8004AB6C0 /* HunLiBuZhiSimpleTableViewCell.swift */,
 				FEEE33BC1AD4042900707AE1 /* DaRenCommentTableViewCell.swift */,
 				FEEEF8131AC198ED0050B0D0 /* DaRenHeaderView.swift */,
+				FECC27671AE51070004AB6C0 /* EnterpriseHeaderView.swift */,
 				FE6823941AD9B7A700BCAAD4 /* BookedBuZhiTableViewCell.swift */,
 				FE68239E1AD9B84000BCAAD4 /* BookedDaRenTableViewCell.swift */,
 				FEB71A531ADD03A000F7B87F /* DiscoverTableViewCell.swift */,
@@ -302,6 +324,8 @@
 				FEBCF2E01ADA118800E68BE7 /* ChatOppTableViewCell.swift */,
 				FEDFADAF1AC047E10005464A /* HeartTabBsrButton.swift */,
 				FEDFADAD1AC023610005464A /* MyTabBar.swift */,
+				FECC27831AE5188E004AB6C0 /* BookingStatusTableViewCell.swift */,
+				FECC27841AE5188E004AB6C0 /* BookingStatusFinishedTableViewCell.swift */,
 				FE9598751AE2B183005F73CE /* MessageBubbleCell.swift */,
 			);
 			name = views;
@@ -388,12 +412,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEE281CB1AE4D7AA0004B75D /* Main.storyboard in Resources */,
 				AC37DFCF1AB57ABD00AA6B53 /* Default@2x.png in Resources */,
 				FE929E991ACB82160095F04A /* DaRenHeader.xib in Resources */,
 				AC37DFD31AB57B2B00AA6B53 /* Default-568h@2x.png in Resources */,
+				FECC278A1AE518B1004AB6C0 /* Main.storyboard in Resources */,
 				FE95988A1AE3DFF4005F73CE /* AppIocn.png in Resources */,
 				FEDFADAA1AC0093E0005464A /* TabBarView.xib in Resources */,
+				FECC276E1AE510C5004AB6C0 /* EnterpriseHeaderView.xib in Resources */,
 				AC19A0131AB56EFD00167523 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,15 +438,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEEEF80C1AC183A30050B0D0 /* DaRenDetailViewController.swift in Sources */,
+				FECC27641AE50BC0004AB6C0 /* EnterpriseViewController.swift in Sources */,
 				FEEEF8161AC1A64D0050B0D0 /* MyNavigationViewController.swift in Sources */,
 				AC1CF6A31AB71A0D0095B58C /* ExtendingUIImage.swift in Sources */,
 				FEBCF2E11ADA118800E68BE7 /* ChatOppTableViewCell.swift in Sources */,
 				AC7CD2091ABF1351007E2B20 /* DaRenViewController.swift in Sources */,
+				FECC27851AE5188E004AB6C0 /* BookingStatusTableViewCell.swift in Sources */,
 				ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */,
 				FEDFADB01AC047E10005464A /* HeartTabBsrButton.swift in Sources */,
 				FEBCF2CB1ADA014500E68BE7 /* CustomerServiceViewController.swift in Sources */,
 				FEBCF2DF1ADA10BC00E68BE7 /* ChatTableViewCell.swift in Sources */,
 				FEBCF2EF1ADA22C100E68BE7 /* ChatData.swift in Sources */,
+				FECC27681AE51070004AB6C0 /* EnterpriseHeaderView.swift in Sources */,
 				FE1DCEEF1AD2F272001F900D /* DaRenPhotoTableViewController.swift in Sources */,
 				FE1DCEF21AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift in Sources */,
 				FE9598781AE2B231005F73CE /* Message.swift in Sources */,
@@ -429,6 +457,7 @@
 				FE9B17F11ACB347D0052A9FD /* DaRenExcelView.swift in Sources */,
 				FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */,
 				AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */,
+				FECC277A1AE514E6004AB6C0 /* HunLiBuZhiSimpleTableViewController.swift in Sources */,
 				FEEE33BD1AD4042900707AE1 /* DaRenCommentTableViewCell.swift in Sources */,
 				AC19B47E1ABD66BD00E332C1 /* ExtendingUIButton.swift in Sources */,
 				FE6823B51AD9DD5500BCAAD4 /* PersonalCenterViewController.swift in Sources */,
@@ -437,6 +466,7 @@
 				FEBCF2DD1ADA0BDA00E68BE7 /* ComplainViewController.swift in Sources */,
 				AC7CD20D1ABF171D007E2B20 /* RegisterViewController.swift in Sources */,
 				AC19A00E1AB56EFD00167523 /* ViewController.swift in Sources */,
+				FECC27861AE5188E004AB6C0 /* BookingStatusFinishedTableViewCell.swift in Sources */,
 				AC19A00C1AB56EFD00167523 /* AppDelegate.swift in Sources */,
 				ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */,
 				FEDFADAE1AC023610005464A /* MyTabBar.swift in Sources */,
@@ -446,6 +476,7 @@
 				FE9598901AE3EEC9005F73CE /* DaRenCollectionTableViewController.swift in Sources */,
 				FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */,
 				FEB71A541ADD03A000F7B87F /* DiscoverTableViewCell.swift in Sources */,
+				FECC27881AE51896004AB6C0 /* BookingStatusTableViewController.swift in Sources */,
 				AC7CD20B1ABF1375007E2B20 /* HunLiBuZhiViewController.swift in Sources */,
 				FE30134B1AE28A3500003FE2 /* DiscoverDetailedTableViewCell.swift in Sources */,
 				AC30A3971AB9960D001054B9 /* registerInfo.swift in Sources */,
@@ -461,6 +492,7 @@
 				FEBCF2D31ADA0B1600E68BE7 /* InquiryChatTableViewController.swift in Sources */,
 				FE8081A71AC6F05D00A70DE3 /* DaRenTableViewController.swift in Sources */,
 				FEB71A4E1ADCFEFA00F7B87F /* DiscoverTableViewController.swift in Sources */,
+				FECC27761AE514D8004AB6C0 /* HunLiBuZhiSimpleTableViewCell.swift in Sources */,
 				FE95987E1AE38B43005F73CE /* MyWaitToCommentViewController.swift in Sources */,
 				AC1CF6A71AB73E1F0095B58C /* InputInfomationViewController.swift in Sources */,
 			);
