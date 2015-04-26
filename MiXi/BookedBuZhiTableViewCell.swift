@@ -29,7 +29,7 @@ class BookedBuZhiTableViewCell: UITableViewCell {
     @IBOutlet weak var bookTimeBtn: UIButton!
     
     @IBAction func BookBtnClicked(sender: UIButton) {
-
+        delegate.bookATime()
     }
     
 
