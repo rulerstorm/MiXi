@@ -25,6 +25,7 @@ class HunLiBuZhiViewController: UIViewController{
         //适配iphone4
         self.srollView.contentSize = CGSize(width: 320, height: 568)  //这行表述可滚动范围
         
+        
 
     }
 
