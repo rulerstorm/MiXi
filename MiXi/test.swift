@@ -11,6 +11,6 @@ import Foundation
 
 class test {
     func test(){
-        AVObject 
+
     }
 }
