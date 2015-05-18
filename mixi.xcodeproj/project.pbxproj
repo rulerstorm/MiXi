@@ -25,6 +25,8 @@
 		ACD1EEC91ABEEB60007189A2 /* SlideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */; };
 		ACD1EECC1ABEF5E1007189A2 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */; };
 		ACF5D7C01ABEB0D300F5904B /* UserCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */; };
+		B9A55B5103501C05B37BA03D /* libPods-mixi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5627FB95A221152D9D2779 /* libPods-mixi.a */; };
+		FE0461DE1B09BBB700B629ED /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0461DD1B09BBB700B629ED /* test.swift */; };
 		FE1DCEEF1AD2F272001F900D /* DaRenPhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCEED1AD2F272001F900D /* DaRenPhotoTableViewController.swift */; };
 		FE1DCEF21AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DCEF11AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift */; };
 		FE27DD2E1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */; };
@@ -87,6 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A5627FB95A221152D9D2779 /* libPods-mixi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mixi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B055866A7011712F5F4B376 /* Pods-mixi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mixi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mixi/Pods-mixi.debug.xcconfig"; sourceTree = "<group>"; };
 		AC118A311ABCA1BC00A1915C /* mainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mainTabbarController.swift; path = MiXi/mainTabbarController.swift; sourceTree = SOURCE_ROOT; };
 		AC19A0061AB56EFD00167523 /* mixi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mixi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC19A00A1AB56EFD00167523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		AC30A3961AB9960D001054B9 /* registerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerInfo.swift; sourceTree = "<group>"; };
 		AC37DFCE1AB57ABD00AA6B53 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		AC37DFD21AB57B2B00AA6B53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		AC6C66EEB970467D1E0422C1 /* Pods-mixi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mixi.release.xcconfig"; path = "Pods/Target Support Files/Pods-mixi/Pods-mixi.release.xcconfig"; sourceTree = "<group>"; };
 		AC7CD2081ABF1351007E2B20 /* DaRenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenViewController.swift; path = MiXi/DaRenViewController.swift; sourceTree = SOURCE_ROOT; };
 		AC7CD20A1ABF1375007E2B20 /* HunLiBuZhiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiViewController.swift; path = MiXi/HunLiBuZhiViewController.swift; sourceTree = SOURCE_ROOT; };
 		AC7CD20C1ABF171D007E2B20 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = MiXi/RegisterViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -110,6 +115,7 @@
 		ACD1EEC71ABEEB60007189A2 /* SlideBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideBarViewController.swift; path = MiXi/SlideBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACD1EECB1ABEF5E1007189A2 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideViewController.swift; path = MiXi/SlideViewController.swift; sourceTree = SOURCE_ROOT; };
 		ACF5D7BF1ABEB0D300F5904B /* UserCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserCenterTableViewController.swift; path = MiXi/UserCenterTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		FE0461DD1B09BBB700B629ED /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = test.swift; path = MiXi/test.swift; sourceTree = SOURCE_ROOT; };
 		FE1DCEED1AD2F272001F900D /* DaRenPhotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenPhotoTableViewController.swift; path = MiXi/DaRenPhotoTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FE1DCEF11AD2FC9F001F900D /* DaRenPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DaRenPhotoTableViewCell.swift; path = MiXi/DaRenPhotoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FE27DD2D1AC937F8003A1F2E /* HunLiBuZhiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HunLiBuZhiTableViewController.swift; path = MiXi/HunLiBuZhiTableViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -167,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9A55B5103501C05B37BA03D /* libPods-mixi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +193,8 @@
 				AC19A0081AB56EFD00167523 /* mixi */,
 				AC19A01E1AB56EFD00167523 /* mixiTests */,
 				AC19A0071AB56EFD00167523 /* Products */,
+				D2C71186375E361341692FF3 /* Pods */,
+				EFDFB66CAABBCCD87A85EBA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,7 +210,6 @@
 		AC19A0081AB56EFD00167523 /* mixi */ = {
 			isa = PBXGroup;
 			children = (
-				AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */,
 				FECC27891AE518B1004AB6C0 /* Main.storyboard */,
 				AC323AB41ABEA41100F46563 /* views */,
 				AC1CF6A41AB72FE30095B58C /* Utility */,
@@ -217,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				AC19A00B1AB56EFD00167523 /* AppDelegate.swift */,
+				FE0461DD1B09BBB700B629ED /* test.swift */,
+				AC7CD26F1ABF1F4C007E2B20 /* mixi-Bridging-Header.h */,
 				FE9598891AE3DFF4005F73CE /* AppIocn.png */,
 				AC37DFCE1AB57ABD00AA6B53 /* Default@2x.png */,
 				AC37DFD21AB57B2B00AA6B53 /* Default-568h@2x.png */,
@@ -331,6 +341,23 @@
 			name = views;
 			sourceTree = "<group>";
 		};
+		D2C71186375E361341692FF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B055866A7011712F5F4B376 /* Pods-mixi.debug.xcconfig */,
+				AC6C66EEB970467D1E0422C1 /* Pods-mixi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFDFB66CAABBCCD87A85EBA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A5627FB95A221152D9D2779 /* libPods-mixi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,9 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC19A0251AB56EFD00167523 /* Build configuration list for PBXNativeTarget "mixi" */;
 			buildPhases = (
+				A0223A8B718B431C378002A8 /* Check Pods Manifest.lock */,
 				AC19A0021AB56EFD00167523 /* Sources */,
 				AC19A0031AB56EFD00167523 /* Frameworks */,
 				AC19A0041AB56EFD00167523 /* Resources */,
+				52880933B8247A16A8D3C168 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -432,6 +461,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52880933B8247A16A8D3C168 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mixi/Pods-mixi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0223A8B718B431C378002A8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC19A0021AB56EFD00167523 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -458,6 +520,7 @@
 				FE97600B1AC85A290041486D /* MBProgressHUD.m in Sources */,
 				AC30A3951AB9618D001054B9 /* mainColor.swift in Sources */,
 				FECC277A1AE514E6004AB6C0 /* HunLiBuZhiSimpleTableViewController.swift in Sources */,
+				FE0461DE1B09BBB700B629ED /* test.swift in Sources */,
 				FEEE33BD1AD4042900707AE1 /* DaRenCommentTableViewCell.swift in Sources */,
 				AC19B47E1ABD66BD00E332C1 /* ExtendingUIButton.swift in Sources */,
 				FE6823B51AD9DD5500BCAAD4 /* PersonalCenterViewController.swift in Sources */,
@@ -596,6 +659,7 @@
 		};
 		AC19A0261AB56EFD00167523 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B055866A7011712F5F4B376 /* Pods-mixi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -614,6 +678,7 @@
 		};
 		AC19A0271AB56EFD00167523 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6C66EEB970467D1E0422C1 /* Pods-mixi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

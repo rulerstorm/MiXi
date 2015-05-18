@@ -1,0 +1,1 @@
+../../../AVOSCloudIM/iOS/release-v3.1.1.1/AVOSCloudIM.framework/Headers/AVIMTypedMessage.h

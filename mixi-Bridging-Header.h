@@ -11,6 +11,6 @@
 
 //指示器动画库
 #import "MBProgressHUD.h"
-
+#import "AVOSCloud/AVOSCloud.h"
 
 #endif
