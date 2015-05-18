@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //这里添加app的key（leanClould）
+        AVOSCloud.setApplicationId("rich0sq0xqpcjm1uq7g4oso0nb412woznuvljm4eh4vfvg2p", clientKey: "b9whyse8ek1hiwu7sxi3btmiiuejuivh0o5dhg8vhwqrkhqj")
+        
+        let testObj = AVObject(className: "fuck")
+        testObj["foo"] = "bar"
+        testObj.saveInBackground()
+        
         return true
     }
 

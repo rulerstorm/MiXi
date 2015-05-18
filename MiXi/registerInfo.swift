@@ -18,6 +18,8 @@ class registerInfo{
         userName = nil
         userGender = gender.male
         userBudget = 0
+        
+        
     }
     
     var userName: String?
@@ -25,7 +27,13 @@ class registerInfo{
     var userBudget :Int?
     var userStyle = [String]()
     
+    let realUser = AVUser()
+    
     func saveToDisk(){
         //waiting to fill this part
     }
+    
+    
+    
+    
 }
