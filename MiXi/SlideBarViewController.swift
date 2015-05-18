@@ -36,12 +36,22 @@ class SlideBarViewController: UIViewController {
     }
     
 
+    @IBOutlet weak var avatorImageView: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         btnMainPage.selected = true
+        
+        if let data = NSData(contentsOfURL: Url!){
+            let avator = UIImage(data: data)
+            
+            //我不知道为什么会自动旋转90度，我还要手动转回来。。。
+            avatorImageView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI) * 0.5)
+            
+            avatorImageView.image = avator
+        }
         
     }
 

@@ -9,7 +9,7 @@
 import UIKit
 
 
-class InputInfomationViewController: UIViewController, UITextFieldDelegate{
+class InputInfomationViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate,  UINavigationControllerDelegate{
 
 //    @IBOutlet var scrollView: UIScrollView!
     
@@ -23,20 +23,31 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var lableStyle: UITextField!
     @IBOutlet weak var labelHotRecommand: UILabel!
     
-    //持有用户注册数据的模型
-    let userInfo = registerInfo()
     //保存数据的方法
     private func saveToModule(){
         userInfo.userName = textNikname.text
-        userInfo.userGender = (buttonMale.selected) ? (registerInfo.gender.male) : (registerInfo.gender.female)
+        userInfo.userGender = (buttonMale.selected) ? 1 : 0
         userInfo.userBudget = textBudget.text?.toInt()
 //        userInfo.userStyle 这个随时保存
+        
+        userInfo.saveToDisk()
     }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //触摸关闭键盘
+        var tapGestureRecognizer:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "keyboardHide")
+        
+        //为啥要加下面这行？参考：http://blog.csdn.net/kylinbl/article/details/9139473
+        tapGestureRecognizer.cancelsTouchesInView = false;
+        self.view.addGestureRecognizer(tapGestureRecognizer)
+        
+        
+        
+        
         //设置底部“完成”按钮
         buttonComplete.setAsMainTheme()
         
@@ -99,6 +110,7 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
         NSNotificationCenter.defaultCenter().removeObserver(self);
     }
 
+    
     //这里是下面一坨代码创建按钮的点击事件
     func hotBtnPressed(sender :UIButton){    //这里如果sender参数前面加＃会无法识别selector。。。哭
         sender.selected = !sender.selected
@@ -180,28 +192,64 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate{
     }
     
     //每次编辑完毕都要保存
-    func textFieldDidEndEditing(textField: UITextField) {
-        self.saveToModule()
-    }
+//    func textFieldDidEndEditing(textField: UITextField) {
+//        self.saveToModule()
+//    }
+    //5月18日评：这个想法简直有病！
     
     
     
-    
-    //编辑完成提交数据的button时间，需要判定后界面跳转至“主界面”
+    //编辑完成提交数据
     @IBAction func buttonCompeleteTaped() {
         self.view.endEditing(true)
         MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-
+        saveToModule()
+        let qos = Int( QOS_CLASS_BACKGROUND.value)
+        let queue = dispatch_get_global_queue(qos, 0)
+        dispatch_async(queue) {
+            sleep(3)
+            dispatch_async(dispatch_get_main_queue()) {   //UI相关的动作必须切换到主线程
+                MBProgressHUD.hideHUDForView(self.view, animated: true)
+                self.performSegueWithIdentifier("main", sender: nil)
+            }
+        }
+    }
+    
+    
+    @IBOutlet weak var avator: UIButton!
+    @IBAction func avatorClicked() {
+        let myIPC = UIImagePickerController()
         
-//        let actionSheet = UIAlertController(title: "test", message: "test message", preferredStyle: UIAlertControllerStyle.ActionSheet)
-//        actionSheet.addAction(这个参数填什么？)
-//        actionSheet.presentViewController(self, animated: true, completion: nil)
+        myIPC.sourceType = UIImagePickerControllerSourceType.Camera
+        myIPC.delegate = self
         
-        //手动执行segue
-//        self.performSegueWithIdentifier
+        self.presentViewController(myIPC, animated: true, completion: nil)
+        
         
     }
     
-
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        let image = info["UIImagePickerControllerOriginalImage"] as! UIImage
+        avator.setImage(image, forState: UIControlState.Normal)
+        
+        //头像保存至磁盘
+        let phoData =  UIImagePNGRepresentation(image)
+        phoData.writeToFile(Url!.path!, atomically: true)
+        
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    
+    
+    
+    
+    func keyboardHide(){
+        self.view.endEditing(true)
+    }
+    
+    
     
 }
