@@ -223,6 +223,9 @@ class InputInfomationViewController: UIViewController, UITextFieldDelegate, UIIm
         myIPC.sourceType = UIImagePickerControllerSourceType.Camera
         myIPC.delegate = self
         
+        //允许调用系统自带的简单编辑
+        myIPC.allowsEditing = true
+        
         self.presentViewController(myIPC, animated: true, completion: nil)
         
         

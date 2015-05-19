@@ -84,3 +84,7 @@ let userDefaults = NSUserDefaults.standardUserDefaults()
 
 var searchPath = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true)
 let Url = NSURL(fileURLWithPath: "\(searchPath[0])/avator.png")
+
+
+
+
